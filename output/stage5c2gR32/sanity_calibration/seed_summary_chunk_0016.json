@@ -1,0 +1,804 @@
+{
+  "rows": [
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0026776727106930676,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.0437747298869984,
+      "phase_batch_seed": 3029073984,
+      "seed_index": 250,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002696104458304743,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.10389064416564656,
+      "phase_batch_seed": 3995735297,
+      "seed_index": 251,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002656899504949195,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.167228289850593,
+      "phase_batch_seed": 499760853,
+      "seed_index": 252,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002875761225933021,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.16684672508266235,
+      "phase_batch_seed": 2662273123,
+      "seed_index": 253,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002881143255996791,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.4468816162525626,
+      "phase_batch_seed": 2894520448,
+      "seed_index": 254,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0024153197612490547,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.2387261607673796,
+      "phase_batch_seed": 3168038766,
+      "seed_index": 255,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.00249799559002336,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.3434527523662733,
+      "phase_batch_seed": 2581945619,
+      "seed_index": 256,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0023233246817366817,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.837249985696589,
+      "phase_batch_seed": 3639729657,
+      "seed_index": 257,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0022293251944507228,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.737024324399601,
+      "phase_batch_seed": 1658760207,
+      "seed_index": 258,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0025260352447678143,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.8078599220886968,
+      "phase_batch_seed": 367135140,
+      "seed_index": 259,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002445748916315381,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.8602925329396869,
+      "phase_batch_seed": 3201331904,
+      "seed_index": 260,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0025245964914950075,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.4619347981839008,
+      "phase_batch_seed": 2391578026,
+      "seed_index": 261,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002514777308989877,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.1411752474889856,
+      "phase_batch_seed": 2164002261,
+      "seed_index": 262,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002276271170958231,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.93306213430308,
+      "phase_batch_seed": 786945976,
+      "seed_index": 263,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002325067222231056,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.283848538429424,
+      "phase_batch_seed": 2188558644,
+      "seed_index": 264,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002665048726480961,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.0269205099805485,
+      "phase_batch_seed": 1667538061,
+      "seed_index": 265,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002727227454737172,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.4121561554058075,
+      "phase_batch_seed": 967854574,
+      "seed_index": 266,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0025067154838651143,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.985633487206088,
+      "phase_batch_seed": 304208443,
+      "seed_index": 267,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0026230445107286713,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.4499030535721302,
+      "phase_batch_seed": 3898144197,
+      "seed_index": 268,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0030056291122743687,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.5238230272975758,
+      "phase_batch_seed": 3593057915,
+      "seed_index": 269,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0023482941711001635,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.5155123583368995,
+      "phase_batch_seed": 2474314714,
+      "seed_index": 270,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0025337565939685764,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.6960094643938076,
+      "phase_batch_seed": 2609024979,
+      "seed_index": 271,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0023810506090492217,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.3901095530637746,
+      "phase_batch_seed": 662869272,
+      "seed_index": 272,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002526456784811292,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.5203151278713825,
+      "phase_batch_seed": 3626311301,
+      "seed_index": 273,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002589417304194096,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.540081337158592,
+      "phase_batch_seed": 3585507937,
+      "seed_index": 274,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0025261358724507532,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.6946904589692213,
+      "phase_batch_seed": 2083003229,
+      "seed_index": 275,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0026302250789838303,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.10255624310886596,
+      "phase_batch_seed": 2683785003,
+      "seed_index": 276,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0029276665956526208,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.4927209461298504,
+      "phase_batch_seed": 3478977979,
+      "seed_index": 277,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0029236959693861634,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 1.3584130441429203,
+      "phase_batch_seed": 222601886,
+      "seed_index": 278,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002549950933049828,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.2392444432377145,
+      "phase_batch_seed": 157646883,
+      "seed_index": 279,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002688203718525989,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.4758849520273331,
+      "phase_batch_seed": 1147081581,
+      "seed_index": 280,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002257810696805229,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.9699724291802378,
+      "phase_batch_seed": 1799449144,
+      "seed_index": 281,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.003077452520105323,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.9814702096368063,
+      "phase_batch_seed": 3200100693,
+      "seed_index": 282,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0027547634455415406,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.5237384485476416,
+      "phase_batch_seed": 347910253,
+      "seed_index": 283,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0027165110126988116,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.1495077863768055,
+      "phase_batch_seed": 2102831843,
+      "seed_index": 284,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0026690678251559082,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.3631827248020554,
+      "phase_batch_seed": 3526287942,
+      "seed_index": 285,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0022189185195800563,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -2.220970173503073,
+      "phase_batch_seed": 3878084316,
+      "seed_index": 286,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002594563364214931,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.0428337377749441,
+      "phase_batch_seed": 56800086,
+      "seed_index": 287,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0027214980935509445,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.28195572601642926,
+      "phase_batch_seed": 312744838,
+      "seed_index": 288,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0030888828879328265,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 1.124007465393937,
+      "phase_batch_seed": 132215341,
+      "seed_index": 289,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002788922504040039,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.5392003100655062,
+      "phase_batch_seed": 3184081695,
+      "seed_index": 290,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0025096706119035125,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.0784995606909937,
+      "phase_batch_seed": 1492912782,
+      "seed_index": 291,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0028223239837525498,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.19080299642686244,
+      "phase_batch_seed": 914968983,
+      "seed_index": 292,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002742461037683168,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.3172475826237453,
+      "phase_batch_seed": 3496151297,
+      "seed_index": 293,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0024787955306775707,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.9738549230069797,
+      "phase_batch_seed": 4139930244,
+      "seed_index": 294,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0030096639378801933,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.1093151311776787,
+      "phase_batch_seed": 1630067034,
+      "seed_index": 295,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002974286457097201,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -0.5464059155137007,
+      "phase_batch_seed": 2014710887,
+      "seed_index": 296,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.002165770987990587,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -2.1981697320360074,
+      "phase_batch_seed": 635213596,
+      "seed_index": 297,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0022867995463031923,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": -1.5547393098594138,
+      "phase_batch_seed": 3101008876,
+      "seed_index": 298,
+      "sidak_benign_rejected": false
+    },
+    {
+      "benign_rejected": false,
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "critical_value": 3.9628056733104815,
+      "family_size": 135,
+      "fixture_standard_error": 0.0029630833871038885,
+      "injected_detection": {
+        "0.0025": false,
+        "0.005": true,
+        "0.01": true
+      },
+      "maximum_standardized_excess": 0.9165998957563053,
+      "phase_batch_seed": 1658982021,
+      "seed_index": 299,
+      "sidak_benign_rejected": false
+    }
+  ]
+}

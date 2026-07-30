@@ -1,0 +1,18 @@
+seed: 1734
+level: smoke
+lattice:
+  shape:
+  - 3
+  - 3
+  - 3
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.3
+dtwa:
+  n_traj: 96
+  t_max: 1.4
+  n_steps: 29

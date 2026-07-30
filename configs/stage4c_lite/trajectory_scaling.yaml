@@ -1,0 +1,38 @@
+seed: 1729
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 8
+  t_max: 1.4
+  n_steps: 31
+stage4:
+  seed_start: 81001
+  seeds: 4
+  trajectory_reps: 6
+  trajectory_seed_stride: 100000
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 250
+  ci: 0.95
+  primary_pair: [static_only, mobile_plus_spin_density]
+  labels: [static_only, mobile_plus_spin_density, everything]
+  matched_families:
+    - family: matched_small_2d_3d
+      shapes: [[3,3], [2,2,2]]
+    - family: larger_3d_signal_check
+      shapes: [[3,3,2]]
+  gates:
+    min_fixed_negative_shapes: 2
+    min_fixed_ci_shapes: 1
+    max_trajectory_dominated_shapes: 2
+stage4c0:
+  n_traj_sweep: [4, 8]
+  effect_floor_db: 0.20
+  trajectory_fraction_threshold: 0.50
+  required_real_shapes: [3x3, 2x2x2, 3x3x2]
+  claim_scope: diagnostic trajectory-scaling preflight only

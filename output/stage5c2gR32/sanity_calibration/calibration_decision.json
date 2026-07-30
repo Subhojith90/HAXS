@@ -1,0 +1,46 @@
+{
+  "benign_false_rejection_interval_95": [
+    0.0,
+    0.0037374040400176777
+  ],
+  "benign_false_rejection_rate": 0.0,
+  "benign_false_rejections": 0,
+  "benign_interval_half_width": 0.0018687020200088388,
+  "benign_trials": 1024,
+  "binding_sesoi": 0.005,
+  "binding_sesoi_detection_rate": 0.982421875,
+  "decision_sha256": "98fc68c4918eb3bc697aff1b6c11c2f171c2cfdb95230e09e05d491097a41cd5",
+  "extension_permitted": false,
+  "familywise_alpha": 0.01,
+  "next": "STOP_OR_PREDECLARED_EXTENSION_ONLY",
+  "power": [
+    {
+      "detection_rate": 0.0,
+      "detections": 0,
+      "lower_95": 0.0,
+      "offset_fraction_of_half_particle_count": 0.0025,
+      "trials": 1024,
+      "upper_95": 0.0037374040400176777
+    },
+    {
+      "detection_rate": 0.982421875,
+      "detections": 1006,
+      "lower_95": 0.972385245677466,
+      "offset_fraction_of_half_particle_count": 0.005,
+      "trials": 1024,
+      "upper_95": 0.9888524933932983
+    },
+    {
+      "detection_rate": 1.0,
+      "detections": 1024,
+      "lower_95": 0.9962625959599825,
+      "offset_fraction_of_half_particle_count": 0.01,
+      "trials": 1024,
+      "upper_95": 1.0
+    }
+  ],
+  "primary_rule": "bonferroni_one_sided_normal_envelope",
+  "schema_version": "haxs.stage5c2gR32.statistical-sanity.v1",
+  "stage": "S03",
+  "status": "FAIL"
+}

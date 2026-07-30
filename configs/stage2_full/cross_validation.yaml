@@ -1,0 +1,21 @@
+seed: 202605
+level: stage2_full
+lattice:
+  shape: [3, 3, 3]
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 350
+  t_max: 1.4
+  n_steps: 35
+optimization:
+  n_candidates: 60
+stage2:
+  folds: 5
+  seeds_per_fold: 8
+  seed_start: 10001

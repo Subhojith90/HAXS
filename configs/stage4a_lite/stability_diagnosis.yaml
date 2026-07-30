@@ -1,0 +1,42 @@
+seed: 1729
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 16
+  t_max: 1.4
+  n_steps: 31
+stage4:
+  seed_start: 71001
+  seeds: 4
+  trajectory_reps: 2
+  trajectory_seed_stride: 100000
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 150
+  ci: 0.95
+  primary_pair: [static_only, mobile_plus_spin_density]
+  labels: [static_only, mobile_plus_spin_density, everything]
+  matched_families:
+    - family: matched_small_2d_3d
+      shapes: [[3,3], [2,2,2]]
+    - family: larger_3d_signal_check
+      shapes: [[3,3,2]]
+  gates:
+    min_fixed_negative_shapes: 3
+    min_fixed_ci_shapes: 1
+    min_nested_stable_shapes: 1
+stage4a:
+  effect_floor_db: 0.20
+  target_power: 0.80
+  alpha: 0.05
+  max_recommended_seed_cap: 500
+  instability_labels:
+    weak_effect: abs(effect) below practical effect floor
+    trajectory_dominated: trajectory variance fraction above 0.50
+    underpowered: projected seed requirement above current seeds
+    promising: negative effect with reasonable projected sample size

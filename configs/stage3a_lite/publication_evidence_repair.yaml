@@ -1,0 +1,34 @@
+seed: 1729
+lattice:
+  shape: [3, 3, 3]
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 64
+  t_max: 1.4
+  n_steps: 31
+optimization:
+  n_candidates: 8
+stage3:
+  seed_start: 30001
+  seeds: 40
+  mechanism_seeds: 16
+  bootstrap_samples: 800
+  ci: 0.95
+  folds: 3
+  seeds_per_fold: 3
+  finite_size_shapes:
+    - [2, 3]
+    - [3, 3]
+    - [2, 2, 2]
+    - [3, 3, 2]
+    - [3, 3, 3]
+  inference_pairs:
+    - [static_only, mobile_plus_spin_density]
+    - [static_only, everything]
+    - [mobile_plus_spin_density, everything]

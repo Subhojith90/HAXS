@@ -1,0 +1,26 @@
+stage5c2gR32_failed_evidence:
+  schema_version: haxs.stage5c2gR32.failed-evidence.v1
+  archive_filename: HAXS_Stage5C2G_R3_1_G1_FAILED_EVIDENCE_20260728.zip
+  archive_sha256: 301dd288e536350ce47b8f919a6fe7b8fcd4fe609c5532a1646081121622e5dc
+  candidate_sha256: 91344d090d9f3387781c4e53bbbe4a5c9b359eaa82f47373b2d4f55cfcf2a2a3
+  receipt_id: bec6a297-cf01-4df4-868f-1e01110167dd
+  receipt_sha256: 0309aeacc5f27eade2e529ca5080cf8b7c33d1d40bfa8cb4666cbba0f164e2c1
+  attempt_id: 83809c41b55e453599953c9379623088
+  state_sha256: 010c52c2b9dc4c1a062755ce2f41d80021527350b9aae938cdb27c615bb6c2f3
+  manifest_sha256: a2c1cfd0507d58478a7c4f91e7c2f2f03bbf70fc1e6d20d4b2b6f84c58e9e353
+  semantic_file_sha256: 93f84509ed7f1e5a57a3267b01260ce721b9381a0700f2eb4eddbac20b2044ed
+  semantic_decision_sha256: a23e0ceba5e40426109c7855bb7dd923f9647a28f4438fdcc02ed93767fff16e
+  expected:
+    terminal_status: FAILED
+    sequence: 1
+    comparisons: 128
+    curve_rows: 11520
+    equality_passes: 128
+    absolute_sanity_passes: 103
+    absolute_sanity_failures: 25
+    maximum_difference: 0.0
+    only_failed_check: collective_component_bounds
+  supersedes:
+    candidate_sha256: 91344d090d9f3387781c4e53bbbe4a5c9b359eaa82f47373b2d4f55cfcf2a2a3
+    receipt_id: bec6a297-cf01-4df4-868f-1e01110167dd
+    disposition: immutable_failed_never_retry

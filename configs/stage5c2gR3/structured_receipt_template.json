@@ -1,0 +1,24 @@
+{
+  "schema_version": "haxs.stage5c2gR3.1.authorization.v1",
+  "receipt_id": "REPLACE_WITH_UUID",
+  "decision": "ACCEPT_AND_AUTHORIZE_G1_ONLY",
+  "candidate_sha256": "REPLACE_WITH_FINAL_CANDIDATE_SHA256",
+  "protocol_archive_sha256": "REPLACE_WITH_FINAL_PROTOCOL_ARCHIVE_SHA256",
+  "runtime_tree_sha256": "REPLACE_WITH_FINAL_RUNTIME_TREE_SHA256",
+  "authorized_scope": "G1_ONLY",
+  "blocked_scopes": [
+    "G2",
+    "G3",
+    "G4",
+    "STAGE5C3",
+    "STAGE5D",
+    "MANUSCRIPT_RESULT_CLAIMS",
+    "EXACT_MOBILE_HOLE_CLAIMS",
+    "PUBLIC_RELEASE"
+  ],
+  "issued_at_utc": "REPLACE_WITH_UTC_ISO8601_TIMESTAMP",
+  "issuer": {
+    "name": "REPLACE_WITH_SUPERVISOR_NAME",
+    "role": "SUPERVISOR"
+  }
+}

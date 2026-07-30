@@ -1,0 +1,22 @@
+stage5c2gR2_G1:
+  stage: stage5c2gR2_paired_calibration_invariants
+  namespace_uuid: "db8b8e31-5559-42a7-b2fb-984dbf263c35"
+  times: {start: 0.0, stop: 1.4, points: 45}
+  hierarchy: {occupancy_replicates: 2, paths_per_occupancy: 4, phase_batches_per_path: 4}
+  n_traj_per_phase_batch: 1024
+  tolerance_max_abs_full_curve_difference: 1.0e-10
+  model: {j_perp: 1.0, jz: 0.35, hopping_t: 0.55, mobile_eta: 0.55, lambda_sd: 0.30}
+  cases:
+    - id: limit_hopping_zero_chain6
+      shape: [6]
+      holes: [2]
+      labels: [static_only, mobile_only]
+      overrides: {hopping_t: 0.0, mobile_eta: 0.0}
+    - id: limit_spin_density_zero_rect2x3
+      shape: [2, 3]
+      holes: [2]
+      labels: [static_only, spin_density_only]
+      overrides: {lambda_sd: 0.0}
+  expected_comparison_rows: 128
+  downstream_permission_on_pass: none_return_for_supervisory_review
+

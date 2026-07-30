@@ -1,0 +1,143 @@
+{
+  "alternative_definition": "independent family resample error shifted to a population with mean B*(1+SESOI) at the frozen challenge cell",
+  "candidate_created": false,
+  "canonical_units": 4,
+  "decision_sha256": "65efb3df0841813b6b24f91f8bac48e49fc02112869cbfb042a95d9906a6c792",
+  "elapsed_seconds": 2.552027292025741,
+  "extension_permitted": false,
+  "frozen_rule": {
+    "envelope": "bonferroni_two_sided_normal",
+    "sampling": "iid",
+    "trajectories": 4096
+  },
+  "frozen_rule_sha256": "f407660d05b5328bd3a5b0945185453e19b50df3fbb5709a4be2422dcbe25368",
+  "global_family_size": 540,
+  "next": "SUPERVISORY_PRE_CANDIDATE_REVIEW",
+  "operating_characteristics": [
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "false_rejection_lower_95": 0.0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_upper_95": 0.007446975722882739,
+      "false_rejections": 0,
+      "scope": "GLOBAL",
+      "simultaneous_coverage_lower_95": 0.9925530242771171,
+      "simultaneous_coverage_rate": 1.0,
+      "simultaneous_coverage_upper_95": 0.9999999999999999,
+      "simultaneous_coverages": 512,
+      "trials": 512
+    },
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "false_rejection_lower_95": 0.0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_upper_95": 0.007446975722882739,
+      "false_rejections": 0,
+      "scope": "CASE::limit_hopping_zero_chain6",
+      "simultaneous_coverage_lower_95": 0.9925530242771171,
+      "simultaneous_coverage_rate": 1.0,
+      "simultaneous_coverage_upper_95": 0.9999999999999999,
+      "simultaneous_coverages": 512,
+      "trials": 512
+    },
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "false_rejection_lower_95": 0.0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_upper_95": 0.007446975722882739,
+      "false_rejections": 0,
+      "scope": "CASE::limit_spin_density_zero_rect2x3",
+      "simultaneous_coverage_lower_95": 0.9925530242771171,
+      "simultaneous_coverage_rate": 1.0,
+      "simultaneous_coverage_upper_95": 0.9999999999999999,
+      "simultaneous_coverages": 512,
+      "trials": 512
+    },
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "scope": "UNIT::chain6_hole_2",
+      "trials": 512
+    },
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "scope": "UNIT::chain6_hole_4",
+      "trials": 512
+    },
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "scope": "UNIT::rect2x3_hole_2",
+      "trials": 512
+    },
+    {
+      "binding_sesoi_detections": 512,
+      "binding_sesoi_power": 1.0,
+      "binding_sesoi_power_lower_95": 0.9925530242771171,
+      "binding_sesoi_power_upper_95": 0.9999999999999999,
+      "scope": "UNIT::rect2x3_hole_3",
+      "trials": 512
+    }
+  ],
+  "role": "NON_AUTHORISING_SCALE_EXTENSION_CALIBRATION",
+  "schema_version": "haxs.stage5c2gR32A.stochastic-validation.v1",
+  "seed_collision_count": 0,
+  "stage": "R3.2A-S03-VALIDATION",
+  "status": "PASS",
+  "truth_error_metrics": [
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "maximum_absolute_standardized_aggregate_bias": 1.1518070780266434,
+      "mean_reported_standard_error": 0.013238354704041394,
+      "occupancy_id": "chain6_hole_2",
+      "rmse": 0.014891821569908491,
+      "rmse_to_mean_se_ratio": 1.1248997252930781,
+      "unit_id": "8d9f57771b025ad2b6da9e578278aa6a"
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "maximum_absolute_standardized_aggregate_bias": 2.0540385467523286,
+      "mean_reported_standard_error": 0.013254504533804008,
+      "occupancy_id": "chain6_hole_4",
+      "rmse": 0.015205851052724668,
+      "rmse_to_mean_se_ratio": 1.1472213852991628,
+      "unit_id": "db87e6c265d45773bb6297db5af0c11f"
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "maximum_absolute_standardized_aggregate_bias": 0.40334066296123416,
+      "mean_reported_standard_error": 0.013975753449200667,
+      "occupancy_id": "rect2x3_hole_2",
+      "rmse": 0.015490461895550572,
+      "rmse_to_mean_se_ratio": 1.108381165413056,
+      "unit_id": "fb5214d8d1bf5caa839f81a965024f62"
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "maximum_absolute_standardized_aggregate_bias": 1.7212595102082304,
+      "mean_reported_standard_error": 0.013977142804277518,
+      "occupancy_id": "rect2x3_hole_3",
+      "rmse": 0.016028049141345778,
+      "rmse_to_mean_se_ratio": 1.1467328742209464,
+      "unit_id": "89bd5e9b58115b60bdad35f43f6437be"
+    }
+  ],
+  "untouched_validation": true,
+  "validation_families": 512
+}

@@ -1,0 +1,38 @@
+stage5c2gR2_protocol:
+  stage: stage5c2gR2_locked_configuration_atomic_gate_hierarchical_validity_relock
+  protocol_version: 3.0.0
+  status: repair_candidate_not_timestamped
+  canonical_configs:
+    G1: configs/stage5c2gR2/g1.yaml
+    G2: configs/stage5c2gR2/g2_transport.yaml
+    G3: configs/stage5c2gR2/g3_validity.yaml
+    G4: configs/stage5c2gR2/g4_fixed_count.yaml
+  custody: configs/stage5c2gR2/custody.yaml
+  environment: configs/stage5c2gR2/environment.yaml
+  environment_lock: requirements-stage5c2gR2.lock
+  authorization:
+    free_form_scientific_config_forbidden: true
+    one_atomic_state_per_gate: true
+    failure_revokes_prior_pass: true
+    state_key_fields: [candidate_sha256, canonical_config_sha256, expected_plan_sha256, attempt_id]
+    recompute_gate_and_raw_manifest_before_authorization: true
+    exact_runtime_file_set_required: true
+  hierarchical_validity:
+    estimator: nested_occupancy_path_phase_bootstrap
+    bootstrap_replicates: 10000
+    confidence_level: 0.95
+    seed: 53029
+    require_intervals_for: [time_profile_correlation, rmse_db, effect_sign, component_difference, local_window_effect, density_l1, normalized_msd_error, return_probability_error, configuration_tv]
+  execution_permissions:
+    G0: approved_now
+    G1: only_after_new_external_timestamp_then_run_alone
+    G2: blocked_pending_separately_accepted_G1
+    G3: blocked_pending_separately_accepted_G2
+    G4: blocked_pending_separately_accepted_G3_and_new_receipt
+    stage5c3_production: blocked
+    stage5d: blocked
+    manuscript_result_claims: blocked
+    public_release: blocked
+  rejected_candidates:
+    - e9a9740caac19b51a7a1da0b0f404c804d1a45d0eff45fbc602aeeee2db1c396
+    - e65745b3359ab2eccc12c0bd381e6d57d5aea5d1857d245e3bfd8682aaaea886

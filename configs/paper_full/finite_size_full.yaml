@@ -1,0 +1,30 @@
+seed: 1234
+level: paper_full
+finite_size:
+  shapes:
+  - - 12
+  - - 24
+  - - 36
+  - - 4
+    - 4
+  - - 5
+    - 5
+  - - 3
+    - 3
+    - 3
+  - - 4
+    - 4
+    - 4
+  seeds:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+dtwa:
+  n_traj: 1500
+  t_max: 2.0
+  n_steps: 81

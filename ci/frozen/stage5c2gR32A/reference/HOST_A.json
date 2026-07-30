@@ -1,0 +1,26 @@
+{
+  "G1_authorized": false,
+  "candidate_sha256": "1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165",
+  "environment_sha256": "85c319fc955d57115c202ecd712eafd00bdd01c8ae8f2403a67ec7a1178ef3ec",
+  "host_label": "HOST_A",
+  "physical_host": {
+    "machine": "arm64",
+    "platform_identity_sha256": "7329989bb200437bc37531b189671123ec7ff5c74c6f911d09fee3b47aa36106",
+    "serial_or_node_sha256": "cf8799acfd7690db453bf1bfd1c4075e24196dbe32dc1435fd7569dadd50dee5",
+    "system": "Darwin"
+  },
+  "protocol_archive_sha256": "b60cbfa1f5296d2d7844f4324d21b0b6743f2d10b93f373be1484e3fe79ae694",
+  "python_version": "3.12.7",
+  "runtime_tree_sha256": "3599bbabfaf0eff916408d2398b585ad0ffb18dcf554238d22de1fcb039bc036",
+  "schema_version": "haxs.stage5c2gR32A.physical-host-g0.v1",
+  "scientific_execution_performed": false,
+  "status": "PASS",
+  "transcript_sha256": {
+    "00_compileall.txt": "8c2166e4f40d10bb4c7877b8a39511946741f56f510ea284d05c5f09e0356e2a",
+    "01_full_tests.txt": "ae68d21120007bef1e271ea260f1e1b76c4bd77bc197d06fdbd1ed05f2a35b40",
+    "02_targeted_tests.txt": "d99a0a5dd4f29f810ba4de15635aca9097bc01638b56a0b7423ca7535dd299e5",
+    "03_immutable_install.txt": "2f40daa74ae6e86952847a6d5ede7d8b08f567181444db01a5c676b4b38738d0",
+    "04_fresh_unzip.txt": "f196a6d06052ad7d33356462424035741a10af63d8d77b0d49c3579ef4731167"
+  },
+  "wheel_sha256": "ef308ac5a7fc04821e4d041b317a39eb24c51dc6715bf1dd9a80b340c1831c55"
+}

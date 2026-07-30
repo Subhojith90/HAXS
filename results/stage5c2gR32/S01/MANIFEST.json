@@ -1,0 +1,10 @@
+{
+  "files": {
+    "manifest_check.csv": "7e2f582619ff8e893ed038110edadbba0e97c8c5ab9b473c310560d0a6d7b232",
+    "regenerated_semantic_decision.json": "93f84509ed7f1e5a57a3267b01260ce721b9381a0700f2eb4eddbac20b2044ed",
+    "supersession_ledger.json": "17af20cb28c122dc0fb0c7413737f937e183431178d71b02ff40035c68f2993c",
+    "verification.json": "9e31deff6e0f9570b959e05e918cfd55ba29854fa3399b4ec919b57e04f1dd96"
+  },
+  "manifest_sha256": "ae95e503822d38e7028689ecfd796b491fd87ff77795ae1399825753e7fb4235",
+  "schema_version": "haxs.stage5c2gR32.S01-manifest.v1"
+}

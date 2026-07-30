@@ -1,0 +1,62 @@
+seed: 72001
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 16
+  n_steps: 31
+  t_max: 1.4
+stage4:
+  seed_start: 72001
+  seeds: 4
+  trajectory_reps: 2
+  trajectory_seed_stride: 100000
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 1000
+  ci: 0.95
+  labels:
+    - static_only
+    - mobile_plus_spin_density
+    - everything
+  primary_pair:
+    - static_only
+    - mobile_plus_spin_density
+  matched_families:
+    - family: targeted_3d_promising
+      shapes:
+        - [3, 3, 2]
+  gates:
+    min_fixed_negative_shapes: 1
+    min_fixed_ci_shapes: 1
+    min_nested_stable_shapes: 1
+    max_trajectory_dominated_shapes: 0
+stage4d:
+  required_shapes: ['3x3x2']
+  required_fixed_negative_shapes: 1
+  required_bootstrap_ci_shapes: 1
+  required_t_ci_shapes: 1
+  trajectory_fraction_threshold: 0.5
+  recommended_next_seed_floor: 32
+stage4e:
+  target_shape: '3x3x2'
+  target_family: targeted_3d_promising
+  ntraj_sweep: [4, 8]
+  trajectory_reps: 2
+  seeds: 4
+  pass_requires:
+    final_ntraj: 8
+    fixed_mean_negative: true
+    t_ci_excludes_zero: true
+    trajectory_fraction_below: 0.5
+    negative_seed_fraction_at_least: 0.5
+  stage5_design:
+    recommended_disorder_seeds: 32
+    recommended_trajectory_reps: 6
+    recommended_ntraj: 32
+    fixed_time_primary: true
+    min_time_secondary: true

@@ -1,0 +1,30 @@
+{
+  "candidate_created": false,
+  "candidate_methods": [
+    "iid",
+    "antithetic",
+    "randomized_qmc"
+  ],
+  "candidate_trajectory_budgets": [
+    1024,
+    2048,
+    4096
+  ],
+  "canonical_units": 4,
+  "decision_sha256": "d2e1d89dd78d26865db110a93a1f66083dc7bdbf3d600c71f169b281f0d1a04b",
+  "elapsed_seconds": 5.337546624999959,
+  "families_per_design": 128,
+  "frozen_rule": {
+    "envelope": "bonferroni_two_sided_normal",
+    "sampling": "iid",
+    "trajectories": 4096
+  },
+  "frozen_rule_sha256": "f407660d05b5328bd3a5b0945185453e19b50df3fbb5709a4be2422dcbe25368",
+  "manifest_sha256": "1fac2c899a6c240f5293624e7bdc3f704d2890fcc9e6986257a6626e73dfd266",
+  "next": "UNTOUCHED_VALIDATION",
+  "role": "NON_AUTHORISING_RULE_COMPARISON",
+  "schema_version": "haxs.stage5c2gR32A.stochastic-development.v1",
+  "stage": "R3.2A-S03-DEVELOPMENT",
+  "status": "PASS",
+  "validation_opened": false
+}

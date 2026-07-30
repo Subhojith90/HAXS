@@ -1,0 +1,5 @@
+unit_id,case_id,occupancy_id,particle_count,node_count
+8d9f57771b025ad2b6da9e578278aa6a,limit_hopping_zero_chain6,chain6_hole_2,5,1024
+db87e6c265d45773bb6297db5af0c11f,limit_hopping_zero_chain6,chain6_hole_4,5,1024
+fb5214d8d1bf5caa839f81a965024f62,limit_spin_density_zero_rect2x3,rect2x3_hole_2,5,1024
+89bd5e9b58115b60bdad35f43f6437be,limit_spin_density_zero_rect2x3,rect2x3_hole_3,5,1024

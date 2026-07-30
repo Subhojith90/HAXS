@@ -1,0 +1,14 @@
+{
+  "from_candidate": "69347518a2103d7c5d61ca630536fa518853bc8d1e28530d29a69ce9af2a46ed",
+  "to_stage": "stage5c2gR3",
+  "repairs": {
+    "F1": "two independent verifiers derive G1 from raw curves and canonical tolerance",
+    "F2": "fcntl single-writer lock plus attempt/sequence compare-and-swap",
+    "F3": "recursive runtime tree rejects native, loader, hidden, symlink and unknown artifacts",
+    "F4": "canonical evidence root plus exact recursive manifest tree",
+    "F5": "egg-info removed; wheel built and installed from external copy",
+    "F6": "legacy syntax error repaired; AST and compile gate covers every locked Python file",
+    "F7": "Python patch, OS, architecture, transitive content, BLAS/LAPACK, threads and floating-point attestation",
+    "F8": "G2/G3 top-level allocation and coverage calibration redesigned on paper; execution remains blocked"
+  }
+}

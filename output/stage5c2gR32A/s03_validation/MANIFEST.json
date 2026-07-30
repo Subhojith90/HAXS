@@ -1,0 +1,13 @@
+{
+  "files": {
+    "VALIDATION_OPENED.json": "27a7bf0c1b289d733ce3673d0375676c6a9529bda8deec97354be7a0d7df08e7",
+    "decision.json": "e959031d528d12c63a113584326581aa3f74f6fa5ed28fb5a454c5bf44398e48",
+    "operating_characteristics.csv": "6d518f9591d927cfa22d1980f991dea230dfe58859064ce66b8aa13771fcd213",
+    "seed_collision_report.json": "aff574e9099d5143426d2eaf20362ba427431a0365398b5954aa42fa2a325b96",
+    "truth_error_metrics.csv": "c324883a5187f97770fb1730a6017df5d88e1e61c908abe526004d9985261475",
+    "validation_family_statistics.csv": "7766e68725f240d7c3dc4ed94e4067df502070de61f8ef290b516b076a09b91d",
+    "validation_seed_registry.csv": "65d6ac30fd4300b6e5ce10b066e8f6a19136a70a73032c6fda183eb1d20e2d06"
+  },
+  "manifest_sha256": "740ba0dc96131054b2fe567a867b92602312495ebda833d7ea859ad90fcb37e7",
+  "schema_version": "haxs.stage5c2gR32A.validation-manifest.v1"
+}

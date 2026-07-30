@@ -1,0 +1,88 @@
+............................................FF......F.................   [100%]
+=================================== FAILURES ===================================
+______________________ test_every_python_file_must_parse _______________________
+
+    def test_every_python_file_must_parse() -> None:
+>       for relative in scan_runtime_tree(ROOT)["files"]:
+
+tests/stage5c2gR3/test_stage5c2gR3_adversarial.py:201: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/stage5c2gR3_common.py:123: in scan_runtime_tree
+    assert_execution_root_closed(root)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1')
+
+    def assert_execution_root_closed(root: Path = ROOT) -> dict:
+        stage = protocol(root)
+        allowed = set(stage.get("preparation_root_allowed_entries", []))
+        allowed.update(Path(value).parts[0] for value in stage.get("runtime_roots", []))
+        allowed.update(Path(value).parts[0] for value in stage.get("runtime_root_files", []))
+        allowed.update(stage.get("packaged_root_metadata", []))
+        observed = {path.name for path in root.iterdir()}
+        unexpected = sorted(observed - allowed)
+        forbidden_hooks = sorted(observed & set(stage.get("forbidden_root_hooks", [])))
+        unsafe_links = sorted(path.name for path in root.iterdir() if path.is_symlink())
+        if unexpected or forbidden_hooks or unsafe_links:
+>           raise RuntimeError(f"execution root closure failed: unexpected={unexpected} forbidden_hooks={forbidden_hooks} symlinks={unsafe_links}")
+E           RuntimeError: execution root closure failed: unexpected=['build'] forbidden_hooks=[] symlinks=[]
+
+scripts/stage5c2gR3_common.py:55: RuntimeError
+___________ test_packaged_full_suite_dependencies_are_runtime_bound ____________
+
+    def test_packaged_full_suite_dependencies_are_runtime_bound() -> None:
+>       tree = scan_runtime_tree(ROOT)["files"]
+
+tests/stage5c2gR3/test_stage5c2gR3_adversarial.py:206: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/stage5c2gR3_common.py:123: in scan_runtime_tree
+    assert_execution_root_closed(root)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+root = PosixPath('/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1')
+
+    def assert_execution_root_closed(root: Path = ROOT) -> dict:
+        stage = protocol(root)
+        allowed = set(stage.get("preparation_root_allowed_entries", []))
+        allowed.update(Path(value).parts[0] for value in stage.get("runtime_roots", []))
+        allowed.update(Path(value).parts[0] for value in stage.get("runtime_root_files", []))
+        allowed.update(stage.get("packaged_root_metadata", []))
+        observed = {path.name for path in root.iterdir()}
+        unexpected = sorted(observed - allowed)
+        forbidden_hooks = sorted(observed & set(stage.get("forbidden_root_hooks", [])))
+        unsafe_links = sorted(path.name for path in root.iterdir() if path.is_symlink())
+        if unexpected or forbidden_hooks or unsafe_links:
+>           raise RuntimeError(f"execution root closure failed: unexpected={unexpected} forbidden_hooks={forbidden_hooks} symlinks={unsafe_links}")
+E           RuntimeError: execution root closure failed: unexpected=['build'] forbidden_hooks=[] symlinks=[]
+
+scripts/stage5c2gR3_common.py:55: RuntimeError
+__________ test_external_copy_wheel_install_does_not_mutate_candidate __________
+
+    def test_external_copy_wheel_install_does_not_mutate_candidate() -> None:
+        dangerous = {"PYTHONPATH", "PYTHONHOME", "PYTHONSTARTUP", "PYTHONINSPECT", "PYTHONUSERBASE", "LD_PRELOAD", "DYLD_INSERT_LIBRARIES", "DYLD_LIBRARY_PATH"}
+        environment = {key: value for key, value in os.environ.items() if key not in dangerous}
+        result = subprocess.run([sys.executable, "-I", "scripts/verify_stage5c2gR3_immutable_install.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
+>       assert result.returncode == 0, result.stdout + result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/verify_stage5c2gR3_immutable_install.py", line 54, in <module>
+E             if __name__ == "__main__": main()
+E                                        ^^^^^^
+E           File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/verify_stage5c2gR3_immutable_install.py", line 20, in main
+E             before = scan_runtime_tree(ROOT); before_sha = sha256_payload(before)
+E                      ^^^^^^^^^^^^^^^^^^^^^^^
+E           File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/stage5c2gR3_common.py", line 123, in scan_runtime_tree
+E             assert_execution_root_closed(root)
+E           File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/stage5c2gR3_common.py", line 55, in assert_execution_root_closed
+E             raise RuntimeError(f"execution root closure failed: unexpected={unexpected} forbidden_hooks={forbidden_hooks} symlinks={unsafe_links}")
+E         RuntimeError: execution root closure failed: unexpected=['build'] forbidden_hooks=[] symlinks=[]
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/opt/anaconda3/bin/python3.12', '-I', 'scripts/verify_stage5c2gR3_immutable_install.py'], retu...unsafe_links}")\nRuntimeError: execution root closure failed: unexpected=[\'build\'] forbidden_hooks=[] symlinks=[]\n').returncode
+
+tests/stage5c2gR3/test_stage5c2gR3_adversarial.py:269: AssertionError
+- generated xml file: /Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/results/stage5c2gR32A/junit/junit_r32a_retry1.xml -
+=========================== short test summary info ============================
+FAILED tests/stage5c2gR3/test_stage5c2gR3_adversarial.py::test_every_python_file_must_parse
+FAILED tests/stage5c2gR3/test_stage5c2gR3_adversarial.py::test_packaged_full_suite_dependencies_are_runtime_bound
+FAILED tests/stage5c2gR3/test_stage5c2gR3_adversarial.py::test_external_copy_wheel_install_does_not_mutate_candidate
+3 failed, 67 passed in 8.61s

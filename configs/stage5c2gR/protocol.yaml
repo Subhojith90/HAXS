@@ -1,0 +1,62 @@
+stage5c2gR_protocol:
+  stage: stage5c2gR_paired_randomness_transport_calibration_and_tamper_evident_relock
+  protocol_version: 2.0.0
+  status: repair_candidate_not_yet_timestamped
+  purpose: calibration_relock_and_conditional_validity_only
+  fixed_time: 0.9227272727272726
+  configs:
+    exact_mobile_benchmark: configs/stage5c2gR/exact_mobile_benchmark.yaml
+    fixed_count: configs/stage5c2gR/fixed_count.yaml
+    custody: configs/stage5c2gR/custody.yaml
+  random_unit_contract:
+    label_independent: true
+    identifiers: [block_id, occupancy_realization_id, hole_path_realization_id, phase_batch_realization_id, exact_initial_state_id]
+    common_random_numbers_required_for_all_label_contrasts: true
+  source_identity:
+    method: deterministic_full_local_scientific_tree_sha256
+    coverage: all_python_source_scripts_tests_yaml_configs_and_stage_runbooks
+    runtime_candidate_payload_recomputation: required
+    external_receipt_comparison: required
+  calibration_gates:
+    zero_coupling_max_abs_difference_db: 1.0e-10
+    minimum_clean_static_time_profile_correlation: 0.90
+    maximum_clean_static_rmse_db: 0.25
+    require_transport_mapping_pass: true
+    require_all_attempts_completed: true
+  transport_mapping_gates:
+    eta_grid: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2]
+    fitting_time_windows: [0.7, 1.0, 1.4]
+    density_l1_mean_maximum: 0.25
+    normalized_msd_rmse_maximum: 0.25
+    return_probability_rmse_maximum: 0.20
+    configuration_tv_mean_maximum: 0.35
+    eta_window_sensitivity_maximum: 0.20
+    bootstrap_replicates: 2000
+    bootstrap_seed: 52028
+    forbidden_tuning_observables: [xi2, xi2_db, squeezing, validation_cases]
+  validity_gates:
+    minimum_time_profile_correlation: 0.90
+    maximum_rmse_multiple_of_clean_static_calibration: 1.50
+    require_transport_gate: true
+    require_all_designated_local_window_signs: true
+    require_sign_and_component_ranking_agreement: true
+    ranking_near_tie_tolerance_db: 0.05
+    require_zero_coupling_limits: true
+    require_exact_accounting: true
+    require_hierarchical_intervals: true
+  stop_go_sequence:
+    G0: artifact_identity
+    G1: paired_calibration_invariants
+    G2: transport_mobility_mapping
+    G3: untouched_validity
+    G4: fixed_hole_controls_after_written_supervisor_approval
+    G5: untouched_geometry_family_not_approved
+  forbidden_actions:
+    - current_stage5c2g_candidate_finalization_or_execution
+    - untouched_validation_before_passed_calibration_lock
+    - fixed_hole_production_before_supervisor_validation_approval
+    - stage5c3_production
+    - stage5d
+    - manuscript_result_claims
+    - public_release
+    - exact_lithium_mobile_hole_claims

@@ -1,0 +1,42 @@
+stage5c2gR32_G1:
+  schema_version: haxs.stage5c2gR32.g1-quadrature.v1
+  stage: deterministic_css_x_phase_quadrature_preflight
+  namespace_uuid: "a2a31c48-2c64-4fb9-a2bb-1bd8e98a739b"
+  times: {start: 0.0, stop: 1.4, points: 45}
+  integration_substeps: [1, 2, 4]
+  quadrature:
+    phase_values:
+      - [0.5, -0.5, -0.5]
+      - [0.5, -0.5, 0.5]
+      - [0.5, 0.5, -0.5]
+      - [0.5, 0.5, 0.5]
+    expected_active_spins: 5
+    expected_nodes_per_unit: 1024
+    equal_weight: 0.0009765625
+  tolerance_max_abs_full_curve_difference: 1.0e-10
+  numerical_roundoff_margin: 1.0e-10
+  dt_convergence:
+    observable_columns: [Sx, Sy, Sz, xi2, min_var, spin_length]
+    minimum_refinement_ratio: 1.5
+    absolute_floor: 1.0e-12
+  model: {j_perp: 1.0, jz: 0.35, hopping_t: 0.55, mobile_eta: 0.55, lambda_sd: 0.30}
+  cases:
+    - id: limit_hopping_zero_chain6
+      shape: [6]
+      occupancies:
+        - {occupancy_id: chain6_hole_2, holes: [2]}
+        - {occupancy_id: chain6_hole_4, holes: [4]}
+      labels: [static_only, mobile_only]
+      overrides: {hopping_t: 0.0, mobile_eta: 0.0}
+    - id: limit_spin_density_zero_rect2x3
+      shape: [2, 3]
+      occupancies:
+        - {occupancy_id: rect2x3_hole_2, holes: [2]}
+        - {occupancy_id: rect2x3_hole_3, holes: [3]}
+      labels: [static_only, spin_density_only]
+      overrides: {lambda_sd: 0.0}
+  expected_units: 4
+  expected_quadrature_registry_rows: 4096
+  expected_weighted_curve_rows: 1080
+  expected_exact_curve_rows: 1080
+  downstream_permission_on_pass: none_pre_candidate_only

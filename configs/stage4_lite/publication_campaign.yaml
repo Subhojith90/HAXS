@@ -1,0 +1,32 @@
+seed: 1729
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 24
+  t_max: 1.4
+  n_steps: 31
+stage4:
+  seed_start: 61001
+  seeds: 4
+  trajectory_reps: 2
+  trajectory_seed_stride: 100000
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 300
+  ci: 0.95
+  primary_pair: [static_only, mobile_plus_spin_density]
+  labels: [static_only, mobile_plus_spin_density, everything]
+  matched_families:
+    - family: small_2d_3d
+      shapes: [[3,3], [2,2,2]]
+    - family: medium_3d_check
+      shapes: [[3,3,2]]
+  gates:
+    min_fixed_negative_shapes: 2
+    min_fixed_ci_shapes: 1
+    min_nested_stable_shapes: 1

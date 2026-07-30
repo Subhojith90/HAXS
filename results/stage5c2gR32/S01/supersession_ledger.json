@@ -1,0 +1,13 @@
+{
+  "ledger_sha256": "112d2b56dedd6dcd6e6a6f1d599fc523a0c4081675564c4633a7cbf85c0459ee",
+  "predecessor_attempt_id": "83809c41b55e453599953c9379623088",
+  "predecessor_candidate_sha256": "91344d090d9f3387781c4e53bbbe4a5c9b359eaa82f47373b2d4f55cfcf2a2a3",
+  "predecessor_receipt_id": "bec6a297-cf01-4df4-868f-1e01110167dd",
+  "predecessor_result_is_binding": true,
+  "predecessor_terminal_status": "FAILED",
+  "receipt_reuse_forbidden": true,
+  "same_candidate_retry_forbidden": true,
+  "schema_version": "haxs.stage5c2gR32.supersession-ledger.v1",
+  "superseding_stage": "stage5c2gR32",
+  "supersession_reason": "replace finite-IID boundary predicate with deterministic quadrature; never reinterpret R3.1"
+}

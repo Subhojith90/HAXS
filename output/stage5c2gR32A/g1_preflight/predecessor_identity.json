@@ -1,0 +1,18 @@
+{
+  "R3_2_S01": {
+    "path": "results/stage5c2gR32/S01/verification.json",
+    "sha256": "9e31deff6e0f9570b959e05e918cfd55ba29854fa3399b4ec919b57e04f1dd96"
+  },
+  "R3_2_S02": {
+    "path": "output/stage5c2gR32/g1_preflight/verification.json",
+    "sha256": "5a6c13c190cc93b302a78fcfbe5d789ceae13496454362463ba171b54a8cc609"
+  },
+  "R3_2_S03_FAILED": {
+    "path": "output/stage5c2gR32/sanity_calibration/calibration_decision.json",
+    "sha256": "918652598f67443b5b37b1ece2585a2b6f92aec2787a51ffe75c607bec87110e"
+  },
+  "R3_2_S03_MANIFEST": {
+    "path": "output/stage5c2gR32/sanity_calibration/MANIFEST.json",
+    "sha256": "c7abc3a106d6beb9499d3e89877dd6b6445c6214b26678c7156569e600d77e4f"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "absolute_sanity_passed": true,
+  "analytic_t0_passed": true,
+  "candidate_created": false,
+  "decision_sha256": "ef9f8ed891eb9df538ad5db8d342902308a7b4a4268c4eccaf60defac7211c48",
+  "dt_convergence_passed": true,
+  "independent_semantics_agree": true,
+  "manifest_sha256": "caa5bac80b8fcb9d0ec2053fb2c9f3f0628817715eea0d2a76134843ecda9b66",
+  "maximum_difference": 0.0,
+  "next": "R3.2A-S03-DEVELOPMENT",
+  "population_rows": 184320,
+  "quadrature_nodes": 4096,
+  "quadrature_units": 4,
+  "stage": "R3.2A-S02",
+  "status": "PASS"
+}

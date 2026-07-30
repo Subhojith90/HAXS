@@ -1,0 +1,25 @@
+seed: 202602
+level: stage2_full
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 400
+  t_max: 1.4
+  n_steps: 35
+stage2:
+  seeds: [8001, 8002, 8003, 8004, 8005, 8006, 8007, 8008, 8009, 8010]
+  shapes:
+    - [6]
+    - [8]
+    - [10]
+    - [12]
+    - [14]
+    - [3, 3]
+    - [4, 4]
+    - [5, 5]
+    - [3, 3, 3]
+    - [4, 4, 4]

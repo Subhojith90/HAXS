@@ -1,0 +1,49 @@
+seed: 1729
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 16
+  t_max: 1.4
+  n_steps: 31
+stage4:
+  seed_start: 91001
+  seeds: 8
+  trajectory_reps: 4
+  trajectory_seed_stride: 100000
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 500
+  ci: 0.95
+  primary_pair: [static_only, mobile_plus_spin_density]
+  labels: [static_only, mobile_plus_spin_density, everything]
+  matched_families:
+    - family: targeted_3d_promising
+      shapes: [[3,3,2]]
+    - family: matched_small_control
+      shapes: [[2,2,2]]
+  gates:
+    min_fixed_negative_shapes: 2
+    min_fixed_ci_shapes: 1
+    max_trajectory_dominated_shapes: 1
+stage4a:
+  effect_floor_db: 0.20
+  target_power: 0.80
+  alpha: 0.05
+  max_recommended_seed_cap: 500
+stage4d:
+  claim_scope: targeted publication pilot only; no final manuscript claim unless gates pass
+  required_shapes: [3x3x2, 2x2x2]
+  primary_metric: xi2_db_fixed
+  secondary_metric: xi2_db_min
+  min_disorder_pairs_for_pilot: 8
+  min_trajectory_reps: 4
+  trajectory_fraction_threshold: 0.50
+  required_fixed_negative_shapes: 2
+  required_t_ci_shapes: 1
+  required_bootstrap_ci_shapes: 1
+  recommended_next_seed_floor: 32

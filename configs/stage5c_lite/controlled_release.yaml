@@ -1,0 +1,6 @@
+stage5c:
+  mode: controlled_release_checkpoint
+  source_stage: stage5b1
+  repair_stage: stage5b1R
+  broad_compute_allowed: false
+  publication_claim_allowed: false

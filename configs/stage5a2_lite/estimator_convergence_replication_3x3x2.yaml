@@ -1,0 +1,65 @@
+dtwa:
+  n_steps: 45
+  n_traj: 128
+  t_max: 1.4
+lattice:
+  periodic: false
+model:
+  hole_fraction: 0.18
+  j_perp: 1.0
+  jz: 0.35
+  lambda_sd: 0.3
+  mobile_eta: 0.55
+seed: 75001
+stage4:
+  bootstrap_samples: 800
+  ci: 0.95
+  fixed_time_fraction: 0.65
+  gates:
+    max_trajectory_dominated_shapes: 0
+    min_fixed_ci_shapes: 1
+    min_fixed_negative_shapes: 1
+    min_nested_stable_shapes: 1
+  labels:
+  - static_only
+  - mobile_plus_spin_density
+  - everything
+  matched_families:
+  - family: target_3d_convergence
+    shapes:
+    - - 3
+      - 3
+      - 2
+  primary_pair:
+  - static_only
+  - mobile_plus_spin_density
+  seed_start: 75001
+  seeds: 8
+  trajectory_reps: 4
+  trajectory_seed_stride: 100000
+stage5a:
+  convergence_tolerance_db: 0.25
+  fixed_time_primary: true
+  min_time_secondary: true
+  negative_seed_fraction_at_least: 0.7
+  ntraj_sweep:
+  - 24
+  - 64
+  - 128
+  pass_requires:
+    convergence_delta_abs_below_db: 0.25
+    final_ntraj: 128
+    high_ntraj_mean_negative: true
+    high_ntraj_t_ci_excludes_zero: true
+    high_ntraj_trajectory_fraction_below: 0.5
+    replication_mean_negative: true
+    replication_negative_seed_fraction_at_least: 0.7
+  primary_seed_start: 75001
+  replication_seed_start: 85001
+  seeds_per_block: 8
+  stage_name: 'Stage 5A2: estimator-convergence repair and independent replication
+    gate'
+  target_family: target_3d_convergence
+  target_shape: 3x3x2
+  trajectory_fraction_below: 0.5
+  trajectory_reps: 4

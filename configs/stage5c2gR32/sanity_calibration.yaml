@@ -1,0 +1,35 @@
+stage5c2gR32_sanity_calibration:
+  schema_version: haxs.stage5c2gR32.statistical-sanity.v1
+  stage: preregistered_statistical_sanity_calibration
+  namespace_uuid: "de2d7ae4-58b5-4ba4-95c5-d58bd3d591ee"
+  truth_source: exhaustive_css_x_phase_quadrature
+  cases: [limit_hopping_zero_chain6, limit_spin_density_zero_rect2x3]
+  benign_seeds_per_case: 512
+  minimum_total_benign_seeds: 1000
+  trajectories_per_seed: 1024
+  chunk_size: 50
+  familywise_alpha: 0.01
+  primary_rule: bonferroni_one_sided_normal_envelope
+  comparison_rules:
+    - sidak_one_sided_normal_envelope
+    - empirical_max_t
+  family_definition: all_components_times_and_canonical_units
+  injected_offsets_fraction_of_half_particle_count: [0.0025, 0.005, 0.01]
+  binding_sesoi_fraction_of_half_particle_count: 0.005
+  pass_criteria:
+    maximum_benign_familywise_false_rejection: 0.01
+    maximum_upper_95_interval: 0.015
+    minimum_binding_sesoi_detection: 0.99
+    maximum_monte_carlo_half_width: 0.005
+  interval: wilson_score_95
+  seed_extension:
+    permitted_only_if_interval_half_width_exceeds: 0.005
+    increment_per_case: 256
+    maximum_seeds_per_case: 2048
+  immutable_after_first_output:
+    - primary_rule
+    - familywise_alpha
+    - binding_sesoi_fraction_of_half_particle_count
+    - pass_criteria
+    - family_definition
+  downstream_permission_on_pass: none_pre_candidate_only

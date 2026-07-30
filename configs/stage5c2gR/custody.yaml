@@ -1,0 +1,13 @@
+stage5c2gR_custody:
+  contract: content_addressed_external_mount
+  mount_environment_variable: HAXS_CUSTODY_ROOT
+  default_mount: .
+  instructions: Set HAXS_CUSTODY_ROOT to a directory containing each logical_path below. Every object is mandatory and verified before candidate construction and at every runner start.
+  objects:
+    - {id: frozen_confirmation_manifest, logical_path: results/stage5c2d_lite/confirmation/stage5c2d_block_manifest.json, sha256: 0add2d704ec9c0de2a562de21c58fefaef784bd376676f6c845e0a37315376f3}
+    - {id: frozen_confirmation_curves, logical_path: results/stage5c2d_lite/confirmation/stage5c2d_curves_all.csv, sha256: 0fe14d993239d0e02f3379f4d42db21b1c43ddac5f6167a8fe1dc7f0d068c6ae}
+    - {id: frozen_confirmation_finals, logical_path: results/stage5c2d_lite/confirmation/stage5c2d_finals.csv, sha256: b70d9a78a4bb96fa815503071aa43fcb9fba2a9988e79f5c46026b5ac95fbc65}
+    - {id: frozen_confirmation_seeds, logical_path: results/stage5c2d_lite/confirmation/stage5c2d_seed_registry.csv, sha256: d5b922f1def300b19da140ecb3679d0a49ad711383b05c87abe600b637083784}
+    - {id: stage5c2f_clean_source, logical_path: output/stage5c2f/haxs_stage5c2f_clean_source.zip, sha256: 41d567b6e289c93b279511a7ad87fcf0b622417792e0301629d7a62c30e4e0dc}
+    - {id: stage5c2f_results, logical_path: output/stage5c2f/haxs_stage5c2f_results.zip, sha256: 8ec154138d7013ad239f8a726b141b880ba66ed65f76ca89d70d6b1e941db445}
+    - {id: stage5c2f_supervisor_submission, logical_path: output/stage5c2f/HAXS_Stage5C2F_Srinjoy_Submission_20260714.zip, sha256: e3a94a9f277f960e4cde4cccc37c79ebc2dbb6ed05c59431a3ee8bd2b2396da9}

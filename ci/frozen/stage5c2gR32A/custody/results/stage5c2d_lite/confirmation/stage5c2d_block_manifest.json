@@ -1,0 +1,21 @@
+{
+  "stage": "stage5c2d_nested_core",
+  "block": "confirmation",
+  "config": "configs/stage5c2d_lite/nested_core_3x3x3.yaml",
+  "config_hash": "90af02170d880284",
+  "shape": [
+    3,
+    3,
+    3
+  ],
+  "labels": [
+    "static_only",
+    "mobile_plus_spin_density"
+  ],
+  "fixed_time": 0.9227272727272726,
+  "occupancy_realizations": 12,
+  "paths_per_occupancy": 4,
+  "phase_batches_per_path": 4,
+  "n_traj": 1024,
+  "claim_scope": "Stage 5C.2D target-shape random-stream repair only. No Stage 5C3 production, Stage 5D, publication, exact-hole, or recovery claim."
+}

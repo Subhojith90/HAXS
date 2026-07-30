@@ -1,0 +1,37 @@
+stage5c2g_fixed_count:
+  stage: stage5c2g_fixed_hole_topology_control
+  namespace_uuid: "b62fbc6e-caf9-5dbc-bf68-9de9d48b8c32"
+  shape: [3, 3, 3]
+  fixed_hole_counts: [3, 5, 7]
+  labels: [static_only, mobile_plus_spin_density]
+  occupancies_per_count: 16
+  paths_per_occupancy: 6
+  phase_batches_per_path: 4
+  n_traj: 1024
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  primary_bootstrap_replicates: 20000
+  primary_bootstrap_seed: 62027
+  gates:
+    required_negative_counts: 2
+    central_hole_count: 5
+    require_central_count_negative: true
+    require_central_connected_subset_negative: true
+    minimum_connected_occupancies_for_subset_gate: 8
+    require_central_local_window_negative: true
+    require_estimator_conclusion_agreement: true
+  topology_coefficients_confirmatory: false
+  claim_scope: Fixed-hole/topology confound gate on the selected 3x3x3 stochastic surrogate only. No geometry expansion or mechanism claim.
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+lattice:
+  periodic: false
+dtwa:
+  t_max: 1.4
+  n_steps: 45
+  n_traj: 1024
+

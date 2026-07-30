@@ -1,0 +1,41 @@
+stage5c2gR3_G1:
+  stage: stage5c2gR3_semantically_verified_paired_calibration_invariants
+  schema_version: stage5c2gR3.g1.curves.v1
+  namespace_uuid: "db8b8e31-5559-42a7-b2fb-984dbf263c35"
+  times: {start: 0.0, stop: 1.4, points: 45}
+  hierarchy: {occupancy_replicates: 2, paths_per_occupancy: 4, phase_batches_per_path: 4}
+  n_traj_per_phase_batch: 1024
+  tolerance_max_abs_full_curve_difference: 1.0e-10
+  absolute_sanity:
+    count_abs_tolerance: 1.0e-10
+    norm_error_max: 1.0e-10
+    time_zero_exact_abs_tolerance: 1.0e-10
+    time_zero_surrogate_sx_abs_tolerance: 1.0e-10
+    time_zero_surrogate_xi2_range: [0.50, 1.50]
+    time_zero_surrogate_spin_length_range: [0.95, 1.01]
+    collective_component_abs_margin: 1.0e-8
+    spin_length_range: [0.05, 1.01]
+    xi2_range: [1.0e-12, 1.0e4]
+    min_variance_abs_max_factor: 1.0
+    xi2_db_consistency_abs_tolerance: 1.0e-9
+    wineland_identity_abs_tolerance: 1.0e-8
+    minimum_nontrivial_time_change: 1.0e-6
+    nontrivial_columns: [Sx, xi2, min_var]
+  method_value_columns:
+    exact: [Sx, Sy, Sz, xi2, xi2_db, min_var, spin_length, particle_number, norm_error, hole_number_expectation]
+    surrogate: [Sx, Sy, Sz, xi2, xi2_db, min_var, spin_length, N_eff, active_bonds, hole_spin_covariance]
+  model: {j_perp: 1.0, jz: 0.35, hopping_t: 0.55, mobile_eta: 0.55, lambda_sd: 0.30}
+  cases:
+    - id: limit_hopping_zero_chain6
+      shape: [6]
+      holes: [2]
+      labels: [static_only, mobile_only]
+      overrides: {hopping_t: 0.0, mobile_eta: 0.0}
+    - id: limit_spin_density_zero_rect2x3
+      shape: [2, 3]
+      holes: [2]
+      labels: [static_only, spin_density_only]
+      overrides: {lambda_sd: 0.0}
+  expected_comparison_rows: 128
+  expected_curve_rows: 11520
+  downstream_permission_on_pass: none_return_for_supervisory_review

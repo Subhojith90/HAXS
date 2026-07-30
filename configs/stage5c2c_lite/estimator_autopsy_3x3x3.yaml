@@ -1,0 +1,55 @@
+seed: 131001
+lattice:
+  periodic: false
+model:
+  hole_fraction: 0.18
+  j_perp: 1.0
+  jz: 0.35
+  lambda_sd: 0.3
+  mobile_eta: 0.55
+dtwa:
+  n_steps: 45
+  t_max: 1.4
+stage4:
+  bootstrap_samples: 1000
+  ci: 0.95
+  fixed_time_fraction: 0.65
+  trajectory_seed_stride: 100000
+stage5c2c:
+  stage_name: "Stage 5C.2C estimator-failure autopsy for 3x3x3 replication"
+  shape: [3, 3, 3]
+  shape_name: "3x3x3"
+  family: "stage5c2c_3x3x3_estimator_autopsy"
+  replication_seed_start: 161001
+  seeds_per_block: 8
+  labels:
+    - static_only
+    - mobile_only
+    - spin_density_only
+    - mobile_plus_spin_density
+    - full_controlled
+  core_pair: [static_only, mobile_plus_spin_density]
+  local_window_offsets: [-0.10, 0.0, 0.10]
+  trajectory_fraction_below: 0.50
+  preferred_trajectory_fraction_below: 0.45
+  absolute_nested_se_below: 0.05
+  negative_seed_fraction_at_least: 0.70
+  block_compatibility_abs_db_below: 0.25
+  candidate_grid:
+    - tag: baseline_repeat_offset0
+      n_traj: 768
+      trajectory_reps: 24
+      trajectory_seed_offset: 0
+    - tag: independent_traj_block_offset50m
+      n_traj: 768
+      trajectory_reps: 24
+      trajectory_seed_offset: 50000000
+    - tag: high_budget_offset90m
+      n_traj: 1024
+      trajectory_reps: 36
+      trajectory_seed_offset: 90000000
+  claim_scope: "Estimator-failure autopsy only. No Stage 5D compute, broad finite-size, publication, exact-hole, or recovery claim."
+stage5d:
+  broad_compute_allowed: false
+  design_review_allowed_after_stage5c2c_only: false
+  claim_scope: "Stage 5D remains blocked until supervisor approves a later design review after Stage 5C.2C."

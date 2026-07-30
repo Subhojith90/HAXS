@@ -1,0 +1,25 @@
+stage5c2gR32A_stochastic:
+  schema_version: haxs.stage5c2gR32A.stochastic-development.v1
+  block: DEVELOPMENT
+  namespace_uuid: "ceba1118-b3c6-43ef-b713-c5f89407d73c"
+  deterministic_truth: output/stage5c2gR32A/g1_preflight/quadrature_collective_population.csv
+  canonical_unit_registry: output/stage5c2gR32A/g1_preflight/unit_registry.csv
+  familywise_alpha: 0.01
+  binding_sesoi_fraction_of_half_particle_count: 0.005
+  challenge_component: Sx
+  challenge_time_index: 1
+  development_families: 128
+  candidate_trajectory_budgets: [1024, 2048, 4096]
+  candidate_sampling_rules: [iid, antithetic, randomized_qmc]
+  primary_rule_frozen_for_validation:
+    sampling: iid
+    trajectories: 4096
+    envelope: bonferroni_two_sided_normal
+  truth_metrics:
+    maximum_absolute_standardized_aggregate_bias: 4.0
+    rmse_to_mean_se_ratio: [0.75, 1.25]
+  validation_targets:
+    maximum_false_rejection_upper_95: 0.015
+    minimum_binding_power_lower_95: 0.99
+    minimum_simultaneous_coverage_lower_95: 0.985
+  downstream_permission_on_pass: none_non_authorising_development

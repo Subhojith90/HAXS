@@ -1,0 +1,18 @@
+level: stage3a_lite
+seed: 1729
+lattice:
+  shape: [4]
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+dtwa:
+  n_traj: 1024
+  t_max: 0.4
+  n_steps: 9
+stage3a:
+  css_shell_expected_norm: 0.8660254037844386
+  spin_length_min_after_first_step: 0.90
+  spin_length_collapse_forbidden_value: 0.5773502691896258
+  css_xi2_db_abs_tolerance: 0.45
+  rerun_stage3_lite_after_repair: true

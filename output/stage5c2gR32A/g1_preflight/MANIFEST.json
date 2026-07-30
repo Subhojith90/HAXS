@@ -1,0 +1,15 @@
+{
+  "files": {
+    "dt_convergence.csv": "13ca218ad66423dd74748499a6d552293c19069f5a7b0f85415bea369fd400f1",
+    "matched_exact_curves.csv": "1e34d65576a8aff66d30fc193591f7ab7f5e47aa1843382384596acf0966b988",
+    "predecessor_identity.json": "852722c4fb1385a0d727e7eaf0e78da23d011ed9ac89a09e331cec17c400b099",
+    "quadrature_collective_population.csv": "e4e6ef5bc0e454ef17703dc2e047c58fe6f320483a8d6b0d6b94072d67887f2c",
+    "quadrature_node_registry.csv": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+    "semantic_decision.json": "27162d4b2b6712069c11ae485644463216b103208587d8441ae24716d3767d0b",
+    "semantic_decision_reference.json": "d79326a0aa718d3f1543ae687910493261408ef84aaf6c7884717cb6c71ec281",
+    "unit_registry.csv": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d",
+    "weighted_surrogate_curves.csv": "416918e29d351dd4b14bc2541bad7eb787a074e2f434cca5784ab2c40ff58ee5"
+  },
+  "manifest_sha256": "caa5bac80b8fcb9d0ec2053fb2c9f3f0628817715eea0d2a76134843ecda9b66",
+  "schema_version": "haxs.stage5c2gR32A.deterministic-manifest.v1"
+}

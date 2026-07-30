@@ -1,0 +1,15 @@
+{
+  "config_sha256": "6fb13a8ce6f22ffd13923ae9fe92c9d21065fade1df324c46bc1db2452fdab9e",
+  "files": {
+    "component_maxima.csv": "abcfadbafcc14a91f7038ea05e889c1c2de49eaad197afa498a5257d837eab0a",
+    "dt_convergence.csv": "f264d041b4fd118c3f9f29200b260c99ec99aa2ce72d3958af55a2560b4a3223",
+    "matched_exact_curves.csv": "50b2944eaa626013c57fed37300b4cf6fb385517dca58cab7322cd0d2d96c73b",
+    "quadrature_node_registry.csv": "95b26ffa98e9b01aa8addc3ba44c6b2b9ba2eaafefaef482ff5c2b2aa9332b3c",
+    "semantic_decision.json": "ff48117b9b6bd9188b7924ec01936cc45fdb6c039d6634e7248fa6b95f726757",
+    "semantic_decision_reference.json": "2d1268c60a8313f6ab9745553b3f677cdc7d41ca7bab5dd52d03b13c9de25673",
+    "weighted_surrogate_curves.csv": "50e190296397d8218f1719b4649c5b8747b16b772a8dcae555ff0109db3fa92e"
+  },
+  "manifest_sha256": "de3845a35c308a803dddd61abbef718b90b08816de6dbc963e83e7278bdccc2b",
+  "schema_version": "haxs.stage5c2gR32.S02-manifest.v1",
+  "stage": "S02"
+}

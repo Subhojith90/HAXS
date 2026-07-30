@@ -1,0 +1,63 @@
+stage5c2g_exact_benchmark:
+  stage: stage5c2g_small_system_constrained_validity
+  namespace_uuid: "70d2d1bc-4d02-5e0b-8f3d-551fddca7e4d"
+  labels: [static_only, mobile_only, spin_density_only, combined]
+  times:
+    start: 0.0
+    stop: 1.4
+    points: 45
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  exact_model:
+    particle_statistics: hard_core_bosonic_spin_carriers
+    j_perp: 1.0
+    jz: 0.35
+    hopping_t: 0.55
+    lambda_sd: 0.30
+  surrogate:
+    n_traj: 4096
+    mobile_eta: 0.55
+    lambda_sd: 0.30
+  calibration_cases:
+    - id: cal_chain6_one_hole
+      shape: [6]
+      holes: [2]
+      labels: [static_only]
+    - id: cal_rect2x3_one_hole
+      shape: [2, 3]
+      holes: [2]
+      labels: [static_only]
+    - id: limit_hopping_zero_chain6
+      shape: [6]
+      holes: [2]
+      labels: [static_only, mobile_only]
+      hopping_t: 0.0
+      mobile_eta: 0.0
+    - id: limit_spin_density_zero_rect2x3
+      shape: [2, 3]
+      holes: [2]
+      labels: [static_only, spin_density_only]
+      lambda_sd: 0.0
+  validation_cases:
+    - id: val_chain8_one_hole
+      shape: [8]
+      holes: [3]
+      labels: [static_only, mobile_only, spin_density_only, combined]
+      designated_confirmatory: true
+    - id: val_chain8_two_holes
+      shape: [8]
+      holes: [2, 5]
+      labels: [static_only, mobile_only, spin_density_only, combined]
+      designated_confirmatory: true
+    - id: val_rect2x4_one_hole
+      shape: [2, 4]
+      holes: [3]
+      labels: [static_only, mobile_only, spin_density_only, combined]
+      designated_confirmatory: true
+    - id: val_square3x3_two_holes
+      shape: [3, 3]
+      holes: [0, 8]
+      labels: [static_only, mobile_only, spin_density_only, combined]
+      designated_confirmatory: true
+  claim_scope: Controlled small-system validity comparison. No claim that the stochastic surrogate implements quantum particle hopping.
+

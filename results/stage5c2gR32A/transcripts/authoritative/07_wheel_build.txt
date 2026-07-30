@@ -1,0 +1,10 @@
+WARNING: The directory '/Users/subhojithalder/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: haxs
+  Building wheel for haxs (pyproject.toml): started
+  Building wheel for haxs (pyproject.toml): finished with status 'done'
+  Created wheel for haxs: filename=haxs-0.8.3-py3-none-any.whl size=55464 sha256=ef308ac5a7fc04821e4d041b317a39eb24c51dc6715bf1dd9a80b340c1831c55
+  Stored in directory: /private/var/folders/7w/gsx1_1k50hg0lrl8m2zc5dtw0000gn/T/pip-ephem-wheel-cache-pvrp0_q1/wheels/1c/3d/56/e0af8e759c18ada4c4b234d577e59d728d85a0af3dbec1d344
+Successfully built haxs

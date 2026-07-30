@@ -1,0 +1,25 @@
+stage5c2eR_fixed_count:
+  stage: stage5c2eR_fixed_five_hole_diagnostic
+  shape: [3, 3, 3]
+  labels: [static_only, mobile_plus_spin_density]
+  fixed_hole_count: 5
+  occupancies: 6
+  paths_per_occupancy: 4
+  phase_batches_per_path: 4
+  n_traj: 1024
+  seed_namespace: stage5c2eR_fixed_five_hole_diagnostic_v1
+  fixed_time_fraction: 0.65
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  claim_scope: "Exploratory fixed-five-hole diagnostic only; not merged into the locked Bernoulli primary decision."
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+lattice:
+  periodic: false
+dtwa:
+  t_max: 1.4
+  n_steps: 45
+  n_traj: 1024

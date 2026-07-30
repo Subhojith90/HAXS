@@ -1,0 +1,11 @@
+{
+  "files": {
+    "FROZEN_RULE.json": "cfceb095a4200519e521c2e37164d6efe64ddc83cee39fc59432946e817243f3",
+    "decision.json": "097be6fcfccc2f3da2fdf4da73361f2d8645b5f5af1e8fedc73932962017f911",
+    "development_family_statistics.csv": "b9003b99e8e1119ddb507c337489667a9db50414156c31185e8fbd71d109f077",
+    "development_rule_comparison.csv": "c75ada506f5d55caa079e302e9ab6d78285f65dba9b9da89e58c3cb58a5acc81",
+    "development_seed_registry.csv": "9f19f4be9897cb5dcd524f494edb240264978dba2b1f1e8d0eeb73cd210a3e7c"
+  },
+  "manifest_sha256": "1fac2c899a6c240f5293624e7bdc3f704d2890fcc9e6986257a6626e73dfd266",
+  "schema_version": "haxs.stage5c2gR32A.development-manifest.v1"
+}

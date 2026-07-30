@@ -1,0 +1,12 @@
+stage5c2gR2_environment:
+  python: ">=3.12,<3.13"
+  packages:
+    numpy: "==1.26.4"
+    pandas: "==2.2.2"
+    scipy: "==1.13.1"
+    matplotlib: "==3.9.2"
+    PyYAML: "==6.0.1"
+    pytest: "==7.4.4"
+  enforcement: exact_package_versions_and_supported_python_minor
+  platform_scope: macOS_CPU_reference_environment
+

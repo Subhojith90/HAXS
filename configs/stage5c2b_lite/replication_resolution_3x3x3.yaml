@@ -1,0 +1,46 @@
+seed: 131001
+lattice:
+  periodic: false
+model:
+  hole_fraction: 0.18
+  j_perp: 1.0
+  jz: 0.35
+  lambda_sd: 0.3
+  mobile_eta: 0.55
+dtwa:
+  n_steps: 45
+  t_max: 1.4
+stage4:
+  bootstrap_samples: 1000
+  ci: 0.95
+  fixed_time_fraction: 0.65
+  trajectory_seed_stride: 100000
+stage5c2b:
+  stage_name: "Stage 5C.2B 3x3x3 replication-only variance resolution"
+  shape: [3, 3, 3]
+  shape_name: "3x3x3"
+  family: "stage5c2b_3x3x3_replication_resolution"
+  replication_seed_start: 161001
+  seeds_per_block: 8
+  candidate_ntraj: [512, 768]
+  candidate_reps: [16, 24]
+  stop_after_first_pass: true
+  labels:
+    - static_only
+    - mobile_only
+    - spin_density_only
+    - mobile_plus_spin_density
+    - full_controlled
+  core_pair: [static_only, mobile_plus_spin_density]
+  trajectory_fraction_below: 0.50
+  preferred_trajectory_fraction_below: 0.45
+  negative_seed_fraction_at_least: 0.70
+  block_compatibility_abs_db_below: 0.25
+  local_window_offsets: [-0.10, 0.0, 0.10]
+  claim_scope: "C2B resolves the 3x3x3 replication estimator gate only. No broad finite-size, 5D, or publication claim."
+stage5d:
+  design_review_enabled_after_c2b_pass: true
+  broad_compute_allowed: false
+  output_protocol_only: true
+  proposed_name: "Stage 5D design review scaffold"
+  claim_scope: "Stage 5D remains a gated design scaffold until C2B and source reproducibility pass."

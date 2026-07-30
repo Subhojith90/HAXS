@@ -1,0 +1,48 @@
+seed: 1729
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  t_max: 1.4
+  n_steps: 31
+  n_traj: 48
+stage3c:
+  seed_start: 51001
+  seeds: 8
+  trajectory_reps: 3
+  trajectory_seed_stride: 100000
+  shapes:
+    - [4, 4]
+    - [2, 2, 2]
+    - [3, 3, 2]
+    - [3, 3, 3]
+  labels:
+    - static_only
+    - mobile_plus_spin_density
+    - everything
+  core_pair: [static_only, mobile_plus_spin_density]
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 1000
+  ci: 0.95
+  pass_min_fixed_negative_shapes: 3
+  pass_min_fixed_ci_shapes: 2
+  pass_min_nested_stable_shapes: 2
+validation:
+  ed_dtwa_shape: [4]
+  ed_dtwa_n_traj: 4096
+  ed_dtwa_t_max: 0.4
+  ed_dtwa_n_steps: 9
+  xi2_rmse_threshold: 0.04
+  xi2_db_rmse_threshold: 0.15
+  spin_length_rmse_threshold: 0.003
+  first_step_spin_length_min: 0.99
+  css_xi2_db_abs_threshold: 0.45
+provenance:
+  forbid_stale_spin_length_collapse: true
+  stale_spin_length_low: 0.54
+  stale_spin_length_high: 0.62

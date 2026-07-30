@@ -1,0 +1,14 @@
+{
+  "absolute_sanity_passed": true,
+  "decision_sha256": "7b5e2e721705ec7992aa785b75975234e777da25ad0f203d3a9f459f8ad0d395",
+  "dt_convergence_passed": true,
+  "exact_curve_rows": 1080,
+  "manifest_sha256": "de3845a35c308a803dddd61abbef718b90b08816de6dbc963e83e7278bdccc2b",
+  "maximum_difference": 0.0,
+  "next": "S03",
+  "quadrature_nodes": 4096,
+  "quadrature_units": 4,
+  "stage": "S02",
+  "status": "PASS",
+  "weighted_curve_rows": 1080
+}

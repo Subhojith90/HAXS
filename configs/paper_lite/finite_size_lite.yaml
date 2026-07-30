@@ -1,0 +1,17 @@
+seed: 1234
+level: paper_lite
+finite_size:
+  shapes:
+  - - 8
+  - - 12
+  - - 16
+  - - 3
+    - 3
+    - 3
+  seeds:
+  - 11
+  - 12
+dtwa:
+  n_traj: 96
+  t_max: 1.2
+  n_steps: 25

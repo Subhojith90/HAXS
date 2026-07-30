@@ -1,0 +1,28 @@
+stage5c2gR32_protocol:
+  schema_version: haxs.stage5c2gR32.protocol.v1
+  stage: stage5c2gR32_phase_quadrature_and_statistical_sanity_relock
+  predecessor_candidate_sha256: 91344d090d9f3387781c4e53bbbe4a5c9b359eaa82f47373b2d4f55cfcf2a2a3
+  predecessor_disposition: immutable_failed_never_retry
+  predecessor_receipt_reusable: false
+  required_pre_candidate_gates: [S01, S02, S03]
+  configs:
+    S01: configs/stage5c2gR32/failed_evidence.yaml
+    S02: configs/stage5c2gR32/g1_phase_quadrature.yaml
+    S03: configs/stage5c2gR32/sanity_calibration.yaml
+  authorization:
+    candidate_creation_requires_all_pre_candidate_gates_passed: true
+    two_physically_distinct_g0_hosts_required: true
+    new_structured_receipt_required: true
+    official_scope_after_receipt: G1_ONLY
+    same_candidate_retry_forbidden: true
+    current_receipt_reuse_forbidden: true
+  blocked_scopes:
+    - G1_OFFICIAL_BEFORE_NEW_RECEIPT
+    - G2
+    - G3
+    - G4
+    - STAGE5C3
+    - STAGE5D
+    - MANUSCRIPT_RESULT_CLAIMS
+    - EXACT_MOBILE_HOLE_CLAIMS
+    - PUBLIC_RELEASE

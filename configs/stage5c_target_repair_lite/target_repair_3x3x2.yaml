@@ -1,0 +1,45 @@
+seed: 131001
+lattice:
+  periodic: false
+model:
+  hole_fraction: 0.18
+  j_perp: 1.0
+  jz: 0.35
+  lambda_sd: 0.3
+  mobile_eta: 0.55
+dtwa:
+  n_steps: 45
+  n_traj: 256
+  t_max: 1.4
+stage4:
+  bootstrap_samples: 1000
+  ci: 0.95
+  fixed_time_fraction: 0.65
+  trajectory_seed_stride: 100000
+stage5c_target_repair:
+  stage_name: "Stage 5C: estimator-controlled target-shape advancement"
+  target_shape: [3, 3, 2]
+  target_shape_name: "3x3x2"
+  target_family: "stage5c_target_repair"
+  ntraj: 256
+  trajectory_reps: 10
+  seeds_per_block: 8
+  block_seed_starts:
+    primary: 131001
+    replication: 141001
+  labels:
+    - static_only
+    - mobile_only
+    - spin_density_only
+    - mobile_plus_spin_density
+    - full_controlled
+  core_pair: [static_only, mobile_plus_spin_density]
+  component_pairs:
+    - [static_only, mobile_only]
+    - [static_only, spin_density_only]
+  trajectory_fraction_below: 0.50
+  preferred_trajectory_fraction_below: 0.45
+  negative_seed_fraction_at_least: 0.70
+  block_compatibility_abs_db_below: 0.25
+  local_window_offsets: [-0.10, 0.0, 0.10]
+  claim_scope: "Target-shape estimator-repair campaign only; not broad finite-size Stage 5C."

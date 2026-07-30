@@ -1,0 +1,19 @@
+stage5c2gR3_G3:
+  stage: stage5c2gR3_untouched_hierarchical_validity_design_only_blocked
+  namespace_uuid: "9be852f4-d422-4a99-b1ea-ad9751177cf4"
+  permission: blocked_pending_separately_accepted_G2_and_coverage_calibration
+  labels: [static_only, mobile_only, spin_density_only, combined]
+  times: {start: 0.0, stop: 1.4, points: 45}
+  hierarchy: {occupancy_replicates: 16, paths_per_occupancy: 4, phase_batches_per_path: 4, n_traj_per_phase_batch: 1024}
+  top_level_design: exhaustive_or_symmetry_stratified_where_feasible
+  cases:
+    - {id: val_chain8_one_hole, shape: [8], holes: [3]}
+    - {id: val_chain8_two_holes, shape: [8], holes: [2, 5]}
+    - {id: val_rect2x4_one_hole, shape: [2, 4], holes: [3]}
+    - {id: val_square3x3_two_holes, shape: [3, 3], holes: [0, 8]}
+  coverage_calibration:
+    preregistered: true
+    minimum_synthetic_datasets_per_grid_cell: 200
+    bootstrap_replicates_per_dataset: 2000
+    nominal_confidence: 0.95
+    acceptable_coverage_interval: [0.92, 0.98]

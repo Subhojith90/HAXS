@@ -1,0 +1,7 @@
+{
+  "candidate_sha256": "1e3152eff6c3ce2697e72cace9218603e30efddcfb98061025658bcc297ddeac",
+  "checksum_ledger_self_entry": false,
+  "content_files": 672,
+  "stage": "stage5c2gR32A_fresh_unzip",
+  "status": "PASS"
+}

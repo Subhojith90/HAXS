@@ -1,0 +1,4 @@
+rule,benign_false_rejections,benign_trials,benign_false_rejection_rate,calibration_role,empirical_threshold
+bonferroni_one_sided_normal_envelope,0,1024,0.0,PRIMARY_PREREGISTERED,
+sidak_one_sided_normal_envelope,0,1024,0.0,COMPARATOR_ONLY,
+empirical_max_t,10,1024,0.009765625,COMPARATOR_ONLY,1.9457561478783125

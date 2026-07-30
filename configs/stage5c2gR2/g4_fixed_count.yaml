@@ -1,0 +1,23 @@
+stage5c2gR2_G4:
+  stage: stage5c2gR2_fixed_hole_confound_blocked
+  namespace_uuid: "9d0f1082-0c1a-4c36-a5bc-83938f3cd6f4"
+  permission: blocked_pending_separately_accepted_G3_and_new_receipt
+  shape: [3, 3, 3]
+  fixed_hole_counts: [3, 5, 7]
+  labels: [static_only, mobile_plus_spin_density]
+  occupancies_per_count: 16
+  paths_per_occupancy: 6
+  phase_batches_per_path: 4
+  n_traj: 1024
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  inference:
+    smallest_effect_of_scientific_interest_db: 0.15
+    familywise_alpha: 0.05
+    synchronized_joint_nested_bootstrap_across_times: true
+    bootstrap_replicates: 20000
+    seed: 62029
+    required_counts: 2
+    central_hole_count: 5
+  topology_confirmatory: false
+

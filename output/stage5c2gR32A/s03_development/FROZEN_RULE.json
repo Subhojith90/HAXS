@@ -1,0 +1,12 @@
+{
+  "development_config_sha256": "23e1d8f37dd1ec1120880fbb0a3734e86b4631adbc4f5fcd8240d7f5f4eb0765",
+  "rule": {
+    "envelope": "bonferroni_two_sided_normal",
+    "sampling": "iid",
+    "trajectories": 4096
+  },
+  "rule_sha256": "f407660d05b5328bd3a5b0945185453e19b50df3fbb5709a4be2422dcbe25368",
+  "schema_version": "haxs.stage5c2gR32A.frozen-rule.v1",
+  "selection_basis": "supervisor-prespecified IID 4096 budget; development comparators are non-binding",
+  "selection_timing": "FROZEN_BEFORE_VALIDATION_OPENING"
+}

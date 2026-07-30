@@ -1,0 +1,1550 @@
+{
+  "absolute_sanity_passed": true,
+  "analytic_t0_passed": true,
+  "decision_sha256": "ef9f8ed891eb9df538ad5db8d342902308a7b4a4268c4eccaf60defac7211c48",
+  "derivation": "stage5c2gR32_deterministic_quadrature_primary_v1",
+  "dt_convergence_passed": true,
+  "equality_passed": true,
+  "maximum_difference": 0.0,
+  "node_registry_pass": true,
+  "passed": true,
+  "rows": [
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_2",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_hopping_zero_chain6",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "mobile_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "chain6_hole_4",
+      "sanity": {
+        "mobile_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_2",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 1
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 2
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 4
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "exact",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "norm": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    },
+    {
+      "case_id": "limit_spin_density_zero_rect2x3",
+      "equality_pass": true,
+      "labels": [
+        "static_only",
+        "spin_density_only"
+      ],
+      "maximum_difference": 0.0,
+      "method": "surrogate",
+      "occupancy_id": "rect2x3_hole_3",
+      "sanity": {
+        "spin_density_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        },
+        "static_only": {
+          "checks": {
+            "collective_component_bounds": true,
+            "finite": true,
+            "initial_css": true,
+            "initial_sx": true,
+            "minimum_variance_nonnegative": true,
+            "nontrivial_dynamics": true,
+            "particle_count": true,
+            "spin_length_bounds": true,
+            "wineland_identity": true,
+            "xi2_db_identity": true,
+            "xi2_positive": true
+          },
+          "passed": true
+        }
+      },
+      "sanity_pass": true,
+      "substeps": 8
+    }
+  ],
+  "schema_version": "haxs.stage5c2gR32A.g1-deterministic.v1"
+}

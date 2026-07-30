@@ -1,0 +1,14 @@
+stage5c2gR3_G2:
+  stage: stage5c2gR3_transport_mapping_design_only_blocked
+  namespace_uuid: "a8a61db4-5bc8-43f0-aeb5-bf747839109f"
+  permission: blocked_pending_separately_accepted_G1
+  times: {start: 0.0, stop: 1.4, points: 45}
+  top_level_design: exhaustive_or_symmetry_stratified_initial_hole_configurations
+  occupancy_replicates: 16
+  paths_per_occupancy: 16
+  eta_grid: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2]
+  fitting_time_windows: [0.7, 1.0, 1.4]
+  forbidden_inputs: [xi2, xi2_db, squeezing, validation_cases]
+  cases:
+    - {id: transport_chain6_one_hole, shape: [6], holes: [2], hopping_t: 0.55}
+    - {id: transport_rect2x3_one_hole, shape: [2, 3], holes: [2], hopping_t: 0.55}

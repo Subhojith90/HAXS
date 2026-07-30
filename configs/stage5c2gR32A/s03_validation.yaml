@@ -1,0 +1,28 @@
+stage5c2gR32A_stochastic:
+  schema_version: haxs.stage5c2gR32A.stochastic-validation.v1
+  block: VALIDATION
+  namespace_uuid: "6b08ce92-3300-45b0-887c-e1359466acb7"
+  development_config: configs/stage5c2gR32A/s03_development.yaml
+  development_result: output/stage5c2gR32A/s03_development/decision.json
+  deterministic_truth: output/stage5c2gR32A/g1_preflight/quadrature_collective_population.csv
+  canonical_unit_registry: output/stage5c2gR32A/g1_preflight/unit_registry.csv
+  familywise_alpha: 0.01
+  binding_sesoi_fraction_of_half_particle_count: 0.005
+  challenge_component: Sx
+  challenge_time_index: 1
+  validation_families: 512
+  frozen_rule:
+    sampling: iid
+    trajectories: 4096
+    envelope: bonferroni_two_sided_normal
+  truth_metrics:
+    maximum_absolute_standardized_aggregate_bias: 4.0
+    rmse_to_mean_se_ratio: [0.75, 1.25]
+  pass_criteria:
+    maximum_false_rejection_upper_95: 0.015
+    minimum_binding_power_lower_95: 0.99
+    minimum_simultaneous_coverage_lower_95: 0.985
+  extension:
+    permitted: false
+    final_maximum_reached: true
+  downstream_permission_on_pass: none_non_authorising_scale_extension

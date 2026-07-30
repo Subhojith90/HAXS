@@ -1,0 +1,17 @@
+{
+  "binding_sesoi": 0.005,
+  "config_sha256": "c4d8c2d28607a204fcb2277612d8cf13a7d2b19ebbd57224a0291c4d27211160",
+  "immutable_fields": {
+    "binding_sesoi_fraction_of_half_particle_count": 0.005,
+    "family_definition": "all_components_times_and_canonical_units",
+    "familywise_alpha": 0.01,
+    "pass_criteria": {
+      "maximum_benign_familywise_false_rejection": 0.01,
+      "maximum_monte_carlo_half_width": 0.005,
+      "maximum_upper_95_interval": 0.015,
+      "minimum_binding_sesoi_detection": 0.99
+    },
+    "primary_rule": "bonferroni_one_sided_normal_envelope"
+  },
+  "schema_version": "haxs.stage5c2gR32.statistical-sanity.v1"
+}

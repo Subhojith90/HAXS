@@ -1,0 +1,24 @@
+stage5c2gR2_G3:
+  stage: stage5c2gR2_untouched_hierarchical_validity_blocked
+  namespace_uuid: "9be852f4-d422-4a99-b1ea-ad9751177cf4"
+  permission: blocked_pending_separately_accepted_G2
+  labels: [static_only, mobile_only, spin_density_only, combined]
+  times: {start: 0.0, stop: 1.4, points: 45}
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  hierarchy: {occupancy_replicates: 2, paths_per_occupancy: 4, phase_batches_per_path: 4, n_traj_per_phase_batch: 1024}
+  cases:
+    - {id: val_chain8_one_hole, shape: [8], holes: [3]}
+    - {id: val_chain8_two_holes, shape: [8], holes: [2, 5]}
+    - {id: val_rect2x4_one_hole, shape: [2, 4], holes: [3]}
+    - {id: val_square3x3_two_holes, shape: [3, 3], holes: [0, 8]}
+  hierarchical_gate:
+    bootstrap_replicates: 10000
+    confidence_level: 0.95
+    seed: 53029
+    minimum_correlation_lower_bound: 0.90
+    maximum_rmse_upper_bound_source: accepted_G2_tolerance_state
+    sign_interval_must_exclude_zero_in_same_direction: true
+    ranking_near_tie_tolerance_db: 0.05
+    every_designated_case_must_pass: true
+

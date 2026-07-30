@@ -1,0 +1,31 @@
+stage5c2gR_fixed_count:
+  stage: stage5c2gR_fixed_hole_confound_gate_with_exploratory_topology
+  namespace_uuid: "61e1e8f6-f9a0-47bd-b5a3-28a09126cc9b"
+  shape: [3, 3, 3]
+  fixed_hole_counts: [3, 5, 7]
+  labels: [static_only, mobile_plus_spin_density]
+  occupancies_per_count: 16
+  paths_per_occupancy: 6
+  phase_batches_per_path: 4
+  n_traj: 1024
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  inference:
+    smallest_effect_of_scientific_interest_db: 0.15
+    familywise_alpha: 0.05
+    simultaneous_method: bootstrap_maximum_centered_deviation_across_counts_and_local_times
+    bootstrap_replicates: 20000
+    bootstrap_seed: 62028
+    required_counts: 2
+    central_hole_count: 5
+    require_central_count: true
+    component_ranking_near_tie_tolerance_db: 0.05
+  topology_scope:
+    confirmatory: false
+    description: exploratory within-count descriptors only; no topology-controlled claim
+    descriptors: [connectivity, active_bond_count, cluster_number, boundary_exposure, largest_connected_component]
+  claim_scope: Confirmatory fixed-hole-count confound gate on the selected 3x3x3 stochastic surrogate; topology is exploratory only.
+model: {j_perp: 1.0, jz: 0.35, mobile_eta: 0.55, lambda_sd: 0.30}
+lattice: {periodic: false}
+dtwa: {t_max: 1.4, n_steps: 45, n_traj: 1024}
+

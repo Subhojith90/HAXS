@@ -1,0 +1,12 @@
+{
+  "schema_version": "haxs.repository.current-release.v1",
+  "stage": "Stage5C2G-R3.2A",
+  "branch": "release/stage5c2g-r32a",
+  "candidate_sha256": "1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165",
+  "protocol_archive_sha256": "b60cbfa1f5296d2d7844f4324d21b0b6743f2d10b93f373be1484e3fe79ae694",
+  "host_a_g0": "PASS",
+  "host_b_g0": "PENDING",
+  "two_host_g0": "PENDING",
+  "g1_authorized": false,
+  "scientific_execution_performed": false
+}

@@ -1,0 +1,34 @@
+seed: 31415
+level: paper_lite
+lattice:
+  shape:
+  - 3
+  - 3
+  - 3
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.3
+dtwa:
+  n_traj: 96
+  t_max: 1.35
+  n_steps: 27
+optimization:
+  n_train: 3
+  n_test: 3
+  n_candidates: 10
+objective:
+  lambda_len: 2.0
+search_bounds:
+  echo_min: 0.15
+  echo_max: 0.85
+  hold_min: 0.8
+  hold_max: 1.25
+  ramp_max: 0.5
+  jz_min: -0.15
+  jz_max: 0.85
+  gradient_min: -0.2
+  gradient_max: 0.2

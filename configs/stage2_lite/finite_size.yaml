@@ -1,0 +1,21 @@
+seed: 202602
+level: stage2_lite
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 80
+  t_max: 1.4
+  n_steps: 35
+stage2:
+  seeds: [8001, 8002, 8003, 8004]
+  shapes:
+    - [6]
+    - [8]
+    - [10]
+    - [3, 3]
+    - [4, 4]
+    - [3, 3, 3]

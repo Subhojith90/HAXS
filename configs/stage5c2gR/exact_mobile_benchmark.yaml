@@ -1,0 +1,36 @@
+stage5c2gR_exact_benchmark:
+  stage: stage5c2gR_controlled_hard_core_boson_surrogate_benchmark
+  namespace_uuid: "a47ac10b-58cc-4372-a567-0e02b2c3d479"
+  labels: [static_only, mobile_only, spin_density_only, combined]
+  times: {start: 0.0, stop: 1.4, points: 45}
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  hierarchy:
+    occupancy_replicates: 2
+    paths_per_occupancy: 4
+    phase_batches_per_path: 4
+    transport_paths_per_occupancy: 128
+  exact_model:
+    particle_statistics: hard_core_bosonic_spin_carriers
+    j_perp: 1.0
+    jz: 0.35
+    hopping_t: 0.55
+    lambda_sd: 0.30
+  surrogate:
+    n_traj_per_phase_batch: 1024
+    lambda_sd: 0.30
+    mobility_parameter_source: results/stage5c2gR/mobility_mapping/LOCKED.json
+  transport_calibration_cases:
+    - {id: transport_chain6_one_hole, shape: [6], holes: [2], hopping_t: 0.55}
+    - {id: transport_rect2x3_one_hole, shape: [2, 3], holes: [2], hopping_t: 0.55}
+  calibration_cases:
+    - {id: cal_chain6_one_hole, shape: [6], holes: [2], labels: [static_only]}
+    - {id: cal_rect2x3_one_hole, shape: [2, 3], holes: [2], labels: [static_only]}
+    - {id: limit_hopping_zero_chain6, shape: [6], holes: [2], labels: [static_only, mobile_only], hopping_t: 0.0, mobile_eta: 0.0}
+    - {id: limit_spin_density_zero_rect2x3, shape: [2, 3], holes: [2], labels: [static_only, spin_density_only], lambda_sd: 0.0}
+  validation_cases:
+    - {id: val_chain8_one_hole, shape: [8], holes: [3], designated_confirmatory: true}
+    - {id: val_chain8_two_holes, shape: [8], holes: [2, 5], designated_confirmatory: true}
+    - {id: val_rect2x4_one_hole, shape: [2, 4], holes: [3], designated_confirmatory: true}
+    - {id: val_square3x3_two_holes, shape: [3, 3], holes: [0, 8], designated_confirmatory: true}
+  claim_scope: Hard-core-bosonic constrained comparator versus a stochastic occupancy-mask surrogate. This does not validate fermionic lithium-6 dynamics or exact mobile-hole many-body physics.

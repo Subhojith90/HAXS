@@ -1,0 +1,10 @@
+$ /opt/anaconda3/bin/python3.12 -I scripts/verify_stage5c2gR32A_fresh_unzip.py --submission output/stage5c2gR32A/HAXS_Stage5C2G_R3_2A_Protocol.zip
+{
+  "candidate_sha256": "1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165",
+  "checksum_ledger_self_entry": false,
+  "content_files": 679,
+  "stage": "stage5c2gR32A_fresh_unzip",
+  "status": "PASS"
+}
+
+EXIT_STATUS=0

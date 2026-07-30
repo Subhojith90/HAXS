@@ -1,0 +1,39 @@
+stage5c2gR3_environment:
+  python: "==3.12.7"
+  implementation: CPython
+  platform_system: Darwin
+  platform_machine: arm64
+  packages:
+    numpy: "==1.26.4"
+    pandas: "==2.2.2"
+    scipy: "==1.13.1"
+    matplotlib: "==3.9.2"
+    PyYAML: "==6.0.1"
+    pytest: "==7.4.4"
+    contourpy: "==1.2.0"
+    cycler: "==0.11.0"
+    fonttools: "==4.51.0"
+    iniconfig: "==1.1.1"
+    kiwisolver: "==1.4.8"
+    packaging: "==24.1"
+    pillow: "==10.4.0"
+    pluggy: "==1.6.0"
+    pyparsing: "==3.1.2"
+    python-dateutil: "==2.9.0.post0"
+    pytz: "==2024.1"
+    six: "==1.16.0"
+    tzdata: "==2024.2"
+    pip: "==24.2"
+    setuptools: "==75.1.0"
+    wheel: "==0.44.0"
+  numerical_environment:
+    required_thread_variables:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      VECLIB_MAXIMUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+    numpy_seterr: {divide: warn, over: warn, under: ignore, invalid: warn}
+    blas_attestation_required: true
+    lapack_attestation_required: true
+  installation: immutable_external_wheel_only

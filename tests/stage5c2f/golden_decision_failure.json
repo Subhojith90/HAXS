@@ -1,0 +1,12 @@
+{
+  "stage": "stage5c2f_source_generated_decision",
+  "decision": "FAIL",
+  "target_shape_primary_relock_passed": false,
+  "stage5c3_data_production_allowed": false,
+  "stage5d_allowed": false,
+  "public_release_allowed": false,
+  "next_action": "stop_and_submit_failed_gate",
+  "reasons": [
+    "primary_absolute_mc_se_pass_failed"
+  ]
+}

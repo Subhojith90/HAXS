@@ -1,0 +1,39 @@
+stage5c2g_protocol:
+  stage: stage5c2g_fixed_hole_topology_and_validity_gate
+  protocol_version: 1.0.0
+  status: ready_for_external_timestamp
+  purpose: validity_and_confound_gate_only
+  fixed_time: 0.9227272727272726
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  configs:
+    fixed_count: configs/stage5c2g/fixed_count.yaml
+    exact_mobile_benchmark: configs/stage5c2g/exact_mobile_benchmark.yaml
+    custody: configs/stage5c2g/custody.yaml
+  primary_uncertainty_estimator:
+    name: equal_occupancy_nested_cluster_bootstrap
+    interval: percentile_95
+    replicates: 20000
+    seed: 52027
+  secondary_sensitivity_estimators:
+    - balanced_random_effects_anova_normal_95
+    - equal_occupancy_t_95
+  equivalence_gate:
+    enabled: false
+    reason: Stage 5C.2G tests fixed-count confounding and small-system validity; the prior +/-0.25 dB block-equivalence margin is not used for pass/fail.
+  validity_gates:
+    minimum_time_profile_correlation: 0.90
+    maximum_rmse_multiple_of_clean_static_calibration: 1.50
+    require_all_designated_local_window_signs: true
+    require_sign_and_component_ranking_agreement: true
+    require_zero_coupling_limits: true
+    require_exact_accounting: true
+  forbidden_actions:
+    - stage5c3_production
+    - stage5d
+    - manuscript_result_claims
+    - public_release
+    - exact_mobile_hole_mechanism_claims
+  source_identity: root_relative_sha256_source_manifest
+  source_commit_note: The workspace has no Git repository; the protocol lock hashes every covered source/config file instead of claiming a Git commit.
+  external_timestamp_instruction: Publish the candidate lock SHA-256 externally, save the timestamp receipt as a file, then finalize the lock before any calibration or production command.
+

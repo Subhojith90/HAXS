@@ -1,0 +1,83 @@
+name: HAXS Stage5C2G-R3.2A Host-B G0
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: haxs-stage5c2g-r32a-host-b-g0
+  cancel-in-progress: false
+
+jobs:
+  host-b-g0:
+    name: Candidate-bound Host-B G0 on GitHub macOS ARM64
+    runs-on: macos-15
+    timeout-minutes: 180
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      VECLIB_MAXIMUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+      PYTHONHASHSEED: "0"
+
+    steps:
+      - name: Check out the immutable release commit
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Verify frozen release inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          HAXS_RUN_ROOT="$RUNNER_TEMP/haxs-stage5c2g-r32a-host-b"
+          export HAXS_RUN_ROOT
+          echo "HAXS_RUN_ROOT=$HAXS_RUN_ROOT" >> "$GITHUB_ENV"
+          mkdir -p "$HAXS_RUN_ROOT/diagnostics"
+          {
+            shasum -a 256 -c ci/frozen/stage5c2gR32A/INPUT_MANIFEST_SHA256.txt
+            test "$(uname -s)" = "Darwin"
+            test "$(uname -m)" = "arm64"
+            test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+            test -z "$(git status --porcelain --untracked-files=no)"
+            git rev-parse HEAD
+          } 2>&1 | tee "$HAXS_RUN_ROOT/diagnostics/REPOSITORY_PREFLIGHT.txt"
+
+      - name: Execute fail-closed Host-B G0 and two-host comparison
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash ci/run_stage5c2gR32A_github_host_b_g0.sh
+
+      - name: Upload complete G0 return and diagnostics
+        id: upload
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: HAXS-Stage5C2G-R32A-HOST-B-G0-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/haxs-stage5c2g-r32a-host-b/deliverables
+            ${{ runner.temp }}/haxs-stage5c2g-r32a-host-b/diagnostics
+            ${{ runner.temp }}/haxs-stage5c2g-r32a-host-b/evidence
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Record immutable run identity
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "### HAXS Stage 5C.2G-R3.2A Host-B G0"
+            echo
+            echo "- Candidate: \`1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165\`"
+            echo "- Release branch: \`$GITHUB_REF_NAME\`"
+            echo "- Commit: \`$GITHUB_SHA\`"
+            echo "- Run: \`$GITHUB_RUN_ID\`"
+            echo "- Artifact digest: \`${{ steps.upload.outputs.artifact-digest }}\`"
+            echo "- Artifact URL: ${{ steps.upload.outputs.artifact-url }}"
+            echo "- Scope: G0 only; G1-G4 and downstream scientific execution were not run."
+          } >> "$GITHUB_STEP_SUMMARY"

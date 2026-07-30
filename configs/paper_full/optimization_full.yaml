@@ -1,0 +1,22 @@
+seed: 31415
+level: paper_full
+lattice:
+  shape:
+  - 4
+  - 4
+  - 4
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.3
+dtwa:
+  n_traj: 1500
+  t_max: 2.0
+  n_steps: 81
+optimization:
+  n_train: 12
+  n_test: 12
+  n_candidates: 120

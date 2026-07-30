@@ -1,0 +1,44 @@
+
+seed: 171001
+lattice:
+  periodic: false
+model:
+  hole_fraction: 0.18
+  j_perp: 1.0
+  jz: 0.35
+  lambda_sd: 0.3
+  mobile_eta: 0.55
+dtwa:
+  n_steps: 45
+  t_max: 1.4
+  n_traj: 1024
+stage5c2d:
+  stage_name: "Stage 5C.2D random-stream separation and confirmatory re-lock"
+  shape: [3, 3, 3]
+  shape_name: "3x3x3"
+  labels: [static_only, mobile_plus_spin_density]
+  core_pair: [static_only, mobile_plus_spin_density]
+  fixed_time_fraction: 0.65
+  local_window_offsets: [-0.10, 0.0, 0.10]
+  occupancy_realizations: 12
+  paths_per_occupancy: 4
+  phase_batches_per_path: 4
+  n_traj: 1024
+  blocks:
+    primary:
+      occupancy_seed_start: 211001
+      hole_path_seed_start: 311001
+      phase_batch_seed_start: 411001
+    confirmation:
+      occupancy_seed_start: 221001
+      hole_path_seed_start: 321001
+      phase_batch_seed_start: 421001
+  gates:
+    hierarchical_ci_high_below: 0.0
+    occupancy_negative_fraction_at_least: 0.80
+    local_window_ci_high_below: 0.0
+    absolute_mc_se_below: 0.05
+    absolute_mc_se_target: 0.03
+    block_compatibility_abs_db_below: 0.25
+  bootstrap_samples: 1000
+  claim_scope: "Stage 5C.2D target-shape random-stream repair only. No Stage 5C3 production, Stage 5D, publication, exact-hole, or recovery claim."

@@ -1,0 +1,11 @@
+stage5c2gR3_G4:
+  stage: stage5c2gR3_fixed_hole_confound_design_only_blocked
+  namespace_uuid: "9d0f1082-0c1a-4c36-a5bc-83938f3cd6f4"
+  permission: blocked_pending_separately_accepted_G3_and_new_receipt
+  shape: [3, 3, 3]
+  fixed_hole_counts: [3, 5, 7]
+  labels: [static_only, mobile_plus_spin_density]
+  occupancies_per_count: 16
+  paths_per_occupancy: 6
+  phase_batches_per_path: 4
+  n_traj: 1024

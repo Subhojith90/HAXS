@@ -1,0 +1,38 @@
+stage5c2eR:
+  stage: stage5c2eR_dominant_variance_precision_relock
+  shape: [3, 3, 3]
+  labels: [static_only, mobile_plus_spin_density]
+  target_block: primary
+  locked_confirmation_required: true
+  fixed_time_fraction: 0.65
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  existing_design:
+    occupancies: 12
+    paths_per_occupancy: 4
+    phase_batches_per_path: 4
+  extended_design:
+    occupancies: 16
+    paths_per_occupancy: 6
+    phase_batches_per_path: 4
+  n_traj: 1024
+  # domain-separated seed hashing replaces arithmetic starts for all new extension cells.
+  seed_namespace: stage5c2eR_primary_extension_v1
+  bootstrap_samples: 1000
+  gates:
+    absolute_mc_se_below: 0.05
+    hierarchical_ci_high_below: 0.0
+    occupancy_negative_fraction_at_least: 0.80
+    block_compatibility_abs_db_below: 0.25
+  claim_scope: "Stage 5C.2E-R primary precision re-lock only. Confirmation remains locked. No Stage 5C3 production, Stage 5D, publication, exact-hole, or recovery claim."
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+lattice:
+  periodic: false
+dtwa:
+  t_max: 1.4
+  n_steps: 45
+  n_traj: 1024

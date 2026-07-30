@@ -1,0 +1,9 @@
+case_id,occupancy_id,label,coarse_to_medium_max_abs,medium_to_fine_max_abs,refinement_ratio,minimum_required_ratio,passed
+limit_hopping_zero_chain6,chain6_hole_2,mobile_only,6.799086627040651e-09,3.882578702985029e-10,17.511780564327864,1.5,True
+limit_hopping_zero_chain6,chain6_hole_2,static_only,6.799086627040651e-09,3.882578702985029e-10,17.511780564327864,1.5,True
+limit_hopping_zero_chain6,chain6_hole_4,mobile_only,9.7529395670648e-09,5.716019879642431e-10,17.062466143268384,1.5,True
+limit_hopping_zero_chain6,chain6_hole_4,static_only,9.7529395670648e-09,5.716019879642431e-10,17.062466143268384,1.5,True
+limit_spin_density_zero_rect2x3,rect2x3_hole_2,spin_density_only,2.67659612251947e-08,1.5422534360709506e-09,17.355099103156316,1.5,True
+limit_spin_density_zero_rect2x3,rect2x3_hole_2,static_only,2.67659612251947e-08,1.5422534360709506e-09,17.355099103156316,1.5,True
+limit_spin_density_zero_rect2x3,rect2x3_hole_3,spin_density_only,2.6765961447239306e-08,1.5422529919817407e-09,17.355104244502705,1.5,True
+limit_spin_density_zero_rect2x3,rect2x3_hole_3,static_only,2.6765961447239306e-08,1.5422529919817407e-09,17.355104244502705,1.5,True

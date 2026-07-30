@@ -1,0 +1,14 @@
+stage5c2g_custody:
+  frozen_confirmation:
+    root: results/stage5c2d_lite/confirmation
+    files:
+      stage5c2d_block_manifest.json: 0add2d704ec9c0de2a562de21c58fefaef784bd376676f6c845e0a37315376f3
+      stage5c2d_curves_all.csv: 0fe14d993239d0e02f3379f4d42db21b1c43ddac5f6167a8fe1dc7f0d068c6ae
+      stage5c2d_finals.csv: b70d9a78a4bb96fa815503071aa43fcb9fba2a9988e79f5c46026b5ac95fbc65
+      stage5c2d_seed_registry.csv: d5b922f1def300b19da140ecb3679d0a49ad711383b05c87abe600b637083784
+  predecessor_stage5c2f_archives:
+    output/stage5c2f/haxs_stage5c2f_clean_source.zip: 41d567b6e289c93b279511a7ad87fcf0b622417792e0301629d7a62c30e4e0dc
+    output/stage5c2f/haxs_stage5c2f_results.zip: 8ec154138d7013ad239f8a726b141b880ba66ed65f76ca89d70d6b1e941db445
+    output/stage5c2f/HAXS_Stage5C2F_Srinjoy_Submission_20260714.zip: e3a94a9f277f960e4cde4cccc37c79ebc2dbb6ed05c59431a3ee8bd2b2396da9
+  mutation_policy: read_only
+

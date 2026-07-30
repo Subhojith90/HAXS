@@ -1,0 +1,70 @@
+dtwa:
+  n_steps: 45
+  n_traj: 128
+  t_max: 1.4
+lattice:
+  periodic: false
+model:
+  hole_fraction: 0.18
+  j_perp: 1.0
+  jz: 0.35
+  lambda_sd: 0.3
+  mobile_eta: 0.55
+seed: 91001
+stage4:
+  bootstrap_samples: 800
+  ci: 0.95
+  fixed_time_fraction: 0.65
+  gates:
+    min_fixed_negative_shapes: 1
+    min_fixed_ci_shapes: 1
+    min_nested_stable_shapes: 1
+    max_trajectory_dominated_shapes: 0
+  labels:
+    - static_only
+    - mobile_plus_spin_density
+    - everything
+  matched_families:
+    - family: target_3d_adaptive_trajectory_lock
+      shapes:
+        - [3, 3, 2]
+  primary_pair:
+    - static_only
+    - mobile_plus_spin_density
+  seed_start: 91001
+  seeds: 8
+  trajectory_reps: 8
+  trajectory_seed_stride: 100000
+stage5b0R:
+  stage_name: "Stage 5B0-R / Stage 5A4-R: adaptive trajectory-fraction lock and gated five-label pilot"
+  target_shape: "3x3x2"
+  target_family: "target_3d_adaptive_trajectory_lock"
+  adaptive_candidates:
+    - {ntraj: 128, trajectory_reps: 12}
+    - {ntraj: 192, trajectory_reps: 8}
+    - {ntraj: 256, trajectory_reps: 8}
+  primary_seed_start: 91001
+  replication_seed_start: 99001
+  seeds_per_block: 8
+  five_label_seed_start: 101001
+  five_label_seeds: 8
+  five_label_trajectory_reps: 6
+  five_label_ntraj: 192
+  trajectory_fraction_below: 0.5
+  preferred_trajectory_fraction_below: 0.45
+  negative_seed_fraction_at_least: 0.70
+  block_compatibility_abs_db_below: 0.25
+  run_five_label_only_if_lock_passes: true
+  mechanism_labels:
+    - static_only
+    - mobile_only
+    - spin_density_only
+    - mobile_plus_spin_density
+    - everything
+  mechanism_pairs:
+    - [static_only, mobile_only]
+    - [static_only, spin_density_only]
+    - [static_only, mobile_plus_spin_density]
+    - [mobile_only, mobile_plus_spin_density]
+    - [spin_density_only, mobile_plus_spin_density]
+    - [static_only, everything]

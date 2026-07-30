@@ -1,0 +1,58 @@
+seed: 75001
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.3
+dtwa:
+  n_traj: 12
+  n_steps: 31
+  t_max: 1.4
+stage4:
+  seed_start: 75001
+  seeds: 4
+  trajectory_reps: 2
+  trajectory_seed_stride: 100000
+  fixed_time_fraction: 0.65
+  bootstrap_samples: 300
+  ci: 0.95
+  labels:
+    - static_only
+    - mobile_plus_spin_density
+    - everything
+  primary_pair:
+    - static_only
+    - mobile_plus_spin_density
+  matched_families:
+    - family: target_3d_convergence
+      shapes:
+        - [3, 3, 2]
+  gates:
+    min_fixed_negative_shapes: 1
+    min_fixed_ci_shapes: 1
+    min_nested_stable_shapes: 1
+    max_trajectory_dominated_shapes: 0
+stage5a:
+  target_shape: 3x3x2
+  target_family: target_3d_convergence
+  ntraj_sweep: [8, 12]
+  trajectory_reps: 2
+  primary_seed_start: 75001
+  replication_seed_start: 85001
+  seeds_per_block: 4
+  convergence_tolerance_db: 0.30
+  trajectory_fraction_below: 0.5
+  negative_seed_fraction_at_least: 0.70
+  fixed_time_primary: true
+  min_time_secondary: true
+  pass_requires:
+    final_ntraj: 12
+    high_ntraj_mean_negative: true
+    high_ntraj_t_ci_excludes_zero: true
+    high_ntraj_trajectory_fraction_below: 0.5
+    replication_mean_negative: true
+    replication_negative_seed_fraction_at_least: 0.70
+    convergence_delta_abs_below_db: 0.20

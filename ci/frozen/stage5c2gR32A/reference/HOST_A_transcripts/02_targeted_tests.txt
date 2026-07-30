@@ -1,0 +1,5 @@
+$ /opt/anaconda3/bin/python3.12 -m pytest -q tests/stage5c2gR32A tests/stage5c2gR32 tests/regression
+.................................                                        [100%]
+33 passed in 1.06s
+
+EXIT_STATUS=0

@@ -1,0 +1,35 @@
+seed: 1729
+lattice:
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+dtwa:
+  n_traj: 64
+  t_max: 1.4
+  n_steps: 31
+stage3b:
+  seed_start: 41001
+  seeds: 18
+  bootstrap_samples: 1500
+  ci: 0.95
+  fixed_time_fraction: 0.65
+  shapes:
+    - [2, 3]
+    - [3, 3]
+    - [4, 4]
+    - [2, 2, 2]
+    - [3, 3, 2]
+    - [3, 3, 3]
+  labels:
+    - static_only
+    - mobile_only
+    - spin_density_only
+    - mobile_plus_spin_density
+    - everything
+  core_pair: [static_only, mobile_plus_spin_density]
+  pass_min_shapes: 3
+  pass_min_dimension_families: 2

@@ -1,0 +1,104 @@
+stage5c2gR3_protocol:
+  stage: stage5c2gR3_1_absolute_sanity_import_isolation_root_containment_structured_receipt
+  protocol_version: 4.1.0
+  status: r3_1_repair_candidate_not_timestamped
+  canonical_configs:
+    G1: configs/stage5c2gR3/g1.yaml
+    G2: configs/stage5c2gR3/g2_transport.yaml
+    G3: configs/stage5c2gR3/g3_validity.yaml
+    G4: configs/stage5c2gR3/g4_fixed_count.yaml
+  custody: configs/stage5c2gR3/custody.yaml
+  environment: configs/stage5c2gR3/environment.yaml
+  environment_lock: requirements-stage5c2gR3.lock
+  runtime_roots: [src, scripts, tests, configs, docs]
+  runtime_root_files:
+    - pyproject.toml
+    - README.md
+    - STAGE3_COMMANDS.sh
+    - STAGE3A_COMMANDS.sh
+    - STAGE5C2GR3_COMMANDS.sh
+    - STAGE5C2GR32_COMMANDS.sh
+    - requirements-stage5c2gR2.lock
+    - requirements-stage5c2gR3.in
+    - requirements-stage5c2gR3.lock
+    - scripts_patch/stage5c2eR_patch.py
+  preparation_root_allowed_entries:
+    - .DS_Store
+    - .pytest_cache
+    - MANIFEST.sha256
+    - README.md
+    - STAGE3A_COMMANDS.sh
+    - STAGE3_COMMANDS.sh
+    - STAGE5C2GR2_COMMANDS.sh
+    - STAGE5C2GR3_COMMANDS.sh
+    - STAGE5C2GR32_COMMANDS.sh
+    - STAGE5C2GR_COMMANDS.sh
+    - STAGE5C2G_COMMANDS.sh
+    - configs
+    - data
+    - docs
+    - figures
+    - haxs_stage5c2eR_dominant_variance_relock_checkpoint_20260712_125532.zip
+    - haxs_stage5c2eR_dominant_variance_relock_checkpoint_20260712_125532.zip.sha256
+    - manuscript
+    - notebooks
+    - output
+    - pyproject.toml
+    - reproducibility
+    - requirements-stage5c2gR.lock
+    - requirements-stage5c2gR2.lock
+    - requirements-stage5c2gR3.in
+    - requirements-stage5c2gR3.lock
+    - requirements.txt
+    - results
+    - scripts
+    - scripts_patch
+    - src
+    - tables
+    - tests
+    - tmp
+  packaged_root_metadata:
+    - CANDIDATE.stage5c2gR3_1.json
+    - haxs-0.8.1-py3-none-any.whl
+    - MANIFEST.stage5c2gR3_1.sha256
+    - SBOM.stage5c2gR3_1.json
+  official_execution_state_entries: [.pytest_cache, output, reproducibility, results]
+  forbidden_root_hooks: [conftest.py, sitecustomize.py, usercustomize.py]
+  dangerous_environment_variables: [PYTHONPATH, PYTHONHOME, PYTHONSTARTUP, PYTHONINSPECT, PYTHONUSERBASE, LD_PRELOAD, DYLD_INSERT_LIBRARIES, DYLD_LIBRARY_PATH]
+  semantic_analyzers:
+    primary: scripts/stage5c2gR3_semantics.py
+    independent_reference: scripts/stage5c2gR3_semantics_reference.py
+  authorization:
+    paired_equality_and_absolute_physical_sanity_required: true
+    isolated_interpreter_required: true
+    external_import_environment_forbidden: true
+    complete_top_level_policy_required: true
+    official_G1_requires_fresh_minimal_protocol_root: true
+    structured_receipt_required: true
+    decision_derived_only_from_candidate_bound_raw_curves: true
+    stored_pass_fields_are_non_authoritative: true
+    exclusive_process_lock: fcntl_flock
+    transition_rule: compare_and_swap_attempt_and_sequence
+    canonical_recursive_evidence_tree: true
+    reject_symlinks_absolute_paths_parent_traversal_and_unlisted_nested_files: true
+    exact_runtime_files_and_directories: true
+    setup_must_not_mutate_candidate_tree: true
+  execution_permissions:
+    G0: approved_now
+    G1: blocked_until_supervisor_accepts_R3_1_and_new_structured_receipt_exists
+    G2: blocked_pending_separately_accepted_G1
+    G3: blocked_pending_separately_accepted_G2_and_redesigned_top_level_allocation
+    G4: blocked_pending_separately_accepted_G3_and_new_receipt
+    stage5c3_production: blocked
+    stage5d: blocked
+    manuscript_result_claims: blocked
+    public_release: blocked
+  authoritative_transcript_policy:
+    development_history_excluded_from_supervisor_bundle: true
+    final_host_labels: [HOST_A, HOST_B]
+    required_transcripts: [00_compileall.txt, 01_static_gate.txt, 02_full_tests.txt, 03_targeted_tests.txt, 04_immutable_install.txt, 05_candidate.txt, 06_package.txt, 07_fresh_unzip.txt, 08_host_attestation.txt]
+  rejected_candidates:
+    - e9a9740caac19b51a7a1da0b0f404c804d1a45d0eff45fbc602aeeee2db1c396
+    - e65745b3359ab2eccc12c0bd381e6d57d5aea5d1857d245e3bfd8682aaaea886
+    - 69347518a2103d7c5d61ca630536fa518853bc8d1e28530d29a69ce9af2a46ed
+    - 1392df486fa51cdcb71956e51dd55c3640f157d62a9873f22c6c2214d3d08062

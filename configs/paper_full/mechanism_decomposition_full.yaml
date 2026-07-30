@@ -1,0 +1,28 @@
+seed: 27182
+level: paper_full
+lattice:
+  shape:
+  - 4
+  - 4
+  - 4
+  periodic: false
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.3
+dtwa:
+  n_traj: 2000
+  t_max: 2.0
+  n_steps: 81
+mechanism:
+  seeds:
+  - 1001
+  - 1002
+  - 1003
+  - 1004
+  - 1005
+  - 1006
+  - 1007
+  - 1008

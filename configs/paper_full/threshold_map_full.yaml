@@ -1,0 +1,44 @@
+seed: 16180
+level: paper_full
+model:
+  jz: 0.35
+dtwa:
+  n_traj: 1500
+  t_max: 2.0
+  n_steps: 81
+threshold:
+  hole_fractions:
+  - 0.0
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.35
+  - 0.4
+  mobile_etas:
+  - 0.0
+  - 0.2
+  - 0.5
+  - 0.8
+  - 1.2
+  lambda_sds:
+  - 0.0
+  - 0.15
+  - 0.3
+  - 0.45
+  - 0.6
+  dimensions:
+  - 1
+  - 2
+  - 3
+  seeds:
+  - 1001
+  - 1002
+  - 1003
+  - 1004
+  - 1005
+  - 1006
+  - 1007
+  - 1008

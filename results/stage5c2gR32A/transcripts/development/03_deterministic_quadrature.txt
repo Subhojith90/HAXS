@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/run_stage5c2gR32A_phase_quadrature.py", line 179, in <module>
+    main()
+  File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/run_stage5c2gR32A_phase_quadrature.py", line 173, in main
+    result = run(args.config, args.out)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/haxs_stage5c2f_occupancy_preserving_relock_v1/scripts/run_stage5c2gR32A_phase_quadrature.py", line 134, in run
+    raise RuntimeError("quadrature population row count differs from plan")
+RuntimeError: quadrature population row count differs from plan

@@ -1,0 +1,9 @@
+{
+  "archive": "output/stage5c2gR32A/HAXS_Stage5C2G_R3_2A_Protocol.zip",
+  "checksum_ledger_self_entry": false,
+  "content_files": 672,
+  "next": "FRESH_UNZIP_THEN_TWO_PHYSICAL_HOST_G0",
+  "scientific_execution_performed": false,
+  "sha256": "32c18cef306723087fa457ead7fbc3fda4928ee564d6f1c31d651a89abe3a2e1",
+  "status": "PASS"
+}

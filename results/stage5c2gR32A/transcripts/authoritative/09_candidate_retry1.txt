@@ -1,0 +1,7 @@
+{
+  "candidate_sha256": "1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165",
+  "runtime_files": 560,
+  "scientific_execution_performed": false,
+  "status": "AWAITING_TWO_PHYSICAL_HOST_G0",
+  "wheel_sha256": "ef308ac5a7fc04821e4d041b317a39eb24c51dc6715bf1dd9a80b340c1831c55"
+}
