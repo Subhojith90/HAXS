@@ -1,0 +1,26 @@
+{
+  "absolute_paths_recorded": false,
+  "dependency_lock": {
+    "path": "requirements-stage5c2gR3.lock",
+    "sha256": "914c8a6aba4fdea4d811ff7122350e03a869192bd140b0aba2d1f0f7a975e10b"
+  },
+  "environment_sha256": "123c8ab524265ed53badc846e0be8800425a3a3514d9d0f3c9b72c2da9f22c81",
+  "implementation": "CPython",
+  "packages": {
+    "PyYAML": "6.0.1",
+    "matplotlib": "3.9.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "pip": "26.1.2",
+    "pytest": "7.4.4",
+    "scipy": "1.13.1",
+    "setuptools": "75.1.0",
+    "wheel": "0.44.0"
+  },
+  "platform_machine": "arm64",
+  "platform_system": "Darwin",
+  "python_executable_name": "python",
+  "python_executable_sha256": "475b4a6cffa067fcef02b4b5ee7692857661282c1f34392f3dde7bc311472689",
+  "python_version": "3.12.7",
+  "schema_version": "haxs.stage5c2gR32A1.environment.v1"
+}

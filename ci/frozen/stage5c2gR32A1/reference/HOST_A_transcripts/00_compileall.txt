@@ -1,0 +1,3 @@
+$ /tmp/haxs-stage5c2gr32a1-host-a-retry2.ECA579D32E0E4C2FA75648215499F75A/venv/bin/python -m compileall -q src scripts scripts_patch tests
+
+EXIT_STATUS=0

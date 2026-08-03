@@ -198,12 +198,22 @@ def test_external_pythonpath_shim_cannot_pass_static_gate(tmp_path: Path) -> Non
 
 
 def test_every_python_file_must_parse() -> None:
-    for relative in scan_runtime_tree(ROOT)["files"]:
-        if relative.endswith(".py"): ast.parse((ROOT / relative).read_text(encoding="utf-8"), filename=relative)
+    # R3.2A.1 is prepared inside the canonical Git repository, while the
+    # predecessor helper models an already-extracted minimal R3.1 root.  Parse
+    # the exact current-stage runtime set instead of treating repository-only
+    # metadata (.git, ci, releases) as executable protocol content.
+    from build_stage5c2gR32A1_candidate import runtime_paths
+
+    for path in runtime_paths(ROOT):
+        if path.suffix == ".py":
+            relative = path.relative_to(ROOT).as_posix()
+            ast.parse(path.read_text(encoding="utf-8"), filename=relative)
 
 
 def test_packaged_full_suite_dependencies_are_runtime_bound() -> None:
-    tree = scan_runtime_tree(ROOT)["files"]
+    from build_stage5c2gR32A1_candidate import runtime_paths
+
+    tree = {path.relative_to(ROOT).as_posix() for path in runtime_paths(ROOT)}
     required = {
         "STAGE3_COMMANDS.sh",
         "STAGE3A_COMMANDS.sh",
@@ -211,7 +221,7 @@ def test_packaged_full_suite_dependencies_are_runtime_bound() -> None:
         "scripts_patch/stage5c2eR_patch.py",
         "docs/stage5aR/STAGE5AR_RUNBOOK.md",
     }
-    assert required <= set(tree)
+    assert required <= tree
 
 
 def test_wrong_platform_and_thread_identity_fail_closed(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -265,7 +275,7 @@ def test_two_distinct_physical_hosts_preserve_candidate_identity(tmp_path: Path)
 def test_external_copy_wheel_install_does_not_mutate_candidate() -> None:
     dangerous = {"PYTHONPATH", "PYTHONHOME", "PYTHONSTARTUP", "PYTHONINSPECT", "PYTHONUSERBASE", "LD_PRELOAD", "DYLD_INSERT_LIBRARIES", "DYLD_LIBRARY_PATH"}
     environment = {key: value for key, value in os.environ.items() if key not in dangerous}
-    result = subprocess.run([sys.executable, "-I", "scripts/verify_stage5c2gR3_immutable_install.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
+    result = subprocess.run([sys.executable, "-I", "scripts/verify_stage5c2gR32A1_immutable_install.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
     assert result.returncode == 0, result.stdout + result.stderr
     assert '"status": "PASS"' in result.stdout
 

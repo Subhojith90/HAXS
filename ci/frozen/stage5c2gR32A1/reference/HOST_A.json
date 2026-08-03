@@ -1,0 +1,39 @@
+{
+  "G1_authorized": false,
+  "candidate_sha256": "f0f2a2e6deadc3d4ca4a7c9eab8064ff43d9502a26e3708c4773626f7d4ba711",
+  "environment_sha256": "ba9d74e2bb76f8f71884b26b8c43edcb70403366a07a28c2cb4d54c712cf3c64",
+  "external_root_reconstruction_required": false,
+  "g1_config_sha256": "42efd3159be69746fe374d8f50f6d8e552ce8a1c89f03c80559ea399af931a17",
+  "g1_plan_sha256": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+  "host_label": "HOST_A",
+  "junit_sha256": {
+    "full_tests.xml": "afd98754198812e13fda649ef5427d0a51610bfd73ccc593e70ac98de0e473a4",
+    "targeted_tests.xml": "86ad921f421857542709e816e5bb0a919f794d1506eef90d59878e3b84a4cc32"
+  },
+  "physical_host": {
+    "machine": "arm64",
+    "platform_identity_sha256": "7329989bb200437bc37531b189671123ec7ff5c74c6f911d09fee3b47aa36106",
+    "serial_or_node_sha256": "cf8799acfd7690db453bf1bfd1c4075e24196dbe32dc1435fd7569dadd50dee5",
+    "system": "Darwin"
+  },
+  "protocol_archive_sha256": "346cbc23187b7d82ba47c2a2760f04196488476869e5b695c8c315b465f46380",
+  "python_version": "3.12.7",
+  "root_manifest_sha256": "4a7a7709d0e69f76163b1b5db8a3ac1398044cab624b0964006ac688d642e69e",
+  "runner_sha256": "ed7fc6cddb9aca3c518e6ba216181a2366eadb209185b2ba278f2975f7cf8378",
+  "runtime_tree_sha256": "46a06b688e344ec9b0a5619de436f41765d1bb2745b0725a5eb37a3f53796231",
+  "schema_version": "haxs.stage5c2gR32A1.physical-host-g0.v1",
+  "scientific_execution_performed": false,
+  "status": "PASS",
+  "test_ledger_sha256": "34282512c68c183fda9f299a150c7be1495e639d1f7fd5503fe323713d071753",
+  "transcript_sha256": {
+    "00_compileall.txt": "35ab0dec1844b842ff562503bc8bef039e7de6e64c4be57f7ce3d1d2e6c3c95f",
+    "01_full_tests.txt": "58488c7e60e6d4e615faa655cce99987caa9c2d23e82dd3e64d35e67ef36b1d2",
+    "02_targeted_tests.txt": "61523ea09b1c9a43684695c9b366b184dfacc12a9cd3d805047a34ce696c2a7e",
+    "03_immutable_install.txt": "4abb2cba43f7828835f01f158c23a661df917bfa34a7c23eb886b109b967728e",
+    "04_fresh_unzip.json": "a8632505a57c407e83bb6c209ea9f24a648b74063a63be519864be7e7f4aa530",
+    "05_named_test_ledger.json": "f419b323b055e8286a7d644d2045f61993f1f343dd431b920f3101a7f3bbf543",
+    "06_current_execution_root.json": "a5fd9b3522048cb755a87960864f8e0099b304159b82e2767e3e8aa520bf0a25"
+  },
+  "unit_registry_sha256": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d",
+  "wheel_sha256": "dc8f8a8e18762ab1859ed2cf4cac534fbe114c4f85004725df613d9316bf0d37"
+}

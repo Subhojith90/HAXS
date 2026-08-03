@@ -1,0 +1,9 @@
+{
+  "installed_version": "0.8.4",
+  "isolated": true,
+  "source_tree_after_sha256": "0d74bd064c998dc0fb68e99095e058e0a9bbc6307b1d899da58bb3c3bbfe28f1",
+  "source_tree_before_sha256": "0d74bd064c998dc0fb68e99095e058e0a9bbc6307b1d899da58bb3c3bbfe28f1",
+  "stage": "stage5c2gR32A1_immutable_install",
+  "status": "PASS",
+  "wheel_sha256": "dc8f8a8e18762ab1859ed2cf4cac534fbe114c4f85004725df613d9316bf0d37"
+}

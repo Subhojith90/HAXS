@@ -146,4 +146,4 @@ def test_package_and_runtime_versions_are_consistent() -> None:
     project = tomllib.loads((ROOT / "pyproject.toml").read_text())
     namespace = {}
     exec((ROOT / "src/haxs/version.py").read_text(), namespace)
-    assert project["project"]["version"] == namespace["__version__"] == "0.8.3"
+    assert project["project"]["version"] == namespace["__version__"] == "0.8.4"

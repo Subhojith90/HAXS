@@ -1,0 +1,12 @@
+{
+  "schema_version": "haxs.repository.current-work.v1",
+  "stage": "Stage5C2G-R3.2A.1",
+  "branch": "work/stage5c2g-r32a1",
+  "supervisory_scope": "CANDIDATE_BOUND_LAUNCHER_FINALIZER_AND_ROOT_CLOSURE_ONLY",
+  "predecessor_candidate_sha256": "1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165",
+  "replacement_candidate_status": "NOT_YET_BUILT",
+  "host_a_g0": "NOT_RUN",
+  "host_b_g0": "NOT_RUN",
+  "g1_authorized": false,
+  "scientific_execution_performed": false
+}

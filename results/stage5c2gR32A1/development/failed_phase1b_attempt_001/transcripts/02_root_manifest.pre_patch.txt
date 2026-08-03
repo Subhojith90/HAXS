@@ -1,0 +1,6 @@
+{
+  "closure_files": 7,
+  "root_manifest_sha256": "a3d8606b89f199876e7d57dc8c5d4250281e9910d1b77d72cc059880214b565b",
+  "runtime_files": 584,
+  "status": "PASS"
+}

@@ -1,0 +1,9 @@
+{
+  "G1_authorized": false,
+  "candidate_sha256": "f0f2a2e6deadc3d4ca4a7c9eab8064ff43d9502a26e3708c4773626f7d4ba711",
+  "root_closure_files": 7,
+  "runtime_files": 584,
+  "scientific_execution_performed": false,
+  "status": "AWAITING_REPLACEMENT_TWO_PHYSICAL_HOST_G0",
+  "wheel_sha256": "dc8f8a8e18762ab1859ed2cf4cac534fbe114c4f85004725df613d9316bf0d37"
+}

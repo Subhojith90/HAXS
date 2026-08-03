@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -11,8 +12,13 @@ import pandas as pd
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
-sys.path.insert(0, str(ROOT / "scripts"))
+INSTALLED_TARGET = os.environ.get("HAXS_R32A1_INSTALLED_TARGET")
+if INSTALLED_TARGET:
+    sys.path.insert(0, str(Path(INSTALLED_TARGET).resolve()))
+    sys.path.insert(1, str(ROOT / "scripts"))
+else:
+    sys.path.insert(0, str(ROOT / "src"))
+    sys.path.insert(0, str(ROOT / "scripts"))
 
 from haxs.lattice.graphs import hypercubic_lattice
 from haxs.methods.constrained_spin_hole import run_constrained_curve
