@@ -2,6 +2,9 @@ name: HAXS Stage5C2G-R3.2A.1 Host-B G0
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - release/stage5c2g-r32a1
 
 permissions:
   contents: read
