@@ -1,0 +1,15 @@
+stage5c2gR32A2:
+  schema_version: haxs.stage5c2gR32A2.protocol.v1
+  stage: Stage5C2G-R3.2A.2
+  predecessor_candidate_sha256: f0f2a2e6deadc3d4ca4a7c9eab8064ff43d9502a26e3708c4773626f7d4ba711
+  predecessor_disposition: SUPERSEDED_NON_EXECUTABLE_NO_RECEIPT
+  root_policy: whole_root_deny_by_default_v2
+  comparator_policy: recompute_from_primary_evidence
+  setup_preflight_before_attempt_reservation: true
+  exact_cpython: 3.12.7
+  official_attempt_limit: 1
+  G1: BLOCKED_PENDING_NEW_SUPERVISORY_REVIEW_AND_RECEIPT
+  G2: BLOCKED
+  G3: BLOCKED
+  G4: BLOCKED
+  scientific_execution_permitted: false

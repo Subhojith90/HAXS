@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.closurefix1.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/run_stage5c2gR32A2_g0.py", line 155, in <module>
+    main()
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.closurefix1.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/run_stage5c2gR32A2_g0.py", line 115, in main
+    root_after = verify_root(ROOT, candidate)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.closurefix1.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/verify_stage5c2gR32A2_root.py", line 58, in verify_root
+    assert_exact_membership(actual, expected_bundle, "whole-root file")
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.closurefix1.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/stage5c2gR32A2_common.py", line 149, in assert_exact_membership
+    raise RuntimeError(
+RuntimeError: whole-root file exact membership failed: extra=['scripts/__pycache__/stage5c2gR2_common.cpython-312.pyc', 'scripts/__pycache__/stage5c2gR3_common.cpython-312.pyc'] missing=[]

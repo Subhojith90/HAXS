@@ -1,0 +1,11 @@
+{
+  "G1_authorized": false,
+  "bytecode_closed": true,
+  "candidate_sha256": "46d238bdd2aabc3709ed8a6bcb87a7b75faadd38719293299eba77e8ccfa8563",
+  "content_files": 708,
+  "protocol_archive_sha256": "3b1ecfda65af1811fb6931e5d653a389193d2d1c3e0655602b02cd02531d9a2b",
+  "scientific_execution_performed": false,
+  "stage": "stage5c2gR32A2_fresh_unzip",
+  "status": "PASS",
+  "whole_root_exact": true
+}

@@ -1,0 +1,11 @@
+{
+  "G1_authorized": false,
+  "archive": "output/stage5c2gR32A2/HAXS_Stage5C2G_R3_2A_2_Protocol.zip",
+  "bytecode_caches": 0,
+  "content_files": 708,
+  "next": "STRICT_FRESH_UNZIP_THEN_REPLACEMENT_TWO_HOST_G0",
+  "scientific_execution_performed": false,
+  "sha256": "3b1ecfda65af1811fb6931e5d653a389193d2d1c3e0655602b02cd02531d9a2b",
+  "stage": "stage5c2gR32A2_protocol",
+  "status": "PASS"
+}

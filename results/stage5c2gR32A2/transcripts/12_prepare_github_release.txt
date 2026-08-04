@@ -1,0 +1,9 @@
+{
+  "G1_authorized": false,
+  "candidate_sha256": "24d6d3eb09b41feef6ef8858a300fc0ecbc9c9cf562bdc363d370ff528f2c9a4",
+  "host_b_status": "PENDING",
+  "protocol_archive_sha256": "f507956b3811df02d039038ebaa357949ff770f32bf699e0cbe479319bce1412",
+  "scientific_execution_performed": false,
+  "stage": "Stage5C2G-R3.2A.2",
+  "status": "PASS"
+}

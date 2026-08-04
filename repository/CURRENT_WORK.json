@@ -1,11 +1,11 @@
 {
   "schema_version": "haxs.repository.current-work.v1",
-  "stage": "Stage5C2G-R3.2A.1",
-  "branch": "work/stage5c2g-r32a1",
-  "supervisory_scope": "CANDIDATE_BOUND_LAUNCHER_FINALIZER_AND_ROOT_CLOSURE_ONLY",
-  "predecessor_candidate_sha256": "1950c01dfd46f4c381e2d333dbd2c3bce1969b65140689961662c287dd54c165",
-  "replacement_candidate_status": "NOT_YET_BUILT",
-  "host_a_g0": "NOT_RUN",
+  "stage": "Stage5C2G-R3.2A.2",
+  "branch": "work/stage5c2g-r32a2",
+  "supervisory_scope": "SELF_RECOMPUTING_G0_BYTECODE_CLOSED_ROOT_AND_PRE_RESERVATION_ENVIRONMENT_ONLY",
+  "predecessor_candidate_sha256": "f0f2a2e6deadc3d4ca4a7c9eab8064ff43d9502a26e3708c4773626f7d4ba711",
+  "replacement_candidate_status": "PATCHED_AWAITING_CLEAN_REBUILD_AFTER_POST_TEST_ROOT_MUTATION_FAILURE",
+  "host_a_g0": "FAILED_CLOSED_AFTER_341_FULL_AND_108_TARGETED_PASSES_ON_TWO_UNLISTED_BYTECODE_FILES",
   "host_b_g0": "NOT_RUN",
   "g1_authorized": false,
   "scientific_execution_performed": false

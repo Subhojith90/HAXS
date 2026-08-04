@@ -1,0 +1,18 @@
+{
+  "schema_version": "haxs.stage5c2gR32A2.failed-setup-preflight.v1",
+  "status": "PRESERVED_FAILED_SETUP_PREFLIGHT",
+  "candidate_sha256": "045ea1ad3231b09b0427e26b481abc40852db9bdad0c060d9da982aecea3021b",
+  "candidate_file_sha256": "f3e6c625c2c987bb4f6a84c6ac1a1d706bf92221467db7275d7360ffa5035f08",
+  "protocol_archive_sha256": "040295b8237012cd7f35fe85019325f23dd7eab854f5ea707d1c5ce232db350f",
+  "wheel_sha256": "80805e4dd21dc251a9a9b38b806df1141a0c769790a139ec476d9bbd0ab83ced",
+  "environment_file_sha256": "207d23ab97d8e3109b5934dada92c1fddd374c5cbc33435ce911c6980a49483b",
+  "host_a_diagnostic_sha256": "abf1a1d3189cdeb9dc7fd22e8de9fe547b4c8a6ef8520d0a05e567d7780847ea",
+  "failed_check": "installed_wheel_tree_identity",
+  "root_cause": "pip-generated direct_url and RECORD metadata encoded the absolute wheel installation source path; the importable wheel payload itself was unchanged",
+  "repair": "authenticate every immutable wheel member and installed importable byte while validating pip-generated metadata semantically without binding the absolute file URL",
+  "receipt_present": false,
+  "lock_present": false,
+  "scientific_state_present": false,
+  "scientific_execution_performed": false,
+  "same_candidate_rerun_forbidden": true
+}

@@ -1,0 +1,1 @@
+replace /tmp/haxs-stage5c2gr32a2-host-a.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/README.md? [y]es, [n]o, [A]ll, [N]one, [r]ename: 

@@ -191,7 +191,7 @@ def test_external_pythonpath_shim_cannot_pass_static_gate(tmp_path: Path) -> Non
     shim = tmp_path / "yaml.py"; marker = tmp_path / "external_marker.txt"
     shim.write_text(f"from pathlib import Path\nPath({str(marker)!r}).write_text('executed')\n")
     environment = os.environ.copy(); environment["PYTHONPATH"] = str(tmp_path)
-    result = subprocess.run([sys.executable, "-I", "scripts/check_stage5c2gR3_static_gate.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
+    result = subprocess.run([sys.executable, "-I", "-B", "scripts/check_stage5c2gR3_static_gate.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
     assert result.returncode != 0
     assert "not scrubbed" in result.stdout + result.stderr
     assert not marker.exists()
@@ -275,7 +275,7 @@ def test_two_distinct_physical_hosts_preserve_candidate_identity(tmp_path: Path)
 def test_external_copy_wheel_install_does_not_mutate_candidate() -> None:
     dangerous = {"PYTHONPATH", "PYTHONHOME", "PYTHONSTARTUP", "PYTHONINSPECT", "PYTHONUSERBASE", "LD_PRELOAD", "DYLD_INSERT_LIBRARIES", "DYLD_LIBRARY_PATH"}
     environment = {key: value for key, value in os.environ.items() if key not in dangerous}
-    result = subprocess.run([sys.executable, "-I", "scripts/verify_stage5c2gR32A1_immutable_install.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
+    result = subprocess.run([sys.executable, "-I", "-B", "scripts/verify_stage5c2gR32A1_immutable_install.py"], cwd=ROOT, env=environment, capture_output=True, text=True)
     assert result.returncode == 0, result.stdout + result.stderr
     assert '"status": "PASS"' in result.stdout
 

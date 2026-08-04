@@ -1,0 +1,8 @@
+{
+  "counts": {
+    "full": 341,
+    "targeted": 108
+  },
+  "ledger_sha256": "9e4d35459518ed971a2ef126d6a239b8c38a91263357d0c6f87285d67180275f",
+  "status": "PASS"
+}

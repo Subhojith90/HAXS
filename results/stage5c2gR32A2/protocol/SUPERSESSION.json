@@ -1,0 +1,36 @@
+{
+  "schema_version": "haxs.stage5c2gR32A2.supersession.v1",
+  "predecessor_stage": "Stage5C2G-R3.2A.1",
+  "predecessor_candidate_sha256": "f0f2a2e6deadc3d4ca4a7c9eab8064ff43d9502a26e3708c4773626f7d4ba711",
+  "predecessor_disposition": "SUPERSEDED_NON_EXECUTABLE_NO_RECEIPT",
+  "replacement_stage": "Stage5C2G-R3.2A.2",
+  "replacement_candidate_identity": "SELF_IDENTIFIED_BY_RESULTS_STAGE5C2GR32A2_PROTOCOL_CANDIDATE_JSON",
+  "superseded_preflight_candidate": {
+    "candidate_sha256": "045ea1ad3231b09b0427e26b481abc40852db9bdad0c060d9da982aecea3021b",
+    "protocol_archive_sha256": "040295b8237012cd7f35fe85019325f23dd7eab854f5ea707d1c5ce232db350f",
+    "disposition": "SUPERSEDED_AFTER_SETUP_PREFLIGHT_FAILURE_NO_SCIENTIFIC_ATTEMPT"
+  },
+  "superseded_host_a_g0_candidate": {
+    "candidate_sha256": "46d238bdd2aabc3709ed8a6bcb87a7b75faadd38719293299eba77e8ccfa8563",
+    "protocol_archive_sha256": "3b1ecfda65af1811fb6931e5d653a389193d2d1c3e0655602b02cd02531d9a2b",
+    "disposition": "SUPERSEDED_AFTER_HOST_A_G0_FULL_SUITE_CLOSURE_FAILURE_NO_SCIENTIFIC_ATTEMPT",
+    "full_test_summary": {
+      "passed": 338,
+      "failed": 2,
+      "cause": "TWO_REQUIRED_PREDECESSOR_COMPATIBILITY_ARTIFACTS_WERE_NOT_INCLUDED_IN_THE_PROTOCOL_ROOT"
+    }
+  },
+  "superseded_host_a_root_mutation_candidate": {
+    "candidate_sha256": "830d12d0006e46a4fba312ba9ff6119af8dc0a4713ab0cc7f848853dbfaf9ff4",
+    "protocol_archive_sha256": "4b6bfe621c2d001b2b8a4efaede6d5eeaf791ca511b073624d4eaff63e25b108",
+    "disposition": "SUPERSEDED_AFTER_HOST_A_G0_POST_TEST_ROOT_MUTATION_FAILURE_NO_SCIENTIFIC_ATTEMPT",
+    "g0_test_summary": {
+      "full_passed": 341,
+      "targeted_passed": 108,
+      "root_integrity": "FAILED_CLOSED_ON_TWO_UNLISTED_PREDECESSOR_BYTECODE_FILES",
+      "cause": "NESTED_ISOLATED_ADVERSARIAL_SUBPROCESS_DID_NOT_DISABLE_BYTECODE_WRITES"
+    }
+  },
+  "scientific_execution_performed": false,
+  "G1_authorized": false
+}

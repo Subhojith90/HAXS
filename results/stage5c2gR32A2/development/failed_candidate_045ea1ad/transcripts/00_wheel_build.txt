@@ -1,0 +1,9 @@
+Processing /tmp/haxs-stage5c2gr32a2-build.RnHysH/wheel-source
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: haxs
+  Building wheel for haxs (pyproject.toml): started
+  Building wheel for haxs (pyproject.toml): finished with status 'done'
+  Created wheel for haxs: filename=haxs-0.8.5-py3-none-any.whl size=55466 sha256=80805e4dd21dc251a9a9b38b806df1141a0c769790a139ec476d9bbd0ab83ced
+  Stored in directory: /Users/subhojithalder/Library/Caches/pip/wheels/bf/4e/cf/d43f99005085dbb6d19851975be8f978dedf156c71ccaff8f6
+Successfully built haxs

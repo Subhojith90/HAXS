@@ -1,0 +1,72 @@
+{
+  "G1_authorized": false,
+  "adversarial_outcomes_sha256": "9d0bc598cae9f6bb113a8c4b3b007d9c29b283d46f520e5e9a1e61ea24ff9d1d",
+  "candidate_sha256": "24d6d3eb09b41feef6ef8858a300fc0ecbc9c9cf562bdc363d370ff528f2c9a4",
+  "dependency_lock_sha256": "914c8a6aba4fdea4d811ff7122350e03a869192bd140b0aba2d1f0f7a975e10b",
+  "environment_sha256": "8672d905e96b15f3166a387d072d063eabc17ee4b5b8d1255dd64399061a0180",
+  "g1_config_sha256": "42efd3159be69746fe374d8f50f6d8e552ce8a1c89f03c80559ea399af931a17",
+  "g1_plan_sha256": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+  "host_label": "HOST_A",
+  "physical_host": {
+    "machine": "arm64",
+    "platform_identity_sha256": "7329989bb200437bc37531b189671123ec7ff5c74c6f911d09fee3b47aa36106",
+    "serial_or_node_sha256": "cf8799acfd7690db453bf1bfd1c4075e24196dbe32dc1435fd7569dadd50dee5",
+    "system": "Darwin"
+  },
+  "primary_evidence": {
+    "full_junit": {
+      "path": "HOST_A_junit/full_tests.xml",
+      "sha256": "98e846b9a2ad163f0cd4bae61f82f0fc56cc31e78e208920674bc274d5a05a52"
+    },
+    "named_test_ledger": {
+      "path": "HOST_A_NAMED_TEST_LEDGER.json",
+      "sha256": "8f6a6c6f0da49c41ec53f546a8b7bdc850de752bf7b29bf4f456a9d4c528d631"
+    },
+    "targeted_junit": {
+      "path": "HOST_A_junit/targeted_tests.xml",
+      "sha256": "5a785135de5e6b02cb0a0ce30995b1569676f46f60539a4f53cb430aaf37e1d2"
+    },
+    "transcripts": [
+      {
+        "path": "HOST_A_transcripts/00_compileall.txt",
+        "sha256": "2d3cb5e67ee8f2b7205505e8e671187b327c98be0579b42b2b3a195ebb3aab8e"
+      },
+      {
+        "path": "HOST_A_transcripts/01_full_tests.txt",
+        "sha256": "3e85e1b8eb4a1aacc816949c44448e215735f37c899d607a87be498ffe7ee6f2"
+      },
+      {
+        "path": "HOST_A_transcripts/02_targeted_tests.txt",
+        "sha256": "75bcd209c9f71ebe2cdf1487b2853a885619633423bf75ed37e2f6adae7d8150"
+      },
+      {
+        "path": "HOST_A_transcripts/03_root_before.json",
+        "sha256": "0589473fe23ffdf1b9400581c9af2853750a2d788f42798dfacb5be49be25cde"
+      },
+      {
+        "path": "HOST_A_transcripts/04_environment.json",
+        "sha256": "cd18720dfb6795441e3df1b6302dcaff4cc99e18985b31b3df2834d8db605d69"
+      },
+      {
+        "path": "HOST_A_transcripts/05_fresh_unzip.json",
+        "sha256": "8976a082daf38ffba518ed0520826e5a2b909637450f077428fcb0d9c903ca9d"
+      }
+    ]
+  },
+  "prior_authorization_present": false,
+  "protocol_archive_sha256": "f507956b3811df02d039038ebaa357949ff770f32bf699e0cbe479319bce1412",
+  "root_manifest_sha256": "a0df4da80db39ba26118612f961fbc709923e15ec5fd8536788343e478677e78",
+  "runner_sha256": "5f48d7c0588fb41b8acc96c0ec50ae4357c9b11caa5773705d11add292a8f07b",
+  "runtime_tree_sha256": "879826c4321761572e3e122658d2500580ed48f052fde9dc0645494a9d4f1a54",
+  "schema_version": "haxs.stage5c2gR32A2.physical-host-g0.v1",
+  "scientific_execution_performed": false,
+  "status": "PASS",
+  "test_counts": {
+    "full": 342,
+    "targeted": 109
+  },
+  "test_ledger_sha256": "8f6a6c6f0da49c41ec53f546a8b7bdc850de752bf7b29bf4f456a9d4c528d631",
+  "unit_registry_sha256": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d",
+  "wheel_sha256": "2a800635fa31d9d998b8783821508cce5bcb6e8d88711bff0fafe5021ba85b5c",
+  "wheelhouse_manifest_sha256": "c123e89747bd10289c3202828ca2c1112a88353dbf85c86b98d6cf3b94f6359e"
+}

@@ -1,0 +1,8 @@
+{
+  "bytecode_closed": true,
+  "closure_files": 7,
+  "root_manifest_sha256": "3c32028d00f4ba1a977f3a953a15b3753b7a08db87908dcfb875c327665d2f02",
+  "runtime_directories": 146,
+  "runtime_files": 612,
+  "status": "PASS"
+}

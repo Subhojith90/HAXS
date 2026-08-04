@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "haxs"
-version = "0.8.4"
+version = "0.8.5"
 description = "Hole-Aware XXZ Squeezing surrogate pipeline"
 requires-python = ">=3.12,<3.13"
 dependencies = [

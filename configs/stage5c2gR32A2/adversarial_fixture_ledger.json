@@ -1,0 +1,18 @@
+{
+  "schema_version": "haxs.stage5c2gR32A2.adversarial-fixtures.v1",
+  "minimum_invalid_fixtures": 20,
+  "golden_fixtures": ["valid_complete_g0_dry_run"],
+  "invalid_fixtures": [
+    "altered_host_b_runtime_identity", "altered_host_b_environment_identity",
+    "equal_physical_commitments_with_forged_distinct_flag", "missing_full_junit",
+    "altered_targeted_junit", "missing_named_test_ledger", "altered_named_test_ledger",
+    "missing_transcript", "stale_comparator", "wrong_candidate", "wrong_scope",
+    "predecessor_receipt", "duplicate_receipt_key", "wrong_receipt_hash",
+    "unlisted_sourceless_pyc", "unlisted_pth", "unlisted_zip_import",
+    "unlisted_native_extension", "external_import_shim", "unexpected_symlink",
+    "wrong_python", "wrong_dependency", "wrong_shared_library", "wheel_install_failure",
+    "concurrent_finalizer", "concurrent_launcher", "path_traversal", "extra_directory",
+    "path_dependent_pip_install_metadata"
+  ],
+  "required_outcome": "FAIL_BEFORE_RECEIPT_LOCK_OR_SCIENTIFIC_STATE"
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/run_stage5c2gR32A2_g0.py", line 155, in <module>
+    main()
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/run_stage5c2gR32A2_g0.py", line 105, in main
+    environment = verify_environment(ROOT, candidate, install_wheel=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/haxs-stage5c2gr32a2-host-a.official/protocol/HAXS_Stage5C2G_R3_2A_2_Protocol/scripts/verify_stage5c2gR32A2_environment.py", line 103, in verify_environment
+    raise RuntimeError("installed wheel tree identity failed")
+RuntimeError: installed wheel tree identity failed

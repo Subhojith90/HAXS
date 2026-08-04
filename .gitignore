@@ -6,3 +6,7 @@ build/
 dist/
 *.egg-info/
 artifacts/
+/output/stage5c2gR32A2/**/*.zip
+/output/stage5c2gR32A2/development/
+/output/stage5c2gR32A2/HAXS_Stage5C2G_R3_2A_2_Protocol_SHA256.txt
+/releases/stage5c2gR32A2/HAXS_Stage5C2G_R3_2A_2_Protocol.zip
