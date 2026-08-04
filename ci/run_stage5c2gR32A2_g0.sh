@@ -43,6 +43,11 @@ ACTUAL_PROTOCOL="$(shasum -a 256 "$PROTOCOL" | awk '{print $1}')"
 [[ "$EXPECTED_PROTOCOL" == "$ACTUAL_PROTOCOL" ]]
 unzip -q "$PROTOCOL" -d "$PROTOCOL_PARENT"
 
+[[ -f "$BOUND_PYTHON" && ! -L "$BOUND_PYTHON" ]]
+chmod 0555 "$BOUND_PYTHON"
+[[ -x "$BOUND_PYTHON" ]]
+echo "BOUND_PYTHON_EXECUTABLE_MODE=PASS"
+
 curl --fail --location --retry 3 --retry-all-errors "$ANACONDA_URL" --output "$INSTALLER"
 echo "$EXPECTED_ANACONDA_SHA256  $INSTALLER" | shasum -a 256 -c -
 bash "$INSTALLER" -b -p "$ANACONDA"
