@@ -1,0 +1,13 @@
+{
+  "schema_version": "haxs.stage5c2gR32A2.failed-github-post-g0.v1",
+  "candidate_sha256": "24d6d3eb09b41feef6ef8858a300fc0ecbc9c9cf562bdc363d370ff528f2c9a4",
+  "protocol_archive_sha256": "f507956b3811df02d039038ebaa357949ff770f32bf699e0cbe479319bce1412",
+  "host_b_g0_status": "PASS",
+  "full_tests": 342,
+  "targeted_tests": 109,
+  "failure_phase": "POST_G0_SUPERVISOR_RETURN_PACKAGING",
+  "failure": "packager referenced the untracked releases protocol ZIP instead of the verified reconstructed transport ZIP",
+  "repair": "select and reverify the reconstructed transport ZIP when the releases ZIP is absent",
+  "g1_authorized": false,
+  "scientific_execution_performed": false
+}
