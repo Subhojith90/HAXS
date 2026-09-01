@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-EXPECTED_ANACONDA_SHA256="f64ed797ce23ae1d07ead949bfb6ff630b9fa8269ca8aef8ea2efa82172ece47"
-ANACONDA_URL="https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.sh"
+EXPECTED_ANACONDA_SHA256="1643604001b264ce51ca6c18c8cc90c6d00df55e6bba06498c698ca8e0dde82f"
+ANACONDA_URL="https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.pkg"
 REPOSITORY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RELEASE="$REPOSITORY_ROOT/releases/stage5c2gR32A5"
 RUN="${HAXS_RUN_ROOT:?HAXS_RUN_ROOT must be defined}"
@@ -14,8 +14,8 @@ SIDECAR="${HAXS_PROTOCOL_SIDECAR:-$RELEASE/HAXS_Stage5C2G_R3_2A_5_Protocol_SHA25
 PROTOCOL_PARENT="$RUN/protocol"
 EXTRACTED="$PROTOCOL_PARENT/HAXS_Stage5C2G_R3_2A_5_Protocol"
 DIAGNOSTICS="$RUN/diagnostics"
-ANACONDA="$RUN/anaconda3"
-INSTALLER="$RUN/Anaconda3-2024.10-1-MacOSX-arm64.sh"
+ANACONDA="/opt/anaconda3"
+INSTALLER="$RUN/Anaconda3-2024.10-1-MacOSX-arm64.pkg"
 VENV="$RUN/venv"
 BOUND_PYTHON="$EXTRACTED/ci/frozen/stage5c2gR32A/runtime/python3.12"
 PY="$VENV/bin/python"
@@ -50,7 +50,32 @@ echo "BOUND_PYTHON_EXECUTABLE_MODE=PASS"
 
 curl --fail --location --retry 3 --retry-all-errors "$ANACONDA_URL" --output "$INSTALLER"
 echo "$EXPECTED_ANACONDA_SHA256  $INSTALLER" | shasum -a 256 -c -
-bash "$INSTALLER" -b -p "$ANACONDA"
+[[ ! -e "$ANACONDA" ]]
+sudo installer -pkg "$INSTALLER" -target /
+[[ -x "$ANACONDA/bin/python3.12" ]]
+
+EXPECTED_NATIVE_SHA256="$EXTRACTED/results/stage5c2gR32A5/environment.json"
+"$ANACONDA/bin/python3.12" -I - "$EXPECTED_NATIVE_SHA256" <<'PY'
+import hashlib
+import importlib.util
+import json
+import sys
+
+declared = json.load(open(sys.argv[1], encoding="utf-8"))["native_module_sha256"]
+observed = {}
+for name in sorted(declared):
+    spec = importlib.util.find_spec(name)
+    if spec is None or not spec.origin:
+        raise SystemExit(f"HOST_B_NATIVE_PREFLIGHT_MISSING={name}")
+    with open(spec.origin, "rb") as stream:
+        observed[name] = hashlib.sha256(stream.read()).hexdigest()
+if observed != declared:
+    raise SystemExit(
+        "HOST_B_NATIVE_PREFLIGHT_MISMATCH="
+        + json.dumps({"declared": declared, "observed": observed}, sort_keys=True)
+    )
+print("HOST_B_NATIVE_PREFLIGHT=PASS")
+PY
 "$ANACONDA/bin/python3.12" -m venv "$VENV"
 rm -f "$VENV/bin/python" "$VENV/bin/python3" "$VENV/bin/python3.12"
 ln -s "$BOUND_PYTHON" "$VENV/bin/python"
