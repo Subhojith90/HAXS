@@ -1,0 +1,71 @@
+name: HAXS Stage5C2G-R3.2A.5 Host-B G0
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - release/stage5c2g-r32a5
+
+permissions:
+  contents: read
+
+concurrency:
+  group: haxs-stage5c2g-r32a5-host-b-g0
+  cancel-in-progress: false
+
+jobs:
+  host-b-g0:
+    name: Self-recomputing R3.2A.5 Host-B G0
+    runs-on: macos-15
+    timeout-minutes: 180
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      VECLIB_MAXIMUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+      PYTHONHASHSEED: "0"
+    steps:
+      - name: Check out immutable release commit
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Verify frozen release inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          export HAXS_RUN_ROOT="$RUNNER_TEMP/haxs-stage5c2g-r32a5-host-b"
+          echo "HAXS_RUN_ROOT=$HAXS_RUN_ROOT" >> "$GITHUB_ENV"
+          shasum -a 256 -c ci/frozen/stage5c2gR32A5/INPUT_MANIFEST_SHA256.txt
+          test "$(uname -s)" = "Darwin"
+          test "$(uname -m)" = "arm64"
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test -z "$(git status --porcelain --untracked-files=no)"
+      - name: Execute replacement Host-B G0 and self-recomputed comparison
+        shell: bash
+        run: bash ci/run_stage5c2gR32A5_github_host_b_g0.sh
+      - name: Upload clean complete G0 return
+        id: upload
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: HAXS-Stage5C2G-R32A5-HOST-B-G0-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/haxs-stage5c2g-r32a5-host-b/deliverables
+            ${{ runner.temp }}/haxs-stage5c2g-r32a5-host-b/diagnostics
+            ${{ runner.temp }}/haxs-stage5c2g-r32a5-host-b/g0/evidence
+          if-no-files-found: error
+          retention-days: 30
+      - name: Record immutable run identity
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "### HAXS Stage 5C.2G-R3.2A.5 Host-B G0"
+            echo "- Branch: \`$GITHUB_REF_NAME\`"
+            echo "- Commit: \`$GITHUB_SHA\`"
+            echo "- Run: \`$GITHUB_RUN_ID\`"
+            echo "- Artifact digest: \`${{ steps.upload.outputs.artifact-digest }}\`"
+            echo "- Scope: replacement G0 only; no receipt, G1, or scientific execution."
+          } >> "$GITHUB_STEP_SUMMARY"

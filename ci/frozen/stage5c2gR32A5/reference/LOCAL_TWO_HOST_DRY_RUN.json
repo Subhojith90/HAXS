@@ -1,0 +1,14 @@
+{
+  "G1_authorized": false,
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "complete_return_archive_sha256": "f2a3d4d21c5008562b2706cf0b7ff9534d846afcc5bbaf487f2736d98a749cfd",
+  "complete_return_sha256": "3969832724f6eb3f0366a529b0a297ec8702c9b8b9a849aa8343a93fe21a1503",
+  "decision_sha256": "2b49b2bf522af725c47cf7eddabf17fb0df27e1e27caa61e3b10bd1c1e48dba9",
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "receipt_eligible": false,
+  "schema_version": "haxs.stage5c2gR32A5.local-two-host-dry-run.v1",
+  "scientific_execution_performed": false,
+  "status": "PASS",
+  "synthetic_dry_run": true,
+  "two_host_g0_sha256": "603dffc74d5d15b6f815a6f594e21449c8a84382376ca8fafd1777866b1432a1"
+}

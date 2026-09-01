@@ -1,0 +1,9 @@
+{
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "environment_sha256": "04a3c06d312a2f462da0bd7e432dabf336cc5613364277f373a9db960130063a",
+  "installed_wheel_tree_sha256": "d8e3167613cfd4b8b0c987b1736d93c1c38bf13346b9032efaea4c53e30b95a6",
+  "isolated": true,
+  "setup_complete_before_attempt_reservation": true,
+  "stage": "stage5c2gR32A5_environment",
+  "status": "PASS"
+}

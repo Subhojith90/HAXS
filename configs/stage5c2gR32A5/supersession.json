@@ -1,0 +1,12 @@
+{
+  "schema_version": "haxs.stage5c2gR32A5.supersession.v1",
+  "predecessor_stage": "stage5c2gR32A4",
+  "predecessor_candidate_sha256": "0fe6d37617d02abfc14a1bd6c58b580452205a69f3ebc4039c481097bcda9b9d",
+  "predecessor_protocol_sha256": "896bd322dfd8d7f9c83d8e419cd68cef38c1b2d5c07215a6cc0ecdddccc63410",
+  "disposition": "PRESERVED_EVIDENCE_NOT_AUTHORIZATION_EXECUTABLE",
+  "reason": "The A4 finalizer committed AUTHORIZATION.json inside the immutable exact-membership root and the A4 launcher then rejected that required file as unlisted.",
+  "in_place_patch_permitted": false,
+  "host_b_eligible": false,
+  "receipt_eligible": false,
+  "g1_eligible": false
+}

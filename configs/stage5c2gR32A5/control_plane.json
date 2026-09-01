@@ -1,0 +1,24 @@
+{
+  "schema_version": "haxs.stage5c2gR32A5.control-plane.v1",
+  "immutable_root_policy": "byte_identical_deny_by_default_no_mutable_records",
+  "control_root_policy": "external_candidate_namespace_exact_membership_single_writer",
+  "candidate_namespace": "{control_root}/{candidate_sha256}",
+  "authorized_files": [
+    "SUPERVISOR_AUTHORIZATION_G1_ONLY.json",
+    "AUTHORIZATION.json"
+  ],
+  "setup_files": [
+    "SETUP.json"
+  ],
+  "attempt_files": [
+    "state/G1.json"
+  ],
+  "terminal_files": [
+    "artifacts/G1/{attempt_id}/G1_EXECUTION_TRANSCRIPT.txt",
+    "artifacts/G1/{attempt_id}/ARTIFACT_MANIFEST.json"
+  ],
+  "official_attempt_limit": 1,
+  "setup_failure_consumes_attempt": false,
+  "symlinks_permitted": false,
+  "unlisted_files_or_directories_permitted": false
+}

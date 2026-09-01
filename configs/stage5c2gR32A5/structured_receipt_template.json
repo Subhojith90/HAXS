@@ -1,0 +1,33 @@
+{
+  "schema_version": "haxs.stage5c2gR32A5.authorization.v1",
+  "receipt_id": "REPLACE_WITH_SUPERVISOR_RECEIPT_ID",
+  "decision": "ACCEPT_AND_AUTHORIZE_G1_ONLY",
+  "candidate_sha256": "REPLACE_WITH_A5_CANDIDATE_SHA256",
+  "protocol_archive_sha256": "REPLACE_WITH_A5_PROTOCOL_SHA256",
+  "runtime_tree_sha256": "REPLACE_WITH_A5_RUNTIME_TREE_SHA256",
+  "wheel_sha256": "REPLACE_WITH_A5_WHEEL_SHA256",
+  "environment_sha256": "REPLACE_WITH_A5_ENVIRONMENT_SHA256",
+  "g1_config_sha256": "REPLACE_WITH_A5_G1_CONFIG_SHA256",
+  "g1_plan_sha256": "REPLACE_WITH_A5_G1_PLAN_SHA256",
+  "unit_registry_sha256": "REPLACE_WITH_A5_UNIT_REGISTRY_SHA256",
+  "runner_sha256": "REPLACE_WITH_A5_RUNNER_SHA256",
+  "test_ledger_sha256": "REPLACE_WITH_A5_TEST_LEDGER_SHA256",
+  "g0_return_sha256": "REPLACE_WITH_A5_COMPLETE_G0_RETURN_SHA256",
+  "two_host_g0_sha256": "REPLACE_WITH_A5_TWO_HOST_G0_SHA256",
+  "authorized_scope": "G1_ONLY",
+  "blocked_scopes": [
+    "G2",
+    "G3",
+    "G4",
+    "STAGE5C3",
+    "STAGE5D",
+    "MANUSCRIPT_RESULT_CLAIMS",
+    "EXACT_MOBILE_HOLE_CLAIMS",
+    "PUBLIC_RELEASE"
+  ],
+  "issued_at_utc": "REPLACE_WITH_UTC_TIMESTAMP",
+  "issuer": {
+    "name": "Srinjoy",
+    "role": "SUPERVISOR"
+  }
+}
