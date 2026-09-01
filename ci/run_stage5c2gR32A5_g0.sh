@@ -76,7 +76,7 @@ if observed != declared:
     )
 print("HOST_B_NATIVE_PREFLIGHT=PASS")
 PY
-"$ANACONDA/bin/python3.12" -m venv "$VENV"
+"$ANACONDA/bin/python3.12" -m venv --system-site-packages "$VENV"
 rm -f "$VENV/bin/python" "$VENV/bin/python3" "$VENV/bin/python3.12"
 ln -s "$BOUND_PYTHON" "$VENV/bin/python"
 ln -s "$BOUND_PYTHON" "$VENV/bin/python3"
@@ -96,6 +96,32 @@ export VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
   "$EXTRACTED/ci/frozen/stage5c2gR32A/wheelhouse/pip-26.1.2-py3-none-any.whl"
 "$PY" -I -m pip install --no-index --no-deps \
   "$EXTRACTED/output/stage5c2gR32A5/haxs-0.8.8-py3-none-any.whl"
+
+"$PY" -I - "$EXTRACTED" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+root = Path(sys.argv[1]).resolve()
+sys.path.insert(0, str(root / "scripts"))
+from verify_stage5c2gR32A2_environment import current_environment
+
+declared = json.loads(
+    (root / "results/stage5c2gR32A5/environment.json").read_text(encoding="utf-8")
+)
+observed = current_environment()
+mismatches = {
+    key: {"declared": declared.get(key), "observed": value}
+    for key, value in observed.items()
+    if declared.get(key) != value
+}
+if mismatches:
+    raise SystemExit(
+        "HOST_B_VENV_ENVIRONMENT_PREFLIGHT_MISMATCH="
+        + json.dumps(mismatches, sort_keys=True)
+    )
+print("HOST_B_VENV_ENVIRONMENT_PREFLIGHT=PASS")
+PY
 
 cd "$EXTRACTED"
 HAXS_R32A5_PYTHON="$PY" HAXS_RUN_ROOT="$RUN/g0" \
