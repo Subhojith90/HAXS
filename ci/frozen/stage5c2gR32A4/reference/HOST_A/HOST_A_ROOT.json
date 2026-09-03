@@ -1,0 +1,11 @@
+{
+  "bundle_ledger_sha256": "7e61820ae965f316aba646af4647e948a7a365c2d5a5e4a054c3d9d4e6f17828",
+  "bytecode_closed": true,
+  "candidate_sha256": "0fe6d37617d02abfc14a1bd6c58b580452205a69f3ebc4039c481097bcda9b9d",
+  "directories": 179,
+  "files": 741,
+  "root_manifest_sha256": "e459cbcae59aa3ec58815b1753c9f041289e3f80aabe415991ffc4fd4b6e3796",
+  "stage": "stage5c2gR32A4_root",
+  "status": "PASS",
+  "whole_root_exact": true
+}

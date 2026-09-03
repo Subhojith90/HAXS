@@ -1,0 +1,91 @@
+{
+  "G1_authorized": false,
+  "adversarial_outcomes_sha256": "fa71f1fecba499e46a885c7c5acd0d68484266b6b14290e20b8be5c6d9ead11c",
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "dependency_lock_sha256": "914c8a6aba4fdea4d811ff7122350e03a869192bd140b0aba2d1f0f7a975e10b",
+  "environment_sha256": "de30817a89c24731ce081e77b3cf6d3a3f39661c3e5449e6ad2e8c964f964acb",
+  "g1_config_sha256": "42efd3159be69746fe374d8f50f6d8e552ce8a1c89f03c80559ea399af931a17",
+  "g1_plan_sha256": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+  "host_label": "HOST_B",
+  "physical_host": {
+    "machine": "arm64",
+    "platform_identity_sha256": "3f417a7b1714de763092aa98628c40ceea643d872f0caf5e0347d74bad375dce",
+    "serial_or_node_sha256": "a4bfa476b86bc82fb757d16becdf46002e00a8e5bdbc6805bc8ba176cdc5c73b",
+    "system": "Darwin"
+  },
+  "primary_evidence": {
+    "command_records": {
+      "compileall": {
+        "path": "HOST_B_command_records/compileall.json",
+        "sha256": "ff5819ec901024a1ab73b15f51bdbe64625a4eab94296336a49472fd9de5a707"
+      },
+      "full_tests": {
+        "path": "HOST_B_command_records/full_tests.json",
+        "sha256": "86d972c70bb5f6264c306c5fadbb012a32a035cd9714a3e57ae0d270a196e300"
+      },
+      "targeted_tests": {
+        "path": "HOST_B_command_records/targeted_tests.json",
+        "sha256": "9a4b33497eea535c10f4118e114d60414b44adebbe8dad55f2d7e90e8ef6df43"
+      }
+    },
+    "full_junit": {
+      "path": "HOST_B_junit/full_tests.xml",
+      "sha256": "99239d353315a6720c35e3c40d8383db61be07b91be11b37bb3d8a6446c63fcc"
+    },
+    "named_test_ledger": {
+      "path": "HOST_B_NAMED_TEST_LEDGER.json",
+      "sha256": "6f7c008a6a60a79e84ee19ff9ec085fb8c052ffc1a97c4ec55c864b54c5e333e"
+    },
+    "targeted_junit": {
+      "path": "HOST_B_junit/targeted_tests.xml",
+      "sha256": "142d795ad75c62929e26b00535e4acb639bdf911eee750dbe9c5d954fe9d7795"
+    }
+  },
+  "prior_authorization_present": false,
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "root_manifest_sha256": "ef4d87770f8bad1ba1dd0be95114c000f911c290d226dbb697384e7d32a32de0",
+  "runner_sha256": "37625a05495adc9cc2ec14aacc79ef3e566faef2796ac798f23e75f1f49f0868",
+  "runtime_tree_sha256": "9c4926c8222292f2f67efe37287ff677d403456afb9e5f139fb6752e0235e474",
+  "schema_version": "haxs.stage5c2gR32A5.physical-host-g0.v1",
+  "scientific_execution_performed": false,
+  "semantic_evidence": {
+    "actual_protocol_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+    "command_record_sha256": {
+      "compileall": "cb2f8cef54c5d3e55c7b63cae10d12759d0919ae5ee3183b66febb47b9022a84",
+      "full_tests": "c23ba4b7784950aa98ee0e60c37bcfc2f50a7ede07c5b95462ba8cf35196fa74",
+      "targeted_tests": "46e3f0d816e6117f25d1dd31eb539ee587cbfb99910ca39667e426271a7b5118"
+    },
+    "full_junit": {
+      "errors": 0,
+      "failures": 0,
+      "junit_sha256": "99239d353315a6720c35e3c40d8383db61be07b91be11b37bb3d8a6446c63fcc",
+      "ordered_nodeids_sha256": "ff91f4403345345c3e6df8def6e7e3ec90efe276c5135f426a196806c2b12e24",
+      "schema_version": "haxs.stage5c2gR32A5.junit-semantics.v1",
+      "semantics_sha256": "be76e7578e625c4398f44bcd03bdb1d94e9e9fe0d31f23058a631a0e84851730",
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 402
+    },
+    "semantic_evidence_sha256": "0a2a05a073c7538503d2b64af8f06d044bcf586fe422eab06c0b4fd7fa674710",
+    "targeted_junit": {
+      "errors": 0,
+      "failures": 0,
+      "junit_sha256": "142d795ad75c62929e26b00535e4acb639bdf911eee750dbe9c5d954fe9d7795",
+      "ordered_nodeids_sha256": "da6551c3919df879c59759839939ab1eb67f8bdc1dd0493de20126c669143858",
+      "schema_version": "haxs.stage5c2gR32A5.junit-semantics.v1",
+      "semantics_sha256": "d2019fdc4b851b523fc9d7e2c31965f32aa116e04620d1f5ffc0ea0cb33d1dc5",
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 169
+    }
+  },
+  "status": "PASS",
+  "test_counts": {
+    "full": 402,
+    "targeted": 169
+  },
+  "test_ledger_sha256": "6f7c008a6a60a79e84ee19ff9ec085fb8c052ffc1a97c4ec55c864b54c5e333e",
+  "unit_registry_sha256": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d",
+  "wheel_sha256": "a08d3a80b8ee3e0eacc55a5797ac2ddde3630f02158dc9a7f00a832eabe053cb",
+  "wheelhouse_manifest_sha256": "c123e89747bd10289c3202828ca2c1112a88353dbf85c86b98d6cf3b94f6359e"
+}

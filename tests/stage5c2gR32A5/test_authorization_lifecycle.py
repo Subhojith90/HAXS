@@ -289,6 +289,36 @@ def test_runner_failure_terminalizes_once_and_does_not_retry(tmp_path: Path) -> 
     namespace = candidate_control_root(control, item, immutable)
     state = json.loads((namespace / STATE_NAME).read_text())
     assert state["status"] == "FAILED"
+    transcript = namespace / state["artifact_path"] / "G1_EXECUTION_TRANSCRIPT.txt"
+    assert "declared runner failure" in transcript.read_text(encoding="utf-8")
+    assert "official runner failed with exit status 7" in transcript.read_text(encoding="utf-8")
+
+
+def test_runner_failure_preserves_partial_scientific_output(tmp_path: Path) -> None:
+    immutable, _, control, item, _ = authorize(tmp_path)
+    authorization = load_authorization(control, item, immutable)
+    scientific = tmp_path / "partial-scientific-output"
+    scientific.mkdir()
+    (scientific / "partial-decision.json").write_text(
+        '{"status":"FAIL","reason":"diagnostic"}\n', encoding="utf-8"
+    )
+
+    with pytest.raises(RuntimeError, match="exit status 9"):
+        execute_once(
+            item, authorization, control,
+            lambda: (9, "scientific predicate failed", scientific), immutable,
+            root_verifier=root_pass, environment_verifier=environment_pass,
+        )
+
+    namespace = candidate_control_root(control, item, immutable)
+    state = json.loads((namespace / STATE_NAME).read_text())
+    artifact = namespace / state["artifact_path"]
+    transcript = (artifact / "G1_EXECUTION_TRANSCRIPT.txt").read_text(encoding="utf-8")
+    manifest = json.loads((artifact / "ARTIFACT_MANIFEST.json").read_text())
+    assert "scientific predicate failed" in transcript
+    assert set(manifest["scientific_files"]) == {"partial-decision.json"}
+    assert (artifact / "scientific/partial-decision.json").is_file()
+    assert verify_control_root(control, item, "TERMINAL", immutable)["status"] == "PASS"
 
 
 def test_two_concurrent_launches_execute_runner_once(tmp_path: Path) -> None:

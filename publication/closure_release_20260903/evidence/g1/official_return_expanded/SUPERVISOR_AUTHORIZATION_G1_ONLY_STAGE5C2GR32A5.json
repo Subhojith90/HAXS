@@ -1,0 +1,33 @@
+{
+  "authorized_scope": "G1_ONLY",
+  "blocked_scopes": [
+    "G2",
+    "G3",
+    "G4",
+    "STAGE5C3",
+    "STAGE5D",
+    "MANUSCRIPT_RESULT_CLAIMS",
+    "EXACT_MOBILE_HOLE_CLAIMS",
+    "PUBLIC_RELEASE"
+  ],
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "decision": "ACCEPT_AND_AUTHORIZE_G1_ONLY",
+  "environment_sha256": "de30817a89c24731ce081e77b3cf6d3a3f39661c3e5449e6ad2e8c964f964acb",
+  "g0_return_sha256": "e4c81afb8eb00c60f24572e8e985e5077fda1445a977c05a555fed129ea7d91a",
+  "g1_config_sha256": "42efd3159be69746fe374d8f50f6d8e552ce8a1c89f03c80559ea399af931a17",
+  "g1_plan_sha256": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+  "issued_at_utc": "2026-09-01T16:41:42Z",
+  "issuer": {
+    "name": "Srinjoy Ganguly",
+    "role": "SUPERVISOR"
+  },
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "receipt_id": "f8035d48-a73c-49b1-bf60-872983b24d62",
+  "runner_sha256": "37625a05495adc9cc2ec14aacc79ef3e566faef2796ac798f23e75f1f49f0868",
+  "runtime_tree_sha256": "9c4926c8222292f2f67efe37287ff677d403456afb9e5f139fb6752e0235e474",
+  "schema_version": "haxs.stage5c2gR32A5.authorization.v1",
+  "test_ledger_sha256": "6f7c008a6a60a79e84ee19ff9ec085fb8c052ffc1a97c4ec55c864b54c5e333e",
+  "two_host_g0_sha256": "9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154",
+  "unit_registry_sha256": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d",
+  "wheel_sha256": "a08d3a80b8ee3e0eacc55a5797ac2ddde3630f02158dc9a7f00a832eabe053cb"
+}

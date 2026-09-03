@@ -1,0 +1,36 @@
+{
+  "schema_version": "haxs.stage5c2gR32A4.supersession.v1",
+  "predecessor_stage": "stage5c2gR32A3",
+  "predecessor_candidate_sha256": "03e02b4bc98a5fd116442b8453d8cf2f533c5f66c36a5b7868045d91b320f528",
+  "predecessor_protocol_archive_sha256": "e2aa6e15c64bd556b443976d6de7865909d6dd23bd708b9d5beb895cc45ac028",
+  "predecessor_evidence_disposition": "PRESERVED_SUBSTANTIAL_STATIC_REPAIR_REJECTED_FOR_PRODUCTION_G0",
+  "supersession_reason": [
+    "production writer records a relative JUnit path while argv contains an absolute target",
+    "the A3 verifier cannot round-trip a genuine production-generated command record",
+    "current-stage Host-B and complete-return packaging is incomplete"
+  ],
+  "development_rejected_candidates": [
+    {
+      "candidate_sha256": "01944ae33847c4c13e2bb2358b9c722f476d277be1830feb4e443f6995674a40",
+      "protocol_archive_sha256": "8baf9ff030c9f91eaad96a163c8c53153871f0ed55940b8bed32e99ac6f0ca3e",
+      "disposition": "REJECTED_BEFORE_PHYSICAL_G0",
+      "reason": "local synthetic G0 launcher used the Git checkout instead of a fresh exact protocol root"
+    },
+    {
+      "candidate_sha256": "fba0f5e3c2906c032eea72773077a4cdc2ae83fa85ab144cf3a09218daa90f5f",
+      "protocol_archive_sha256": "fd8fa05e7c2ac41fcebf4653df2c66361f39a482595ec641a777bcf91f59219f",
+      "disposition": "REJECTED_BEFORE_PHYSICAL_G0",
+      "reason": "isolated compileall ignored the environment-only pycache prefix and mutated the fresh execution root"
+    },
+    {
+      "candidate_sha256": "a1389524047b0793ff68dc5cba82c98f632e50ad0aef8a81579369fc792c4d82",
+      "protocol_archive_sha256": "7aa0326de58d1292ad8964ad3ba1b890a34ea3465e5ede7193945cb9ca691c2b",
+      "disposition": "REJECTED_DURING_PHYSICAL_HOST_A_G0_BEFORE_TEST_EXECUTION",
+      "reason": "pycache canonicalizer incorrectly derived the host label from the physical wrapper evidence-directory basename"
+    }
+  ],
+  "production_g0_eligible": false,
+  "receipt_eligible": false,
+  "G1_authorized": false,
+  "scientific_execution_performed": false
+}

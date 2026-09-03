@@ -1,0 +1,12 @@
+{
+  "G1_authorized": false,
+  "bytecode_closed": true,
+  "candidate_sha256": "0fe6d37617d02abfc14a1bd6c58b580452205a69f3ebc4039c481097bcda9b9d",
+  "content_files": 741,
+  "protocol_archive_sha256": "896bd322dfd8d7f9c83d8e419cd68cef38c1b2d5c07215a6cc0ecdddccc63410",
+  "protocol_content_sha256": "593816ea5f6334d3c51dfeaa7df87da4b4f63d302f63d8f60b28c0c1d5fa340a",
+  "scientific_execution_performed": false,
+  "stage": "stage5c2gR32A4_fresh_unzip",
+  "status": "PASS",
+  "whole_root_exact": true
+}

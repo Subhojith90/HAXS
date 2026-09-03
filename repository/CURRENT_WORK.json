@@ -1,12 +1,18 @@
 {
   "schema_version": "haxs.repository.current-work.v1",
-  "stage": "Stage5C2G-R3.2A.2",
-  "branch": "work/stage5c2g-r32a2",
-  "supervisory_scope": "SELF_RECOMPUTING_G0_BYTECODE_CLOSED_ROOT_AND_PRE_RESERVATION_ENVIRONMENT_ONLY",
-  "predecessor_candidate_sha256": "f0f2a2e6deadc3d4ca4a7c9eab8064ff43d9502a26e3708c4773626f7d4ba711",
-  "replacement_candidate_status": "CANDIDATE_BUILT_TWO_HOST_G0_PASS_SUPERVISOR_RETURN_PACKAGING_PATCH_PENDING",
-  "host_a_g0": "PASS_CANDIDATE_24D6D3EB_342_FULL_109_TARGETED",
-  "host_b_g0": "PASS_CANDIDATE_24D6D3EB_342_FULL_109_TARGETED_POST_G0_PACKAGING_PATH_FAILED",
-  "g1_authorized": false,
-  "scientific_execution_performed": false
+  "stage": "PUBLICATION_CLOSURE_20260903",
+  "branch": "release/publication-closure-20260903",
+  "planned_release_branch": "main",
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "two_host_g0_sha256": "9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154",
+  "host_a_g0": "PASS_402_FULL_169_TARGETED",
+  "host_b_g0": "PASS_402_FULL_169_TARGETED",
+  "official_g1_attempt_id": "52e6f14b27a2474ba6db70755825d893",
+  "official_g1_terminal_status": "FAILED",
+  "official_g1_scientific_files": 0,
+  "g1_rerun_authorized": false,
+  "g2_g4_authorized": false,
+  "publication_input_status": "READY_WITH_EXPLICIT_CLAIM_BOUNDARY",
+  "scientific_scope": "SELECTED_STOCHASTIC_MOVING_OCCUPANCY_SURROGATE_ONLY"
 }

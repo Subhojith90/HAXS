@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/HAXS_Stage5C2G_R3_2A_5_Official_G1_20260903/execution/protocol/HAXS_Stage5C2G_R3_2A_5_Protocol/scripts/launch_stage5c2gR32A5_G1_isolated.py", line 194, in <module>
+    main()
+  File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/HAXS_Stage5C2G_R3_2A_5_Official_G1_20260903/execution/protocol/HAXS_Stage5C2G_R3_2A_5_Protocol/scripts/launch_stage5c2gR32A5_G1_isolated.py", line 185, in main
+    terminal = execute_once(candidate, authorization, args.control_root, runner)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/subhojithalder/Desktop/Research Papers/Hole Aware XXZ Screening/HAXS_Stage5C2G_R3_2A_5_Official_G1_20260903/execution/protocol/HAXS_Stage5C2G_R3_2A_5_Protocol/scripts/launch_stage5c2gR32A5_G1_isolated.py", line 109, in execute_once
+    raise RuntimeError(f"official runner failed with exit status {status}")
+RuntimeError: official runner failed with exit status 1

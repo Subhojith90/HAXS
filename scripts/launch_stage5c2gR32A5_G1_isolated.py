@@ -99,6 +99,8 @@ def execute_once(
         candidate, authorization, control_root, immutable_root,
         root_verifier=root_verifier, environment_verifier=environment_verifier,
     )
+    transcript = ""
+    scientific_output = None
     try:
         result = runner()
         if not isinstance(result, tuple) or len(result) not in {2, 3}:
@@ -113,9 +115,19 @@ def execute_once(
             scientific_output=scientific_output, immutable_root=immutable_root,
         )
     except Exception as error:
+        failure_transcript = transcript
+        if failure_transcript and not failure_transcript.endswith("\n"):
+            failure_transcript += "\n"
+        failure_transcript += f"{error!r}\nEXIT_STATUS=1\n"
         terminalize_attempt(
             control_root, candidate, running, "FAILED",
-            f"{error!r}\nEXIT_STATUS=1\n", error=repr(error), immutable_root=immutable_root,
+            failure_transcript, error=repr(error),
+            scientific_output=(
+                scientific_output
+                if scientific_output is not None and scientific_output.is_dir()
+                else None
+            ),
+            immutable_root=immutable_root,
         )
         raise
     verify_control_root(control_root, candidate, "TERMINAL", immutable_root)

@@ -1,0 +1,47 @@
+name: Publication closure integrity
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "publication/closure_release_20260903/**"
+      - "scripts/verify_publication_closure_release.py"
+      - ".github/workflows/publication-closure-integrity.yml"
+      - "README.md"
+      - "repository/CURRENT_WORK.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publication-closure-integrity-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify frozen publication handoff
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Verify release identities, evidence, and claim state
+        run: python3 scripts/verify_publication_closure_release.py
+      - name: Build immutable drafting handoff
+        run: |
+          git archive --format=zip \
+            --prefix=HAXS_Publication_Closure_20260903/ \
+            --output=HAXS_Publication_Closure_20260903.zip \
+            HEAD:publication/closure_release_20260903
+          sha256sum HAXS_Publication_Closure_20260903.zip \
+            > HAXS_Publication_Closure_20260903_SHA256.txt
+      - name: Upload verified drafting handoff
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: HAXS-Publication-Closure-${{ github.run_id }}
+          path: |
+            HAXS_Publication_Closure_20260903.zip
+            HAXS_Publication_Closure_20260903_SHA256.txt
+          if-no-files-found: error
+          retention-days: 90

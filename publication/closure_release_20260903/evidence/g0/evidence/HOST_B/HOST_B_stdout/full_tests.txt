@@ -1,0 +1,14 @@
+........................................................................ [ 17%]
+........................................................................ [ 35%]
+........................................................................ [ 53%]
+........................................................................ [ 71%]
+........................................................................ [ 89%]
+..........................................                               [100%]
+=============================== warnings summary ===============================
+tests/stage5c2gR32A1/test_authorization_interface.py::test_unsafe_archive_entries_fail_closed[entries4]
+  /opt/anaconda3/lib/python3.12/zipfile/__init__.py:1607: UserWarning: Duplicate name: 'HAXS_Stage5C2G_R3_2A_1_Protocol/duplicate.py'
+    return self._open_to_write(zinfo, force_zip64=force_zip64)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/runner/work/_temp/haxs-stage5c2g-r32a5-host-b/g0/evidence/HOST_B_junit/full_tests.xml -
+402 passed, 1 warning in 37.10s

@@ -13,18 +13,20 @@ PROTOCOL="$REPOSITORY_ROOT/releases/stage5c2gR32A5/HAXS_Stage5C2G_R3_2A_5_Protoc
 PROTOCOL_SIDECAR="$REPOSITORY_ROOT/releases/stage5c2gR32A5/HAXS_Stage5C2G_R3_2A_5_Protocol_SHA256.txt"
 DELIVERABLES="$HAXS_RUN_ROOT/deliverables"
 PY="$HAXS_RUN_ROOT/venv/bin/python"
+EXECUTION_ROOT="$HAXS_RUN_ROOT/g0/protocol/HAXS_Stage5C2G_R3_2A_5_Protocol"
 
 if [[ ! -f "$PROTOCOL" ]]; then
   PROTOCOL="$HAXS_RUN_ROOT/transport/HAXS_Stage5C2G_R3_2A_5_Protocol.zip"
 fi
 
 [[ -f "$PROTOCOL" && -f "$PROTOCOL_SIDECAR" ]]
+[[ -d "$EXECUTION_ROOT" ]]
 EXPECTED_PROTOCOL_SHA256="$(awk 'NF {print $1; exit}' "$PROTOCOL_SIDECAR")"
 ACTUAL_PROTOCOL_SHA256="$(shasum -a 256 "$PROTOCOL" | awk '{print $1}')"
 [[ "$EXPECTED_PROTOCOL_SHA256" == "$ACTUAL_PROTOCOL_SHA256" ]]
 echo "SUPERVISOR_RETURN_PROTOCOL_IDENTITY=PASS sha256=$ACTUAL_PROTOCOL_SHA256"
 
-"$PY" -I "$REPOSITORY_ROOT/scripts/package_stage5c2gR32A5_supervisor_return.py" \
+"$PY" -I "$EXECUTION_ROOT/scripts/package_stage5c2gR32A5_supervisor_return.py" \
   --host-a-root "$HOST_A_ROOT" --host-b-root "$HOST_B_ROOT" \
   --protocol "$PROTOCOL" --out-dir "$DELIVERABLES"
 

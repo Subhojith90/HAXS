@@ -1,0 +1,14 @@
+{
+  "authorization_sha256": "d261449f5c18c362424dba223827e1d37389a940d10286606c59640a5322ffe7",
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "g0_return_sha256": "e4c81afb8eb00c60f24572e8e985e5077fda1445a977c05a555fed129ea7d91a",
+  "immutable_root_mutation_permitted": false,
+  "official_attempt_limit": 1,
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "receipt_id": "f8035d48-a73c-49b1-bf60-872983b24d62",
+  "receipt_sha256": "16b1c098c6201a587e1929eae50999d5eb44fb923cecc41694a01a25562429db",
+  "schema_version": "haxs.stage5c2gR32A5.atomic-authorization.v1",
+  "setup_preflight_required_before_attempt": true,
+  "status": "LOCKED_G1_ONLY",
+  "two_host_g0_sha256": "9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154"
+}

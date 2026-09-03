@@ -1,0 +1,12 @@
+{
+  "G1_authorized": false,
+  "bytecode_closed": true,
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "content_files": 775,
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "protocol_content_sha256": "c7d1319fbb8d1f96637b382e48fe06cbda5453d0f0b5ded4db9ed70423b9f544",
+  "scientific_execution_performed": false,
+  "stage": "stage5c2gR32A5_fresh_unzip",
+  "status": "PASS",
+  "whole_root_exact": true
+}

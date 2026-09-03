@@ -1,0 +1,75 @@
+{
+  "project": "Hole-Aware XXZ Squeezing (HAXS)",
+  "stage": "Stage 5C.2G-R3.2A.5 Complete Two-Host G0 Return and Publication Closure Review",
+  "date": "2026-09-01",
+  "headline_verdict": "AMBER",
+  "verdicts": {
+    "g0_authorization": "GREEN: accept A5 G0 and issue G1-only receipt",
+    "current_as_is_physics_publication": "RED: not defensible as a physics manuscript",
+    "next_iteration": "AMBER: one final 28-day exact-surrogate closure campaign",
+    "long_term_high_impact": "PURPLE: possible only after untouched microscopic validation and held-out prediction"
+  },
+  "current_candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "outer_return_sha256": "d9595f46dc919f8d3906b4909cd18833a3659e5f15a04f48ee39787c0f11c9f6",
+  "logical_g0_return_sha256": "e4c81afb8eb00c60f24572e8e985e5077fda1445a977c05a555fed129ea7d91a",
+  "two_host_g0_sha256": "9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154",
+  "test_evidence": {
+    "host_a_full": 402,
+    "host_a_targeted": 169,
+    "host_b_full": 402,
+    "host_b_targeted": 169,
+    "a5_lifecycle_reproduced": 16,
+    "targeted_ledger_reproduced": 169,
+    "full_suite_local_status": "not completed in non-reference Linux CPython 3.13.5 environment"
+  },
+  "current_scientific_evidence": {
+    "geometry": "3x3x3 selected surrogate target",
+    "primary_effect_db": -0.4117970079175504,
+    "primary_se_db": 0.0487092795814467,
+    "primary_ci95": [
+      -0.5176041555117823,
+      -0.3077980073952663
+    ],
+    "confirmation_effect_db": -0.4744235375151275,
+    "confirmation_se_db": 0.0394052227351103,
+    "confirmation_ci95": [
+      -0.5717798536216887,
+      -0.3768318695300995
+    ],
+    "scope": "stochastic moving-occupancy surrogate only; not microscopic mobile-hole dynamics"
+  },
+  "publication_decision": {
+    "submit_current_physics_manuscript_now": false,
+    "recommended_route": "Domain of validity / failure boundary of stochastic mobile-hole surrogates for spin squeezing",
+    "hard_deadline_days": 28,
+    "primary_target_if_strong": "Physical Review A or Physical Review Research",
+    "fallback_if_rigorous_negative": "APS Open Science or Journal of Physics B",
+    "software_fallback": "JORS, SciPost Physics Codebases, or SoftwareX after release sprint",
+    "joss_immediate": false
+  },
+  "approved_now": [
+    "Issue the included G1-only structured receipt",
+    "Run official deterministic G1 exactly once",
+    "Start S02 public-release cleanup in parallel",
+    "Run M01 transport-only calibration after G1 review",
+    "Run M02 untouched exact-surrogate validity",
+    "Draft one closure manuscript"
+  ],
+  "blocked": [
+    "PRL/PRX Quantum submission",
+    "exact mobile-hole claims",
+    "universal mechanism/no-go claims",
+    "constructive recovery claims",
+    "broad Stage 5D campaign",
+    "further protocol-stage proliferation"
+  ],
+  "receipt": {
+    "file": "SUPERVISOR_AUTHORIZATION_G1_ONLY_STAGE5C2GR32A5.json",
+    "receipt_id": "f8035d48-a73c-49b1-bf60-872983b24d62",
+    "receipt_sha256": "16b1c098c6201a587e1929eae50999d5eb44fb923cecc41694a01a25562429db",
+    "issued_at_utc": "2026-09-01T16:41:42Z",
+    "scope": "G1_ONLY"
+  },
+  "most_important_action": "Run G1 once, then finish M01/M02 and submit or stop within 28 days."
+}

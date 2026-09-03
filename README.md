@@ -1,36 +1,50 @@
-# HAXS Stage 5C.2G-R3.1 Authorization Re-lock
+# Hole-Aware XXZ Screening (HAXS)
 
-## Current development stage: Stage 5C.2G-R3.1
+This repository is the canonical code, custody, and publication-input record for
+the HAXS project.
 
-Stage 5C.2F remains accepted as an internal target-shape hierarchy/statistical re-lock. The active patch implements Stage 5C.2G-R3.1 Absolute-Sanity, Import-Isolation, Root-Containment, and Structured-Receipt Re-lock. All preceding G, G-R, G-R2, and G-R3 candidates are rejected. See `docs/stage5c2gR3/STAGE5C2GR3_RUNBOOK.md` and `STAGE5C2GR3_COMMANDS.sh`.
+## Current outcome
 
-R3.1 is a pre-execution protocol candidate. Do not issue a receipt and do not run G1 until the supervisor accepts the R3.1 two-physical-host G0 package. After acceptance and a new exact structured receipt, G1 alone may run and must return for review. G2-G4, Stage 5C3 production, Stage 5D, manuscript-result claims, public release, and exact lithium mobile-hole claims remain blocked.
+- Stage 5C.2F produced a replicated negative `static-only - mobile-plus-spin-density`
+  contrast for one selected 3x3x3 stochastic moving-occupancy surrogate.
+- Stage 5C.2G-R3.2A.5 G0 passed on two physically distinct hosts: 402 full and
+  169 targeted tests passed on each host.
+- The single authorised A5 G1 attempt terminated `FAILED` before producing any
+  scientific files. It must not be rerun under the consumed receipt.
+- G2-G4, exact mobile-hole claims, causal mechanism claims, and universal
+  no-go claims remain unsupported.
 
-The accepted Stage 5C.2F scientific evidence is preserved as predecessor custody. R3 changes authorization, evidence verification, concurrency control, runtime identity, installation, and environment reproducibility; it makes no new scientific claim.
+The drafting handoff is in [`publication/closure_release_20260903`](publication/closure_release_20260903/README.md).
+It contains the compact evidence, paper-ready tables, claim boundary, execution
+summary, final supervisory record, checksums, and an exact email to the
+supervisor.
 
-## Immutable setup
+## Frozen A5 identities
+
+- Candidate SHA-256: `481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932`
+- Protocol archive SHA-256: `d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f`
+- Two-host G0 SHA-256: `9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154`
+- Official G1 attempt: `52e6f14b27a2474ba6db70755825d893` (`FAILED`)
+
+The large protocol is stored as checked split parts under
+`releases/stage5c2gR32A5/`. Reconstruct it only when protocol-level reproduction
+is needed; the publication release deliberately avoids a second 397 MB copy.
+
+## Verify the publication release
 
 ```bash
-python -m pip install --require-hashes -r requirements-stage5c2gR3.lock
-python -I scripts/verify_stage5c2gR3_immutable_install.py
+python3 scripts/verify_publication_closure_release.py
 ```
 
-Editable installation is forbidden because it mutates source-tree package metadata. Wheels are built from an external temporary copy and installed outside the candidate tree.
-
-## R3.1 G0 only
-
-```bash
-python -I scripts/check_stage5c2gR3_static_gate.py
-python scripts/run_tests.py
-python -I scripts/verify_stage5c2gR3_protocol.py --custody-root "$HAXS_CUSTODY_ROOT"
-```
-
-## Custody contract
-
-`HAXS_CUSTODY_ROOT` must point to a read-only external tree containing the seven predecessor objects declared in `configs/stage5c2gR3/custody.yaml`. Custody content is verified by SHA-256 and is not embedded or modified.
+The GitHub workflow `Publication closure integrity` runs the same standard-library
+verification on `main`. It performs no scientific execution.
 
 ## Claim boundary
 
-Allowed: R3.1 checks whether one pre-execution protocol object is semantically fail-closed, serializable, completely identified, immutable under setup, and reproducible on two physically distinct locked hosts.
+Allowed: a replicated negative contrast within the selected stochastic
+moving-occupancy surrogate, together with the documented two-host G0
+reproducibility result.
 
-Forbidden: Stage 5C3 production approval, Stage 5D compute, publication-readiness claims, exact mobile-hole dynamics, component-mechanism claims, or finite-size scaling claims.
+Not allowed: exact lithium mobile-hole dynamics, a causal mobile-hole mechanism,
+a universal no-go result, constructive 3 dB recovery, cross-dimensional
+generalisation, or a claim that the failed G1 attempt is a scientific null result.

@@ -10,3 +10,18 @@ artifacts/
 /output/stage5c2gR32A2/development/
 /output/stage5c2gR32A2/HAXS_Stage5C2G_R3_2A_2_Protocol_SHA256.txt
 /releases/stage5c2gR32A2/HAXS_Stage5C2G_R3_2A_2_Protocol.zip
+
+# Local development and failed-candidate evidence. The curated publication
+# release carries the compact accepted evidence and immutable external hashes.
+/output/stage5c2gR32A3/
+/output/stage5c2gR32A4/
+/output/stage5c2gR32A4_failed_candidate_*/
+/output/stage5c2gR32A5/
+/output/stage5c2gR32A5_failed_candidate_*/
+/results/stage5c2gR32A3/
+/results/stage5c2gR32A4/
+/results/stage5c2gR32A4_failed_candidate_*/
+/results/stage5c2gR32A5/
+/results/stage5c2gR32A5_failed_candidate_*/
+/releases/stage5c2gR32A4/
+/manuscript/publication_closure/

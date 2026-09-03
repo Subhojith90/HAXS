@@ -1,0 +1,40 @@
+schema_version: haxs.stage5c3VB.protocol-design.v1
+status: DESIGN_ONLY_EXECUTION_BLOCKED
+supervisory_stage: Stage5C.3-VB
+calibration:
+  gate: M01
+  allowed_observables:
+    - hole_density_propagation
+    - mean_square_displacement
+    - return_probability
+    - configuration_distance
+  forbidden_observables:
+    - squeezing
+    - squeezing_component_ranking
+    - squeezing_time_profile
+validation:
+  gate: M02
+  systems:
+    - constrained_exact_krylov_one_hole
+    - constrained_exact_krylov_two_hole
+  endpoints:
+    - transport_error
+    - squeezing_sign_agreement
+    - component_ranking
+    - time_profile_discrepancy
+controls:
+  - static_hole
+  - no_motion
+  - deliberately_low_mobility
+  - deliberately_high_mobility
+  - hole_count_only
+  - connectivity_only
+  - static_dilution
+execution_permissions:
+  timestamp_protocol: ALLOWED
+  M01: BLOCKED_PENDING_REPAIRED_G1_AND_SEPARATE_AUTHORIZATION
+  M02: BLOCKED
+  M03: BLOCKED
+  B01: BLOCKED
+  B02: BLOCKED
+  publication_claims: BLOCKED

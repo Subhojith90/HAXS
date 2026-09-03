@@ -1,0 +1,8 @@
+id,route,decision,editorial_risk,reason,action
+V001,Submit current evidence as a PRL/PRX Quantum physics paper,NO,Near-certain editorial/reviewer rejection,"No microscopic validity, no broad generalisation, modest one-shape surrogate result",Do not submit.
+V002,Submit current evidence as PRA/PRR physics paper,NO AS-IS,High rejection risk,Same scientific gaps; protocol engineering is not the contribution,Add M01/M02; then reassess.
+V003,Time-boxed exact-surrogate validity/failure-boundary paper,"YES, RECOMMENDED",Realistic if M02 is decisive,Uses current exact/surrogate code and negative result productively,Submit to PRA/PRR if strong; APS Open Science or J. Phys. B if narrower.
+V004,Methods/negative paper to APS Open Science,POSSIBLE,Moderate after one compact exact benchmark,"Journal explicitly welcomes methods, software, replication and negative/null results",Use if M02 yields a rigorous negative/failure map.
+V005,Software paper now,NO AS-IS,High screening/revision risk,"Missing licence, user docs, public history/reuse, clean release",Run S02; consider JORS/SciPost Physics Codebases/SoftwareX.
+V006,JOSS submission now,NO,Fails current hard/strong screening signals,No six-month public development history or demonstrated impact; no licence,Open development first; not an immediate wrap route.
+V007,Archive and stop without publication,ONLY IF M02 FAILS UNINFORMATIVELY,Scientifically acceptable fallback,Avoids further sunk cost if no valid domain or stable boundary exists,Release internal report/data or a software artifact if useful.

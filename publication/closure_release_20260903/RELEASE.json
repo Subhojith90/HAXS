@@ -1,0 +1,52 @@
+{
+  "schema_version": "haxs.publication-closure-release.v1",
+  "release_date": "2026-09-03",
+  "status": "DRAFTING_INPUTS_READY_WITH_RESTRICTIONS",
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "logical_g0_return_sha256": "e4c81afb8eb00c60f24572e8e985e5077fda1445a977c05a555fed129ea7d91a",
+  "two_host_g0_sha256": "9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154",
+  "g0": {
+    "status": "PASS",
+    "physically_distinct": true,
+    "host_a_full_tests": 402,
+    "host_a_targeted_tests": 169,
+    "host_b_full_tests": 402,
+    "host_b_targeted_tests": 169,
+    "scientific_execution_performed": false
+  },
+  "g1": {
+    "receipt_id": "f8035d48-a73c-49b1-bf60-872983b24d62",
+    "attempt_id": "52e6f14b27a2474ba6db70755825d893",
+    "sequence": 1,
+    "status": "FAILED",
+    "scientific_files": 0,
+    "failure_classification": "INDETERMINATE_CHILD_FAILURE_DUE_TO_FROZEN_LAUNCHER_OBSERVABILITY_GAP",
+    "rerun_authorized": false
+  },
+  "scientific_result": {
+    "scope": "selected 3x3x3 stochastic moving-occupancy surrogate",
+    "contrast": "static-only minus mobile-plus-spin-density",
+    "primary_mean_db": -0.4117970079175504,
+    "primary_se_db": 0.0487092795814467,
+    "primary_ci95": [-0.5176041555117823, -0.3077980073952663],
+    "confirmation_mean_db": -0.4744235375151275,
+    "confirmation_se_db": 0.0394052227351103,
+    "confirmation_ci95": [-0.5717798536216887, -0.3768318695300995],
+    "equivalence_difference_db": 0.062626529597577,
+    "equivalence_interval_90": [-0.0442473317252199, 0.169500390920374],
+    "equivalence_margin_db": 0.25
+  },
+  "downstream": {
+    "g2_g4_run": false,
+    "m01_complete": false,
+    "m02_complete": false,
+    "current_physics_manuscript_as_is_supported": false,
+    "narrow_surrogate_or_methods_draft_supported": true
+  },
+  "github_host_b_run": {
+    "repository": "Subhojith90/HAXS",
+    "run_id": 33513256297,
+    "artifact_sha256": "945cf765d1c0b9c28762607cd9ef3e7a861ec404d229694b6d658d7533993ab3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "artifact_manifest_sha256": "6aac0efcd6a0d9faab879ccc3e78773258a47f34e0182ad6120af17af4252ba8",
+    "artifact_path": "artifacts/G1/52e6f14b27a2474ba6db70755825d893",
+    "attempt_id": "52e6f14b27a2474ba6db70755825d893",
+    "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+    "error": "RuntimeError('official runner failed with exit status 1')",
+    "gate": "G1",
+    "receipt_id": "f8035d48-a73c-49b1-bf60-872983b24d62",
+    "schema_version": "haxs.stage5c2gR32A5.single-attempt-state.v1",
+    "sequence": 1,
+    "state_sha256": "d8c73de450ab8ec2a25de149e553d92b7f64e29fb595e76fc0764b7b2b5f0f21",
+    "status": "FAILED"
+}

@@ -1,0 +1,16 @@
+{
+  "G1_authorized": false,
+  "actual_protocol_archive_sha256": "d804a203567419f4775fb1d7357cfd9675563ba31068bc10918b9d27f2e1f70f",
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "comparison_sha256": "9745c61a7bbb358472f6d64832af48823686cad1af712e6ddefb3965b6008154",
+  "forbidden_state": [],
+  "host_a_semantic_evidence_sha256": "a3b17f098682dbe0c9921b89659343eb033bc8336b997298390dd6c55299c1cf",
+  "host_a_sha256": "3d4a16d66703da89c428cc922652fe6fa9fe666d42c57996f13b4805c08a15de",
+  "host_b_semantic_evidence_sha256": "0a2a05a073c7538503d2b64af8f06d044bcf586fe422eab06c0b4fd7fa674710",
+  "host_b_sha256": "fbf49a0b2f566580a8bce3529da414aef52d869e9dbf15f57adb647bf1205ced",
+  "identity_mismatches": [],
+  "physically_distinct": true,
+  "schema_version": "haxs.stage5c2gR32A5.two-host-g0.v1",
+  "scientific_execution_performed": false,
+  "status": "PASS"
+}

@@ -1,0 +1,52 @@
+{
+  "argv": [
+    "/tmp/haxs-stage5c2gr32a1-build.VYwR8b/venv/bin/python",
+    "-I",
+    "-B",
+    "-X",
+    "pycache_prefix=/private/tmp/haxs-stage5c2gr32a4-host-a-probe4.official/diagnostics/HOST_A_external_pycache",
+    "-m",
+    "compileall",
+    "-q",
+    "src",
+    "scripts",
+    "scripts_patch",
+    "tests"
+  ],
+  "argv_template": [
+    "{BOUND_PYTHON}",
+    "-I",
+    "-B",
+    "-X",
+    "pycache_prefix={PYCACHE}",
+    "-m",
+    "compileall",
+    "-q",
+    "src",
+    "scripts",
+    "scripts_patch",
+    "tests"
+  ],
+  "ended_at_utc": "2026-08-10T05:14:15.337281Z",
+  "execution_evidence_root": "/private/tmp/haxs-stage5c2gr32a4-host-a-probe4.official/evidence",
+  "exit_status": 0,
+  "expected_test_count": 0,
+  "junit": null,
+  "observed_test_count": 0,
+  "python_executable_sha256": "475b4a6cffa067fcef02b4b5ee7692857661282c1f34392f3dde7bc311472689",
+  "record_sha256": "7dcfebb395e8fa411618d00748c7f66c74b214acf274151d59579f0b45b104d7",
+  "schema_version": "haxs.stage5c2gR32A4.command-record.v1",
+  "stage": "compileall",
+  "started_at_utc": "2026-08-10T05:14:14.702479Z",
+  "status": "PASS",
+  "stdout": {
+    "path": "HOST_A_stdout/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "summary": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 0
+  }
+}

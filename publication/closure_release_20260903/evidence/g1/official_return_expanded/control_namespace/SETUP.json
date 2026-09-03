@@ -1,0 +1,34 @@
+{
+  "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+  "environment": {
+    "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+    "environment_sha256": "04a3c06d312a2f462da0bd7e432dabf336cc5613364277f373a9db960130063a",
+    "installed_wheel_tree_sha256": "d8e3167613cfd4b8b0c987b1736d93c1c38bf13346b9032efaea4c53e30b95a6",
+    "isolated": true,
+    "setup_complete_before_attempt_reservation": true,
+    "stage": "stage5c2gR32A5_environment",
+    "status": "PASS"
+  },
+  "execution_contracts": {
+    "g1_config": "42efd3159be69746fe374d8f50f6d8e552ce8a1c89f03c80559ea399af931a17",
+    "g1_plan": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+    "launcher": "4d121dfab7c1a6499434e81601267b86163874af0fb9b913d1c0efa8c905c70f",
+    "runner": "37625a05495adc9cc2ec14aacc79ef3e566faef2796ac798f23e75f1f49f0868",
+    "unit_registry": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d"
+  },
+  "immutable_root": {
+    "bundle_ledger_sha256": "2d8b611bfd2a6415a112bb67672bf5ee18beb1f6eb7f72e596142f5819f10652",
+    "bytecode_closed": true,
+    "candidate_sha256": "481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932",
+    "directories": 185,
+    "files": 775,
+    "root_manifest_sha256": "0812e8cd66dde79ee813846699cac6da44c8ae74285f59058f293e4fff70c633",
+    "stage": "stage5c2gR32A5_immutable_root",
+    "status": "PASS",
+    "whole_root_exact": true
+  },
+  "schema_version": "haxs.stage5c2gR32A5.setup-preflight.v1",
+  "scientific_attempt_reserved": false,
+  "setup_sha256": "cf0ba156e4147c917315705a9f31558d7c8563248cde40bdb1c4f4b24ae91e4a",
+  "status": "PASS"
+}

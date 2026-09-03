@@ -1,0 +1,16 @@
+check,passed,detail
+required_columns,True,missing=
+exact_row_count,True,actual=768 expected=768
+complete_unique_grid,True,unique_cells=768
+one_occupancy_seed_per_level,True,nominal occupancy maps to one seed
+one_occupancy_id_per_level,True,nominal occupancy maps to one immutable id
+one_occupancy_hash_per_level,True,nominal occupancy maps to one physical hash
+one_path_seed_per_pair,True,path is nested within occupancy
+one_path_id_per_pair,True,path pair maps to one immutable id
+one_phase_seed_per_cell,True,phase is nested within path
+one_phase_id_per_cell,True,phase cell maps to one immutable id
+unique_occupancy_seed_by_unit,True,units=16 unique=16
+unique_hole_path_seed_by_unit,True,units=96 unique=96
+unique_phase_batch_seed_by_unit,True,units=384 unique=384
+cross_domain_seed_disjoint,True,
+primary_confirmation_seed_disjoint,True,

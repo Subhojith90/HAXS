@@ -1,0 +1,91 @@
+{
+  "G1_authorized": false,
+  "adversarial_outcomes_sha256": "e0e60383f07ae1c8751edd371e1fca47e18b666c789dd55dc2e6aeea14988013",
+  "candidate_sha256": "0fe6d37617d02abfc14a1bd6c58b580452205a69f3ebc4039c481097bcda9b9d",
+  "dependency_lock_sha256": "914c8a6aba4fdea4d811ff7122350e03a869192bd140b0aba2d1f0f7a975e10b",
+  "environment_sha256": "981b30da0dda197e8bf27751c7d71cf7f65bca064916a5e435b2e7819f835bdf",
+  "g1_config_sha256": "42efd3159be69746fe374d8f50f6d8e552ce8a1c89f03c80559ea399af931a17",
+  "g1_plan_sha256": "3af807d8203349980d7da6fab16f7864ce20ed1ba6eec127bc3244c56ba34cc2",
+  "host_label": "HOST_A",
+  "physical_host": {
+    "machine": "arm64",
+    "platform_identity_sha256": "7329989bb200437bc37531b189671123ec7ff5c74c6f911d09fee3b47aa36106",
+    "serial_or_node_sha256": "cf8799acfd7690db453bf1bfd1c4075e24196dbe32dc1435fd7569dadd50dee5",
+    "system": "Darwin"
+  },
+  "primary_evidence": {
+    "command_records": {
+      "compileall": {
+        "path": "HOST_A_command_records/compileall.json",
+        "sha256": "5accce521fe484d3314f9369a9d56007b5e7546e209abcae4dcfe59659ef9c44"
+      },
+      "full_tests": {
+        "path": "HOST_A_command_records/full_tests.json",
+        "sha256": "4a1e1a6e05565cd28864797dcdc2cb12e4546c6c2435b314865178e7844c5569"
+      },
+      "targeted_tests": {
+        "path": "HOST_A_command_records/targeted_tests.json",
+        "sha256": "df8ce53b62614ba7cd863bfc3aec25fe76a768130f8a86a1a837c10fe0a6eab3"
+      }
+    },
+    "full_junit": {
+      "path": "HOST_A_junit/full_tests.xml",
+      "sha256": "001234762741cf17150cef86fe408ef8e1a6ffd3174936df3c91afc931d98801"
+    },
+    "named_test_ledger": {
+      "path": "HOST_A_NAMED_TEST_LEDGER.json",
+      "sha256": "d8bb29c84a8dcff372337b232469a5f6161af35eb1ca4b9bc0e5b68c13a64294"
+    },
+    "targeted_junit": {
+      "path": "HOST_A_junit/targeted_tests.xml",
+      "sha256": "045ca04b8b1bb9413c8a3120b3524ee6b8b397b5ba97b8e5b1152c75b2b6e2c0"
+    }
+  },
+  "prior_authorization_present": false,
+  "protocol_archive_sha256": "896bd322dfd8d7f9c83d8e419cd68cef38c1b2d5c07215a6cc0ecdddccc63410",
+  "root_manifest_sha256": "4619612229e48aa7e4811aeb7bee5582bc5fd61eeda6a183c57405c326444366",
+  "runner_sha256": "29bc0e21878053940fd65670a4c4c206c5c855d1eb24f1739e488b81898b0c24",
+  "runtime_tree_sha256": "e3abcc45d3a0595e7bd3e4740b72b670540fb52410b855cedfa7c062ab15d7ab",
+  "schema_version": "haxs.stage5c2gR32A4.physical-host-g0.v1",
+  "scientific_execution_performed": false,
+  "semantic_evidence": {
+    "actual_protocol_sha256": "896bd322dfd8d7f9c83d8e419cd68cef38c1b2d5c07215a6cc0ecdddccc63410",
+    "command_record_sha256": {
+      "compileall": "7dcfebb395e8fa411618d00748c7f66c74b214acf274151d59579f0b45b104d7",
+      "full_tests": "aa875a967fe941fd399b07b161d91174dbdb8e3443ad247472e88f8915b111c7",
+      "targeted_tests": "6e30089d52a8e70841a902626900eb3206dc24d73825bfc8c349ec7fbfa2805a"
+    },
+    "full_junit": {
+      "errors": 0,
+      "failures": 0,
+      "junit_sha256": "001234762741cf17150cef86fe408ef8e1a6ffd3174936df3c91afc931d98801",
+      "ordered_nodeids_sha256": "7354ef98f106f41624f821fb64e78a35d41504e938704ab4d8ee30e2faf485c8",
+      "schema_version": "haxs.stage5c2gR32A4.junit-semantics.v1",
+      "semantics_sha256": "e69f16b2f3664721c5f4f5bdbc8f34fed1a15f5cb63f868b73a59a0e9c7aa4bb",
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 386
+    },
+    "semantic_evidence_sha256": "4472938d59cadf065e4507c00474b4ecac2654962150d755f2d497fb379335b8",
+    "targeted_junit": {
+      "errors": 0,
+      "failures": 0,
+      "junit_sha256": "045ca04b8b1bb9413c8a3120b3524ee6b8b397b5ba97b8e5b1152c75b2b6e2c0",
+      "ordered_nodeids_sha256": "e645e38f44c733384b1c4a06f1b9c34b0e0194865a86ba72f07a92c60aa6d2b2",
+      "schema_version": "haxs.stage5c2gR32A4.junit-semantics.v1",
+      "semantics_sha256": "bef071c1f5efe5a1aed47889d38d33103320a6413fe84e17976d5b669c2845ab",
+      "skipped": 0,
+      "status": "PASS",
+      "tests": 153
+    }
+  },
+  "status": "PASS",
+  "test_counts": {
+    "full": 386,
+    "targeted": 153
+  },
+  "test_ledger_sha256": "d8bb29c84a8dcff372337b232469a5f6161af35eb1ca4b9bc0e5b68c13a64294",
+  "unit_registry_sha256": "f47649c6fdd25449f0dd924ce65157a11d4fa3c268a87e9701d18b2a0e157a0d",
+  "wheel_sha256": "cd13779b60e054a51865534307aa33cd2d6990130411fb26842491db2c3393c4",
+  "wheelhouse_manifest_sha256": "c123e89747bd10289c3202828ca2c1112a88353dbf85c86b98d6cf3b94f6359e"
+}
