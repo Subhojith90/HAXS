@@ -1,0 +1,38 @@
+stage5c2f:
+  stage: stage5c2f_occupancy_preserving_relock
+  preregistered_design: balanced_fresh
+  preregistration_status: locked_before_new_results
+  namespace_uuid: "7f2d86b2-7927-5cf6-a4d8-9d4ce51c2f11"
+  shape: [3, 3, 3]
+  labels: [static_only, mobile_plus_spin_density]
+  design:
+    occupancies: 16
+    paths_per_occupancy: 6
+    phase_batches_per_path: 4
+  n_traj: 1024
+  fixed_time_fraction: 0.65
+  local_window_offsets: [-0.1, 0.0, 0.1]
+  bootstrap_samples: 2000
+  bootstrap_seed: 52026
+  locked_confirmation: results/stage5c2d_lite/confirmation
+  estimator: balanced_random_effects_anova_with_nested_bootstrap_95ci
+  equivalence_method: welch_90ci_two_one_sided_margin
+  gates:
+    fixed_time_mean_below: 0.0
+    hierarchical_ci_high_below: 0.0
+    absolute_mc_se_at_most: 0.05
+    occupancy_negative_fraction_at_least: 0.80
+    equivalence_margin_db: 0.25
+  claim_scope: "One preregistered 3x3x3 stochastic-surrogate primary re-lock. Confirmation remains frozen. No Stage 5C3 production, Stage 5D, mechanism, finite-size, exact-hole, publication, or public-release claim."
+model:
+  j_perp: 1.0
+  jz: 0.35
+  hole_fraction: 0.18
+  mobile_eta: 0.55
+  lambda_sd: 0.30
+lattice:
+  periodic: false
+dtwa:
+  t_max: 1.4
+  n_steps: 45
+  n_traj: 1024

@@ -1,0 +1,47 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "affiliation": "University of Bristol, Bristol, United Kingdom",
+      "name": "Halder, Subhojit",
+      "orcid": "0000-0002-9875-0357"
+    },
+    {
+      "affiliation": "Universidad Politécnica de Madrid, Madrid, Spain",
+      "name": "Ganguly, Shreyosha"
+    },
+    {
+      "affiliation": "Universidad Internacional Menéndez Pelayo, Madrid, Spain",
+      "name": "Masta, Apoorv Kumar"
+    },
+    {
+      "affiliation": "Quantum AI Lab, Fractal Analytics, Gurugram, India 122003",
+      "name": "Devendrababu, Shalini",
+      "orcid": "0009-0007-2856-953X"
+    },
+    {
+      "affiliation": "CSIRO, Eveleigh, Australia",
+      "name": "Riaz, Farina"
+    },
+    {
+      "affiliation": "Department of Physics and Astronomy, University College London, Gower Street, London WC1E 6BT, United Kingdom",
+      "name": "Ganguly, Srinjoy",
+      "orcid": "0000-0003-4401-2903"
+    }
+  ],
+  "description": "HAXS is the code-and-data reproducibility release for a predeclared fixed-time spin-squeezing-parameter contrast in a 3x3x3 stochastic moving-occupancy XXZ surrogate. The repository contains the simulation and analysis code, configurations, tests, dependency locks, deterministic figure builder, complete primary and frozen-confirmation source tables, exact-diagonalization/DTWA comparison, two-host reproducibility evidence, and publication-closure record. The reported contrast is bounded to the selected surrogate and does not establish a microscopic mobile-hole mechanism, component-level causality, finite-size scaling, universality, or an experimental prediction. This software release does not include the unpublished manuscript.",
+  "keywords": [
+    "spin squeezing",
+    "XXZ magnet",
+    "discrete truncated Wigner approximation",
+    "stochastic occupancy",
+    "hierarchical bootstrap",
+    "reproducible simulation",
+    "computational physics"
+  ],
+  "language": "eng",
+  "license": "mit",
+  "title": "HAXS: stochastic moving-occupancy XXZ screening and reproducibility package",
+  "upload_type": "software",
+  "version": "1.0.0"
+}

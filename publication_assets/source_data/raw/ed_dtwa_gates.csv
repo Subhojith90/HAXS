@@ -1,0 +1,5 @@
+gate,value,threshold,passed,config_hash
+ed_dtwa_xi2_rmse,0.026065364405215643,0.04,True,d8c3573df9a30a4b
+ed_dtwa_xi2_db_rmse,0.12518296309914573,0.15,True,d8c3573df9a30a4b
+ed_dtwa_spin_length_rmse,0.0006927461163474597,0.003,True,d8c3573df9a30a4b
+dtwa_first_step_spin_length,0.9999908268623541,0.99,True,d8c3573df9a30a4b

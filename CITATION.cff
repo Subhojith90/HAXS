@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software or its archived data, please cite the versioned Zenodo release."
+title: "HAXS: stochastic moving-occupancy XXZ screening and reproducibility package"
+type: software
+version: 1.0.0
+date-released: 2026-11-12
+repository-code: "https://github.com/Subhojith90/HAXS"
+license: MIT
+abstract: >-
+  HAXS is the code-and-data reproducibility release for a predeclared
+  fixed-time spin-squeezing-parameter contrast in a 3x3x3 stochastic
+  moving-occupancy XXZ surrogate. It includes simulation and analysis code,
+  configurations, tests, dependency locks, deterministic figure generation,
+  complete source tables, and publication-closure evidence. The unpublished
+  manuscript is not included in this software release.
+keywords:
+  - spin squeezing
+  - XXZ magnet
+  - discrete truncated Wigner approximation
+  - stochastic occupancy
+  - hierarchical bootstrap
+  - reproducible simulation
+authors:
+  - family-names: Halder
+    given-names: Subhojit
+    orcid: "https://orcid.org/0000-0002-9875-0357"
+    affiliation: "University of Bristol, Bristol, United Kingdom"
+  - family-names: Ganguly
+    given-names: Shreyosha
+    affiliation: "Universidad Politécnica de Madrid, Madrid, Spain"
+  - family-names: Masta
+    given-names: Apoorv Kumar
+    affiliation: "Universidad Internacional Menéndez Pelayo, Madrid, Spain"
+  - family-names: Devendrababu
+    given-names: Shalini
+    orcid: "https://orcid.org/0009-0007-2856-953X"
+    affiliation: "Quantum AI Lab, Fractal Analytics, Gurugram, India 122003"
+  - family-names: Riaz
+    given-names: Farina
+    affiliation: "CSIRO, Eveleigh, Australia"
+  - family-names: Ganguly
+    given-names: Srinjoy
+    orcid: "https://orcid.org/0000-0003-4401-2903"
+    affiliation: "Department of Physics and Astronomy, University College London, Gower Street, London WC1E 6BT, United Kingdom"

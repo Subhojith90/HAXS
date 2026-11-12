@@ -25,3 +25,8 @@ dist/
 /results/stage5c2gR32A5_failed_candidate_*/
 /releases/stage5c2gR32A4/
 /manuscript/publication_closure/
+
+# Manuscript sources and circulation deliverables remain outside the public
+# code/data release, matching the GraphKAN and QNLP release structure.
+/manuscript/
+/deliverables/

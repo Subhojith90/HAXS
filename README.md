@@ -19,6 +19,11 @@ It contains the compact evidence, paper-ready tables, claim boundary, execution
 summary, final supervisory record, checksums, and an exact email to the
 supervisor.
 
+The deterministic figure builder, final plots, and complete source tables used
+by the paper are under [`publication_assets/`](publication_assets/README.md).
+The unpublished manuscript and its circulation deliverables are deliberately
+excluded from this public code/data repository.
+
 ## Frozen A5 identities
 
 - Candidate SHA-256: `481ca1905bedc68d6ac3eb36ac61b80356d4e32cf8847b3e927f081201240932`
@@ -38,6 +43,24 @@ python3 scripts/verify_publication_closure_release.py
 
 The GitHub workflow `Publication closure integrity` runs the same standard-library
 verification on `main`. It performs no scientific execution.
+
+## Citation and archival release
+
+The repository is prepared for Zenodo's GitHub-release integration. Zenodo uses
+the root [`.zenodo.json`](.zenodo.json) as the authoritative release metadata;
+GitHub displays [`CITATION.cff`](CITATION.cff) in its citation panel. The
+one-time repository connection and immutable `v1.0.0` release procedure are in
+[`docs/ZENODO_GITHUB_RELEASE.md`](docs/ZENODO_GITHUB_RELEASE.md).
+
+Before tagging a release, run:
+
+```bash
+python3 scripts/validate_zenodo_github_release.py
+python3 scripts/verify_publication_closure_release.py
+```
+
+Original software is MIT-licensed. Original data, figures, and documentation
+are CC BY 4.0; see [`RIGHTS.md`](RIGHTS.md).
 
 ## Claim boundary
 
